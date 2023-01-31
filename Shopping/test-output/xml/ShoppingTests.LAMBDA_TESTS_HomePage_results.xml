@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HOME PAGE TESTS"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="11.537">
+  <properties />
+  
+  
+            <testcase name="t2_SearchField_verifyAutoSuggestResults" time="1.267" classname="ShoppingTests.LAMBDA_TESTS_HomePage" />
+                <testcase name="t1_verifyLambdaTest_HomePageElements" time="3.337" classname="ShoppingTests.LAMBDA_TESTS_HomePage" />
+                <testcase name="t3_search_ProductInTheSearchFieldAndVerifyResults" time="2.163" classname="ShoppingTests.LAMBDA_TESTS_HomePage" />
+                <testcase name="t3_search_ProductInTheSearchFieldAndVerifyResults" time="2.623" classname="ShoppingTests.LAMBDA_TESTS_HomePage" />
+                <testcase name="t2_SearchField_verifyAutoSuggestResults" time="1.347" classname="ShoppingTests.LAMBDA_TESTS_HomePage" />
+                <testcase name="t5" time="0.800" classname="ShoppingTests.LAMBDA_TESTS_HomePage" />
+      
+</testsuite>

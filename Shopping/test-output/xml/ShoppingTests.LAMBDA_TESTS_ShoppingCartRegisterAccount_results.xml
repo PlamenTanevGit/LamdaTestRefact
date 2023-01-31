@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SHOPPING CART TESTS"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="20.923">
+  <properties />
+  
+  
+            <testcase name="t1_shoppingCartVerificationAndRemoveProducts" time="6.011" classname="ShoppingTests.LAMBDA_TESTS_ShoppingCartRegisterAccount" />
+                <testcase name="d1" time="0.002" classname="ShoppingTests.LAMBDA_TESTS_ShoppingCartRegisterAccount" />
+                <testcase name="t2_shopingCart_AddMultipleItemsVerification" time="4.575" classname="ShoppingTests.LAMBDA_TESTS_ShoppingCartRegisterAccount" />
+                <testcase name="t3_CheckoutItem" time="10.335" classname="ShoppingTests.LAMBDA_TESTS_ShoppingCartRegisterAccount" />
+      
+</testsuite>

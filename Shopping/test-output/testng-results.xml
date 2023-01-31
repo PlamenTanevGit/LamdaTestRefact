@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[]]>
+    </line>
+    <line>
+      <![CDATA[FIREFOX is Initialised]]>
+    </line>
+    <line>
+      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : plamen.tanev31@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 1234]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : HTC Touch HD]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element ]]>
+    </line>
+    <line>
+      <![CDATA[Text : VAT (20%): - is Verified]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element Continue]]>
+    </line>
+    <line>
+      <![CDATA[Driver quit]]>
+    </line>
+    <line>
+      <![CDATA[Duration of Suite is : 20 sec.]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-01-31T00:07:14 EET" name="Default suite" finished-at="2023-01-31T00:07:35 EET" duration-ms="20272">
+    <groups>
+    </groups>
+    <test started-at="2023-01-31T00:07:14 EET" name="Default test" finished-at="2023-01-31T00:07:35 EET" duration-ms="20272">
+      <class name="ShoppingTests.TESTS_PurchaseWithLoggedUser">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ShoppingTests.TESTS_PurchaseWithLoggedUser@957e06]" started-at="2023-01-31T00:07:14 EET" name="beforeSuite" finished-at="2023-01-31T00:07:14 EET" duration-ms="8" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.TESTS_PurchaseWithLoggedUser@957e06]" started-at="2023-01-31T00:07:14 EET" name="beforeClass" finished-at="2023-01-31T00:07:18 EET" duration-ms="3812" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[FIREFOX is Initialised]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="LoginAndPurchase()[pri:0, instance:ShoppingTests.TESTS_PurchaseWithLoggedUser@957e06]" started-at="2023-01-31T00:07:18 EET" name="LoginAndPurchase" finished-at="2023-01-31T00:07:35 EET" duration-ms="16431" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : plamen.tanev31@gmail.com]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 1234]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : HTC Touch HD]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+            <line>
+              <![CDATA[Text : VAT (20%): - is Verified]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element Continue]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- LoginAndPurchase -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.TESTS_PurchaseWithLoggedUser@957e06]" started-at="2023-01-31T00:07:35 EET" name="afterClass" finished-at="2023-01-31T00:07:35 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ShoppingTests.TESTS_PurchaseWithLoggedUser@957e06]" started-at="2023-01-31T00:07:35 EET" name="afterSuite" finished-at="2023-01-31T00:07:35 EET" duration-ms="0" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Driver quit]]>
+            </line>
+            <line>
+              <![CDATA[Duration of Suite is : 20 sec.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- ShoppingTests.TESTS_PurchaseWithLoggedUser -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

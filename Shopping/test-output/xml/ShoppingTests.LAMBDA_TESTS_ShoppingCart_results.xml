@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SHOPPING CART TESTS"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="14.650">
+  <properties />
+  
+  
+            <testcase name="t1_shoppingCartVerification" time="14.650" classname="ShoppingTests.LAMBDA_TESTS_ShoppingCart" />
+      
+</testsuite>
