@@ -439,7 +439,7 @@ public class TestUtil {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = DriverFactory.initialise(Browsers.FIREFOX);
+		driver = DriverFactory.initialise(Browsers.CHROME);
 		Reporter.log(Browsers.FIREFOX + " is Initialised");
 		initConfiguration();
 
