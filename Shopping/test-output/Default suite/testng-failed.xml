@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ShoppingTests.TestDemo">
+      <class name="ShoppingTests.TESTS_PurchaseGuest_NO_VAT">
         <methods>
-          <include name="CheckoutItem_With_VAT"/>
+          <include name="GuestCheckoutItem_Without_VAT"/>
           <include name="beforeSuite"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- ShoppingTests.TestDemo -->
+      </class> <!-- ShoppingTests.TESTS_PurchaseGuest_NO_VAT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

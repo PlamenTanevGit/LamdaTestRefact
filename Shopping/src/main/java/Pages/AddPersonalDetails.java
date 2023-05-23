@@ -28,6 +28,78 @@ public class AddPersonalDetails {
 		this.accountRegisterPage = new AccountRegisterPage(driver);
 	}
 	
+	/**
+	 * GUEST form fill 
+	 */
+	public AddPersonalDetails(WebDriver driver, 
+			String fn, 
+			String ln, 
+			String email, 
+			String phone,
+			String company,
+			String addr,
+			String City, 
+			String PO, 
+			String country, 
+			String region ) throws InterruptedException {
+		this.driver = driver;
+		this.accountRegisterPage = new AccountRegisterPage(driver);
+		setFirstName(fn);
+		setLastName(ln);
+		setEmail(email);
+		setTelephone(phone);		
+		setCompany(company);
+		
+		setAddress1(addr);
+		setAddress2(addr);
+		setCity(City);
+		setPostCode(PO);
+		selectCountry(country);
+		selectRegion(region);
+		
+		
+		
+	}
+	
+	/**
+	 * VISITOR  form fill 
+	 */
+	public AddPersonalDetails(WebDriver driver, 
+			String fn, 
+			String ln, 
+			String email, 
+			String phone,
+			
+			String pass,
+			
+			String company,
+			String addr,
+			String City, 
+			String PO, 
+			String country, 
+			String region ) throws InterruptedException {
+		this.driver = driver;
+		this.accountRegisterPage = new AccountRegisterPage(driver);
+		setFirstName(fn);
+		setLastName(ln);
+		setEmail(email);
+		setTelephone(phone);	
+		
+		setPassword(pass);
+		setConfrimPassword(pass);
+		
+		
+		setCompany(company);		
+		setAddress1(addr);
+		setAddress2(addr);
+		setCity(City);
+		setPostCode(PO);
+		selectCountry(country);
+		selectRegion(region);
+		
+		
+		
+	}
 
 	public String getFirstName() {
 		return firstName;

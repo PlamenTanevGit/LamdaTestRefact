@@ -52,7 +52,7 @@ public class TestDemo extends TestUtil {
 		double subTotal_midCheckout  = accountRegisterPage.getSubTotalAmount();
 		double flatShippingRate_midCheckout  = accountRegisterPage.getFlatShippingRateAmmount();
 		
-		accountRegisterPage.continueClick();
+		accountRegisterPage.clickOnContinue();
 		
 		double subTotal_confirmOrder = confirmOrderPage.getSubTotalAmount();
 		double flatShippingRate_confirmOrder = confirmOrderPage.getFlatShippingRateAmount();

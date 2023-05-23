@@ -15,28 +15,43 @@ public class TESTS_ContinueShopping extends TestUtil {
 		int numberOfAddedItems = 1;
 		String productPrice = null;
 
-		TestUtil.openUrl(config.getProperty("homePage"));
-	
+		/**
+		 * Navigate to the  home page
+		 * and enter in the Product Search Field a product for search
+		 * and click on Search
+		 */
+		TestUtil.openUrl(config.getProperty("homePage"));	
 		homePage.enterProductInSearchField(or.getProperty("product1"));
 		homePage.clickOnSearch();
-
+		/**
+		 * store the Price in a variable
+		 * store the price amount in a variable
+		 */
 		productPrice = searchResultPage.getPriceFromArticle("1");
-
 		double priceDouble = searchResultPage.getThePriceAmount(productPrice);
-
+		/**
+		 * Adding 1 item 
+		 * and
+		 * getting the Unit Price in varibale
+		 */
 		searchResultPage.addToCartMultipleItems("1", numberOfAddedItems);
-
-		double UnitPricFromGrid = shoppingCartPage.getUnitPrice();
+		double UnitPricFromGrid = shoppingCartPage.getUnitPrice();		
+		/**
+		 * Assertion for Unit price from grid = Price Amount
+		 */
 		softAssert.assertEquals(UnitPricFromGrid, (priceDouble));
-
-		double TotalTopValue = shoppingCartPage.assertTotalTop_value((priceDouble * numberOfAddedItems));
-
+		double TotalTopValue = shoppingCartPage.assertTotalTop_value((priceDouble * numberOfAddedItems));		
+		/**
+		 * Assertions for Eco Tax Value and Total value including VAT
+		 */
 		shoppingCartPage.assertEcoTaxValue(numberOfAddedItems * 2);
-
 		shoppingCartPage.assertTotalBottom_value("VAT_YES", TotalTopValue);	
 		
-		shoppingCartPage.clickOnContinueShopping();
-		
+		/**
+		 * Click on Continue Shopping 
+		 * and Assert the success landing of Your Store page
+		 */
+		shoppingCartPage.clickOnContinueShopping();		
 		TestUtil.pageTitleVerify("Your Store");
 	}
 

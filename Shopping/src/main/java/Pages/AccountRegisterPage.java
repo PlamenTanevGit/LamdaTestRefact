@@ -89,7 +89,7 @@ public class AccountRegisterPage {
 	}
 
 	public WebElement continueButton() {
-		return TestUtil.findElement(LocatorType.XPATH, "//button[@id='button-save']");
+		return TestUtil.findElement(LocatorType.CSS, "#button-save");
 	}
 
 	public WebElement accountLogoutMessage() {
@@ -108,18 +108,21 @@ public class AccountRegisterPage {
 		TestUtil.clickOnElement(guestCheckoutRadioButton());		
 	}
 
-	public void continueClick() {
+	public void clickOnContinue() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 4);
-		TestUtil.clickOnElement(continueButton());
+		TestUtil.jSClick(continueButton());
 		wait.until(ExpectedConditions.visibilityOf(confirmOrderPage.confirmOrderTitle()));
+		Thread.sleep(2500);
 	}
 
-	public void checkPrivacyPolicy() {
+	public void checkPrivacyPolicy() throws InterruptedException {
 		TestUtil.pseudoClickJavascript("label[for='input-account-agree']", "before");
+		Thread.sleep(1500);
 	}
 
-	public void checkTermsAndConditions() {
+	public void checkTermsAndConditions() throws InterruptedException {
 		TestUtil.pseudoClickJavascript("label[for='input-agree']", "after");
+		Thread.sleep(1500);
 	}
 
 	public String setFirstName(String firstName) {

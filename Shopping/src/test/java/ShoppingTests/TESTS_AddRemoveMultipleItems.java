@@ -8,7 +8,17 @@ import Utils.TestUtil;
 
 public class TESTS_AddRemoveMultipleItems extends TestUtil{
 	
-	@Test(alwaysRun = true, description = "This test performs search product and verifies the found product")	
+	/**
+	 * This test will perform 
+	 *  > adding of multiple items
+	 *     - Assert Eco Tax value
+	 *     - Assert Total value with VAT 
+	 *  > remove the items by click on Remove button
+	 *  > continue by click on Continue button
+	 */
+	
+	@Test(alwaysRun = true, 
+			description = "This test performs search product and verifies the found product")	
 	public void t2_shopingCart_AddMultipleItemsVerification() throws InterruptedException {
 		int numberOfAddedItems = 3;
 		String productPrice = null;

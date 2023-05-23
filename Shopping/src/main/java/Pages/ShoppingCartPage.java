@@ -120,7 +120,7 @@ public class ShoppingCartPage {
 	}
 	
 
-	public void checkout () {
+	public void clickCheckout () {
 			TestUtil.clickOnElement(CheckoutButton());			
 			wait.until(ExpectedConditions.visibilityOf(checkoutPage.topLeftIcon()));
 	}

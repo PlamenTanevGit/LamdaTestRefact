@@ -32,7 +32,7 @@ public class TESTS_PurchaseWithLoggedUser extends TestUtil {
 		shoppingCartPage.assertEcoTaxValue(numberOfAddedItems * 2);
 		
 		shoppingCartPage.assertTotalBottom_value("VAT_YES", totalValue);
-		shoppingCartPage.checkout();
+		shoppingCartPage.clickCheckout();
 		
 		DriverFactory.waitForAjax();
 		TestUtil.verifyEqualTexts(checkoutPage.VATlabel(), "VAT (20%):");
@@ -43,7 +43,7 @@ public class TESTS_PurchaseWithLoggedUser extends TestUtil {
 		
 		double subTotal = accountRegisterPage.getSubTotalAmount();
 		double flatShippingRate = accountRegisterPage.getFlatShippingRateAmmount();		
-		accountRegisterPage.continueClick();
+		accountRegisterPage.clickOnContinue();
 
 		double subTotalOrder = confirmOrderPage.getSubTotalAmount();
 		double flatShippingRateOrder = confirmOrderPage.getFlatShippingRateAmount();

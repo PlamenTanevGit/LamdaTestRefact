@@ -103,9 +103,10 @@ public class HomePage {
 		TestUtil.clickOnElement(searchButton());
 	}
 	
-	public void searchForProducts (String product) {
+	public void searchForProducts (String product) throws InterruptedException {
 		enterProductInSearchField ( product);
 		clickOnSearch();
+		Thread.sleep(2000);
 		
 	}
 	

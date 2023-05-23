@@ -81,7 +81,7 @@ public class SearchResultPage  {
 	
 	public WebElement addToCartButton() {
 		return TestUtil.findElement(LocatorType.XPATH,
-				"//button[@class='btn btn-cart cart-28']");
+				"(//i[@class='fas fa-shopping-cart'])[1]");
 	}
 	
 	public WebElement addToCartPopUp() {

@@ -40,7 +40,7 @@ public class DriverFactory {
 			chromeOptions.addArguments("--ignore-certificate-errors");
 			chromeOptions.addArguments("--disable-default-apps");
 			chromeOptions.addArguments("--disable-popup-blocking");
-			chromeOptions.addArguments("--incognito");
+//			chromeOptions.addArguments("--incognito");
 			driver = new ChromeDriver(chromeOptions);
 
 			break;

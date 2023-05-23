@@ -34,7 +34,7 @@ public class TESTS_PurchaseGuest_VAT extends TestUtil {
 		shoppingCartPage.assertEcoTaxValue(numberOfAddedItems * 2);
 		shoppingCartPage.assertTotalBottom_value("VAT_YES", totalValue);	
 		
-		shoppingCartPage.checkout();
+		shoppingCartPage.clickCheckout();
 		accountRegisterPage.clickOnGuestCheckOut();
 
 		addPersonalDetails.setFirstName(or.getProperty("firstName")+TestUtil.randomString(5));
@@ -59,7 +59,7 @@ public class TESTS_PurchaseGuest_VAT extends TestUtil {
 		double subTotal_midCheckout  = accountRegisterPage.getSubTotalAmount();
 		double flatShippingRate_midCheckout  = accountRegisterPage.getFlatShippingRateAmmount();
 		
-		accountRegisterPage.continueClick();
+		accountRegisterPage.clickOnContinue();
 		
 		double subTotal_confirmOrder = confirmOrderPage.getSubTotalAmount();
 		double flatShippingRate_confirmOrder = confirmOrderPage.getFlatShippingRateAmount();

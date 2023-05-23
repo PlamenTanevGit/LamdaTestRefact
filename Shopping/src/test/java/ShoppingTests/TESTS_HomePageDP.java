@@ -26,9 +26,17 @@ public class TESTS_HomePageDP extends TestUtil {
 			{ "Palm Treo Pro", "$337.99",2 }, 
 			{ "HTC Touch HD", "$146.00",8 }};
 	}
+	
+	/**
+	 * The test will search multiple products in the search and 
+	 *  Assert the size of the result
+	 *  Assert the name of the products from the result
+	 *  Assert the price of the products from the result
+	 */
 
 	@Test(enabled = true, 
-			dataProvider = "productInputs")
+			dataProvider = "productInputs",
+			description = "The test will search multiple products in the search and Assert the size of the products as results")
 	public void t3_search_ProductInTheSearchFieldAndVerifyResults(String productName, String price, int size)
 			throws InterruptedException {
 
@@ -43,6 +51,12 @@ public class TESTS_HomePageDP extends TestUtil {
 
 		List<WebElement> Str = super.getElementList("//div[@class='row']/div", LocatorType.XPATH);
 
+		/**
+		 *  Assertion for
+		 *   - size
+		 *   - product name
+		 *   - price 
+		 */
 		Assert.assertTrue(Str.size() == size);
 
 		for (int i = 0; i < Str.size(); i++) {

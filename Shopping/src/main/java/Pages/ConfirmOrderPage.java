@@ -58,6 +58,10 @@ public class ConfirmOrderPage {
 	public WebElement confirmOrderTotalLabel() {
 		return TestUtil.findElement(LocatorType.XPATH, "//table//strong[text()='Total:']");
 	}
+	
+	public WebElement successOrderMessage () {
+		return TestUtil.findElement(LocatorType.XPATH, "//h1[normalize-space()='Your order has been placed!']");
+	}
 
 	public WebElement confirmOrderTotalValue(String VAT) {
 
@@ -111,7 +115,7 @@ public class ConfirmOrderPage {
 	}
 
 	public void confirmOrder() {
-		TestUtil.clickOnElement(confirmOrderButton());
+		TestUtil.jSClick(confirmOrderButton());
 	}
 
 	public double getSubTotalAmount() {
