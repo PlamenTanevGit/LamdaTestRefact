@@ -74,6 +74,12 @@
 			<class name="ShoppingTests.TESTS_ContinueShopping" />
 		</classes>
 	</test>
+	
+		<test thread-count="5" name="Not Enough Quantity Message ">
+		<classes>
+			<class name="ShoppingTests.TESTS_PurchaseGuest_NotQuanatity" />
+		</classes>
+	</test>
 
 	<!--  -->
 </suite><!-- Suite -->

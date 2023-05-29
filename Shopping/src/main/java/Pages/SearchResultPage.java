@@ -103,7 +103,7 @@ public class SearchResultPage  {
 		TestUtil.movesToTheElement(product(itemNumber));
 		for (int i = 0; i < itemsNumber; i++) {
 			TestUtil.clickOnElement(addToCartButton());
-			Thread.sleep(150);			
+			Thread.sleep(250);			
 		}
 		TestUtil.clickOnElement(viewCartButton());
 

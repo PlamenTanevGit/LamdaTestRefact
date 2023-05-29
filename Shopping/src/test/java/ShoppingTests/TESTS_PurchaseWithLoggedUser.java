@@ -19,7 +19,7 @@ public class TESTS_PurchaseWithLoggedUser extends TestUtil {
 				or.getProperty("passwordLogin"));
 		TestUtil.assertIsDisplayed(myAccountPage.title());		
 
-		homePage.searchForProducts(or.getProperty("product1"));
+		homePage.searchForProducts(or.getProperty("product3"));
 		productPrice = searchResultPage.getPriceFromArticle("1");
 		
 		double price = searchResultPage.getThePriceAmount(productPrice);

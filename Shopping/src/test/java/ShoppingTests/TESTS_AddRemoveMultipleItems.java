@@ -23,18 +23,20 @@ public class TESTS_AddRemoveMultipleItems extends TestUtil{
 		int numberOfAddedItems = 3;
 		String productPrice = null;
 		int EcoTax = numberOfAddedItems*2;
-
+		/**
+		 * Navigate to home Page
+		 */
 		TestUtil.openUrl(config.getProperty("homePage"));
-		
+		/**
+		 * Add products in the search field 
+		 * and 
+		 * assert the price values for Unit Price
+		 */
 		homePage.enterProductInSearchField(or.getProperty("product1"));
 		homePage.clickOnSearch();
-
 		productPrice = searchResultPage.getPriceFromArticle("1");
-
 		double priceDouble = searchResultPage.getThePriceAmount(productPrice);
-
 		searchResultPage.addToCartMultipleItems("1", numberOfAddedItems);
-
 		double UnitPricFromGrid = shoppingCartPage.getUnitPrice();
 		Assert.assertEquals(UnitPricFromGrid, (priceDouble));
 

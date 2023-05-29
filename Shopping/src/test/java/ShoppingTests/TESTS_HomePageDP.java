@@ -39,12 +39,19 @@ public class TESTS_HomePageDP extends TestUtil {
 			description = "The test will search multiple products in the search and Assert the size of the products as results")
 	public void t3_search_ProductInTheSearchFieldAndVerifyResults(String productName, String price, int size)
 			throws InterruptedException {
-
+		/**
+		 * Navigate to the Home Page
+		 */
 		TestUtil.openUrl(config.getProperty("homePage"));
-
+		/**
+		 * Enter product in the Search field and click on Search button
+		 */
 		homePage.enterProductInSearchField(productName);
 		homePage.clickOnSearch();
 
+		/**
+		 * Multiple verifictaions on Filter menu
+		 */
 		searchResultPage.componentsVerify();
 
 		Assert.assertTrue(searchResultPage.searchResultsTitle(productName).getText().equals("Search - " + productName));

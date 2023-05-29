@@ -108,6 +108,10 @@ public class ShoppingCartPage {
 		return TestUtil.findElement(LocatorType.XPATH, "//div[@class='buttons']/a");
 	}
 	
+	public WebElement insufficientProductsMessage() {
+		return TestUtil.findElement(LocatorType.XPATH, "//div[contains(text(),'Products marked with *** are not available')]");
+	}
+	
 	public void clickOnContinueShopping () {
 		
 		TestUtil.clickOnElement(ContinueShoppingButton());

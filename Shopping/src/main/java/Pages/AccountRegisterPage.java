@@ -112,7 +112,7 @@ public class AccountRegisterPage {
 		WebDriverWait wait = new WebDriverWait(driver, 4);
 		TestUtil.jSClick(continueButton());
 		wait.until(ExpectedConditions.visibilityOf(confirmOrderPage.confirmOrderTitle()));
-		Thread.sleep(2500);
+		Thread.sleep(3500);
 	}
 
 	public void checkPrivacyPolicy() throws InterruptedException {

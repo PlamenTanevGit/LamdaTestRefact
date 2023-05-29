@@ -8,7 +8,7 @@ public class TESTS_Login extends TestUtil {
 	
 
 	@Test(alwaysRun = true, 
-			description = "This Test performs Login with valid Credentials")
+			description = "This Test performs Login with valid Credentials ")
 	public void t1_Login_Valid_UserCredentials() throws InterruptedException {
 
 		TestUtil.openUrl(config.getProperty("loginPage"));
@@ -24,7 +24,7 @@ public class TESTS_Login extends TestUtil {
 	}
 
 	@Test(alwaysRun = true, 
-			description = "This Test performs Login with Invalid Credentials and Asserts warning message is displayed ")
+			description = "This Test performs Login with Invalid Credentials and Asserts warning message is displayed")
 	public void t2_Login_Invalid_UserCredentials() throws InterruptedException {
 
 		TestUtil.openUrl(config.getProperty("loginPage"));

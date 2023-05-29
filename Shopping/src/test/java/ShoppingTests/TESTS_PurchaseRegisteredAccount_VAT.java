@@ -8,6 +8,16 @@ import Utils.TestUtil;
 
 
 public class TESTS_PurchaseRegisteredAccount_VAT extends TestUtil {
+	
+	/**
+	 * The Test will perform product search 
+	 * with Registered account
+	 * on country WITH VAT
+	 * will confirm and Assert the Order 
+	 * then 
+	 * will Logout
+	 * 
+	 */
 
 	
 	@Test(alwaysRun = true,
@@ -24,7 +34,7 @@ public class TESTS_PurchaseRegisteredAccount_VAT extends TestUtil {
 		
 		/**
 		 * perform search for Product
-		 * and store price in a variable
+		 * and store price in a variable 
 		 */
 		homePage.searchForProducts(or.getProperty("product3"));
 		productPrice = searchResultPage.getPriceFromArticle("1");
@@ -95,7 +105,7 @@ public class TESTS_PurchaseRegisteredAccount_VAT extends TestUtil {
 		 * click on Continue and proceed to Order screen
 		 */
 		accountRegisterPage.clickOnContinue();
-		Assert.assertTrue(driver.getTitle().contains("Cinfirm Order"));
+		Assert.assertTrue(driver.getTitle().contains("Confirm Order"));
 		
 		/**
 		 * Assertions :

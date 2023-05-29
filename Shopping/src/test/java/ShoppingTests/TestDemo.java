@@ -16,7 +16,7 @@ public class TestDemo extends TestUtil {
 
 		TestUtil.openUrl(config.getProperty("homePage"));
 
-		homePage.enterProductInSearchField(or.getProperty("product1"));
+		homePage.enterProductInSearchField(or.getProperty("product3"));
 		homePage.clickOnSearch();
 
 		productPrice = searchResultPage.getPriceFromArticle("1");

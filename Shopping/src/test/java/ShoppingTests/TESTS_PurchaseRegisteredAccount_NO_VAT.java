@@ -16,16 +16,23 @@ public class TESTS_PurchaseRegisteredAccount_NO_VAT extends TestUtil {
 		
 		int numberOfAddedItems = 1;
 		String productPrice = null;
-
+		/**
+		 * Navigat to home page
+		 */
 		TestUtil.openUrl(config.getProperty("homePage"));
-
-		homePage.enterProductInSearchField(or.getProperty("product1"));
+		/**
+		 * Enter product and click on Search 
+		 * - store product Price in variable
+		 * - store Amount in variable
+		 */
+		homePage.enterProductInSearchField(or.getProperty("product3"));
 		homePage.clickOnSearch();
-
 		productPrice = searchResultPage.getPriceFromArticle("1");
-
 		double priceDouble = searchResultPage.getThePriceAmount(productPrice);
-
+		/**
+		 * Add items to the Cart
+		 *  - store Unit Price from cart
+		 */
 		searchResultPage.addToCartMultipleItems("1", numberOfAddedItems);
 
 		double UnitPricFromGrid = shoppingCartPage.getUnitPrice();

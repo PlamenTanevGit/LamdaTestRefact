@@ -113,6 +113,7 @@ public class ConfirmOrderPage {
 	public WebElement confirmOrderButton() {
 		return TestUtil.findElement(LocatorType.XPATH, "//div[@class='buttons d-flex justify-content-between']/button");
 	}
+	
 
 	public void confirmOrder() {
 		TestUtil.jSClick(confirmOrderButton());

@@ -11,7 +11,7 @@ import Utils.TestUtil;
 public class TESTS_PurchaseGuest_NO_VAT extends TestUtil {
 
 	/**
-	 *  This test will select GUEST user acount
+	 *  This test will select GUEST user acount 
 	 *   - then will Fill the Guest Form
 	 *   - then will select a Country WITHOUT VAT in the checkout form
 	 *   - then will Assert the VAT is not Displayed

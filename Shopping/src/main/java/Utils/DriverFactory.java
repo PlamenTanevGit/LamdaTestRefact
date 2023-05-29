@@ -36,7 +36,7 @@ public class DriverFactory {
 			WebDriverManager.chromedriver().setup();
 
 			chromeOptions.addArguments("--disable-infobars");
-			chromeOptions.addArguments("--window-size=1920,1080");
+			chromeOptions.addArguments("--window-size=1500,1080");
 			chromeOptions.addArguments("--ignore-certificate-errors");
 			chromeOptions.addArguments("--disable-default-apps");
 			chromeOptions.addArguments("--disable-popup-blocking");
@@ -67,7 +67,7 @@ public class DriverFactory {
 		driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(PAGE_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(SCRIPT_TIMEOUT, TimeUnit.SECONDS);
-		driver.manage().window().maximize();
+//		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 
 		/*
