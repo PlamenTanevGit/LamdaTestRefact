@@ -12,7 +12,7 @@ public class TESTS_PurchaseGuest_NotQuanatity extends TestUtil {
 	@Test(alwaysRun = true,
 			description = "This test search for product then do a checkout by selection of country with VAT")
 	public void GuestCheckoutItem_With_VAT() throws InterruptedException {
-	
+	// test1
 		int numberOfAddedItems = 1;
 		String productPrice = null;
 
