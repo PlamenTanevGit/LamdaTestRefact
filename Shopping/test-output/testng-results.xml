@@ -20,25 +20,25 @@
       <![CDATA[Successfully click on element Guest Checkout]]>
     </line>
     <line>
-      <![CDATA[ Enter value : testFNbrnxr]]>
+      <![CDATA[ Enter value : testFNkznbw]]>
     </line>
     <line>
-      <![CDATA[ Enter value : testLNabypx]]>
+      <![CDATA[ Enter value : testLNnbgtf]]>
     </line>
     <line>
-      <![CDATA[ Enter value : testEmailbleev@mm.com]]>
+      <![CDATA[ Enter value : testEmailnidbs@mm.com]]>
     </line>
     <line>
       <![CDATA[ Enter value : +359123456789]]>
     </line>
     <line>
-      <![CDATA[ Enter value : CompanyTestgoq]]>
+      <![CDATA[ Enter value : CompanyTestrkp]]>
     </line>
     <line>
-      <![CDATA[ Enter value : address1_zerkj]]>
+      <![CDATA[ Enter value : address1_igyea]]>
     </line>
     <line>
-      <![CDATA[ Enter value : address1_zerkj]]>
+      <![CDATA[ Enter value : address1_igyea]]>
     </line>
     <line>
       <![CDATA[ Enter value : 1111]]>
@@ -356,29 +356,29 @@ Yambol]]>
       <![CDATA[Driver quit]]>
     </line>
     <line>
-      <![CDATA[Duration of Suite is : 44 sec.]]>
+      <![CDATA[Duration of Suite is : 39 sec.]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-23T00:09:56 EEST" name="Default suite" finished-at="2023-05-23T00:10:41 EEST" duration-ms="44945">
+  <suite started-at="2023-05-29T12:13:32 EEST" name="Default suite" finished-at="2023-05-29T12:14:12 EEST" duration-ms="39886">
     <groups>
     </groups>
-    <test started-at="2023-05-23T00:09:56 EEST" name="Default test" finished-at="2023-05-23T00:10:41 EEST" duration-ms="44945">
+    <test started-at="2023-05-29T12:13:32 EEST" name="Default test" finished-at="2023-05-29T12:14:12 EEST" duration-ms="39886">
       <class name="ShoppingTests.TESTS_PurchaseGuest_NO_VAT">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-23T00:09:56 EEST" name="beforeSuite" finished-at="2023-05-23T00:09:56 EEST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-29T12:13:32 EEST" name="beforeSuite" finished-at="2023-05-29T12:13:32 EEST" duration-ms="8" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-23T00:09:56 EEST" name="beforeClass" finished-at="2023-05-23T00:09:58 EEST" duration-ms="1813" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-29T12:13:32 EEST" name="beforeClass" finished-at="2023-05-29T12:13:35 EEST" duration-ms="2573" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[FIREFOX is Initialised]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="GuestCheckoutItem_Without_VAT()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-23T00:09:58 EEST" name="GuestCheckoutItem_Without_VAT" description="This test search for product then do a checkout by selection of country without VAT" finished-at="2023-05-23T00:10:41 EEST" duration-ms="43106" status="PASS">
+        <test-method signature="GuestCheckoutItem_Without_VAT()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-29T12:13:35 EEST" name="GuestCheckoutItem_Without_VAT" description="This test search for product then do a checkout by selection of country without VAT" finished-at="2023-05-29T12:14:12 EEST" duration-ms="37281" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
@@ -393,25 +393,25 @@ Yambol]]>
               <![CDATA[Successfully click on element Guest Checkout]]>
             </line>
             <line>
-              <![CDATA[ Enter value : testFNbrnxr]]>
+              <![CDATA[ Enter value : testFNkznbw]]>
             </line>
             <line>
-              <![CDATA[ Enter value : testLNabypx]]>
+              <![CDATA[ Enter value : testLNnbgtf]]>
             </line>
             <line>
-              <![CDATA[ Enter value : testEmailbleev@mm.com]]>
+              <![CDATA[ Enter value : testEmailnidbs@mm.com]]>
             </line>
             <line>
               <![CDATA[ Enter value : +359123456789]]>
             </line>
             <line>
-              <![CDATA[ Enter value : CompanyTestgoq]]>
+              <![CDATA[ Enter value : CompanyTestrkp]]>
             </line>
             <line>
-              <![CDATA[ Enter value : address1_zerkj]]>
+              <![CDATA[ Enter value : address1_igyea]]>
             </line>
             <line>
-              <![CDATA[ Enter value : address1_zerkj]]>
+              <![CDATA[ Enter value : address1_igyea]]>
             </line>
             <line>
               <![CDATA[ Enter value : 1111]]>
@@ -727,17 +727,17 @@ Yambol]]>
             </line>
           </reporter-output>
         </test-method> <!-- GuestCheckoutItem_Without_VAT -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-23T00:10:41 EEST" name="afterClass" finished-at="2023-05-23T00:10:41 EEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-29T12:14:12 EEST" name="afterClass" finished-at="2023-05-29T12:14:12 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-23T00:10:41 EEST" name="afterSuite" finished-at="2023-05-23T00:10:41 EEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ShoppingTests.TESTS_PurchaseGuest_NO_VAT@6356695f]" started-at="2023-05-29T12:14:12 EEST" name="afterSuite" finished-at="2023-05-29T12:14:12 EEST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Driver quit]]>
             </line>
             <line>
-              <![CDATA[Duration of Suite is : 44 sec.]]>
+              <![CDATA[Duration of Suite is : 39 sec.]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterSuite -->

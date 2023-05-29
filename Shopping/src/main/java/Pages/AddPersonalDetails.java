@@ -70,9 +70,9 @@ public class AddPersonalDetails {
 			String email, 
 			String phone,
 			
-			String pass,
-			
+			String pass,			
 			String company,
+			
 			String addr,
 			String City, 
 			String PO, 
