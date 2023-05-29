@@ -460,7 +460,7 @@ public class TestUtil {
 	public void afterClass() {
 
 		if (driver != null) {
-//			driver.quit();
+			driver.quit();
 		}
 
 	}
@@ -468,7 +468,7 @@ public class TestUtil {
 	@AfterSuite
 	public void afterSuite() {
 		if (driver != null) {
-//			driver.quit();
+			driver.quit();
 		}
 		Reporter.log("Driver quit");
 		endTime = System.nanoTime();
