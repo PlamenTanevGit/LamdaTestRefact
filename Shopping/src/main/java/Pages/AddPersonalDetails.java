@@ -62,7 +62,7 @@ public class AddPersonalDetails {
 	}
 	
 	/**
-	 * VISITOR  form fill 
+	 * VISITOR  form fill.
 	 */
 	public AddPersonalDetails(WebDriver driver, 
 			String fn, 
