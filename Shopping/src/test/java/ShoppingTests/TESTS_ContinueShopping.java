@@ -10,7 +10,7 @@ public class TESTS_ContinueShopping extends TestUtil {
 	
 	@Test(alwaysRun = true,
 			description = "This test search for product then do a checkout by selection of country with VAT")
-	public void CheckoutItem_With_VAT() throws InterruptedException {
+	public void checkoutItemWithVAT() throws InterruptedException {
 	
 		int numberOfAddedItems = 1;
 		String productPrice = null;
@@ -45,8 +45,7 @@ public class TESTS_ContinueShopping extends TestUtil {
 		 * Assertions for Eco Tax Value and Total value including VAT
 		 */
 		shoppingCartPage.assertEcoTaxValue(numberOfAddedItems * 2);
-		shoppingCartPage.assertTotalBottom_value("VAT_YES", TotalTopValue);	
-		
+		shoppingCartPage.assertTotalBottom_value("VAT_YES", TotalTopValue);			
 		/**
 		 * Click on Continue Shopping 
 		 * and Assert the success landing of Your Store page

@@ -60,7 +60,6 @@ public class TestUtil {
 	protected static WebDriver driver;
 	protected static WebDriverWait wait;
 	public static SoftAssert softAssert;
-	public static Assert hardAssert;
 	public static WebElement element;
 	private static JavascriptExecutor js;
 	private static String screenshotName;
