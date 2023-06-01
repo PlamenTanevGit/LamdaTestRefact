@@ -57,7 +57,6 @@ public class TESTS_HomePageDP extends TestUtil {
 		Assert.assertTrue(searchResultPage.searchResultsTitle(productName).getText().equals("Search - " + productName));
 
 		List<WebElement> Str = super.getElementList("//div[@class='row']/div", LocatorType.XPATH);
-
 		/**
 		 *  Assertion for
 		 *   - size

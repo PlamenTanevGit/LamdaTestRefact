@@ -57,7 +57,7 @@ public class TESTS_HomePageCSV extends TestUtil {
 	
 	
 	
-	@Test(enabled = true, 
+	@Test(enabled = false, 
 			dataProviderClass = DP.class, 
 			dataProvider = "getDataFromCSV")
 	public void dbg(String product, String numberOfResults)

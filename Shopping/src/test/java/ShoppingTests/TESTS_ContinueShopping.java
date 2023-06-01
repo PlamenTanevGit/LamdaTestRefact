@@ -6,6 +6,16 @@ import Utils.TestUtil;
 
 
 public class TESTS_ContinueShopping extends TestUtil {
+	
+	/***
+	 * The test will do : 
+	 *  - Search for Product
+	 *  - Add Multiple items to the cart ( by click on Add to Cart Button )
+	 *  - for on View Checkout 
+	 *  - Remove the Multiple items from the cart ( by click on Remove Quantity Button ) 
+	 *  - Assert message for empty shopping cart is Displayed  "Your shopping cart is empty!"
+	 *  
+	 */
 
 	
 	@Test(alwaysRun = true,

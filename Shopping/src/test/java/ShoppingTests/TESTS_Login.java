@@ -6,6 +6,13 @@ import Utils.TestUtil;
 
 public class TESTS_Login extends TestUtil {
 	
+	/**
+	 * The Tests are for 
+	 *  - valid login credentials
+	 *  - invalid login credentials
+	 *  
+	 */
+	
 
 	@Test(alwaysRun = true, 
 			description = "This Test performs Login with valid Credentials ")

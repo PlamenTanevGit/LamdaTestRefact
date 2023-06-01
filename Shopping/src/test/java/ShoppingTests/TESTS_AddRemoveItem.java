@@ -8,6 +8,14 @@ import Utils.TestUtil;
 
 public class TESTS_AddRemoveItem extends TestUtil{
 
+	/***
+	 * The test will do : 
+	 *  - Search for Product
+	 *  - Add the item to the cart ( by click on Add to Cart Button )
+	 *  - for on View Checkout 
+	 *  - Remove the item from the cart ( by click on Remove Quantity Button ) 
+	 *  - Assert message for empty shopping cart is Displayed  "Your shopping cart is empty!"
+	 */
 
 	@Test(alwaysRun = true, 
 			dataProviderClass = DP.class, 
@@ -42,7 +50,7 @@ public class TESTS_AddRemoveItem extends TestUtil{
 		searchResultPage.selectViewCart();
 		TestUtil.pageTitleVerify("Shopping Cart");
 		/**
-		 * Assertion of shopping cart componenets
+		 * Assertion of shopping cart components
 		 *  - productName, 
 		 *  - model, 
 		 *  - quantity, 

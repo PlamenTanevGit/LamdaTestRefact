@@ -7,10 +7,17 @@ import Utils.TestUtil;
 
 
 public class TESTS_PurchaseGuest_NotQuanatity extends TestUtil {
-
+	/**
+	 * The test
+	 *  - Navigates to Home Page 
+	 *	- Search for Product with limited Quantity
+	 * 	- Asserts the message for not sufficient products
+	 * 
+	 *  "Products marked with *** are not available in the desired quantity or not in stock!"
+	 */
 	
 	@Test(alwaysRun = true,
-			description = "This test search for product then do a checkout by selection of country with VAT")
+			description = "This test search for product then try to do Checkout and Assert Message for Unavailable products")
 	public void GuestCheckoutItem_With_VAT() throws InterruptedException {
 	// test1
 		int numberOfAddedItems = 1;
