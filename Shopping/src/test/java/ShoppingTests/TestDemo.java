@@ -23,7 +23,7 @@ public class TestDemo extends TestUtil {
 
 		double priceDouble = searchResultPage.getThePriceAmount(productPrice);
 
-		searchResultPage.checkoutMultipleItems("1", numberOfAddedItems);
+		searchResultPage.addMultipleItems("1", numberOfAddedItems);
 
 		double UnitPricFromGrid = shoppingCartPage.getUnitPrice();
 		Assert.assertEquals(UnitPricFromGrid, (priceDouble));
@@ -81,7 +81,7 @@ public class TestDemo extends TestUtil {
 
 		double priceDouble = searchResultPage.getThePriceAmount(productPrice);
 
-		searchResultPage.checkoutMultipleItems("1", numberOfAddedItems);
+		searchResultPage.addMultipleItems("1", numberOfAddedItems);
 
 		double UnitPricFromGrid = shoppingCartPage.getUnitPrice();
 		Assert.assertEquals(UnitPricFromGrid, (priceDouble));

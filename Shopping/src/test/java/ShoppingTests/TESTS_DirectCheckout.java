@@ -31,7 +31,7 @@ public class TESTS_DirectCheckout extends TestUtil {
 		homePage.clickOnSearch();
 		productPrice = searchResultPage.getPriceFromArticle("1");
 		double priceDouble = searchResultPage.getThePriceAmount(productPrice);
-		searchResultPage.checkoutMultipleItems("1", numberOfAddedItems);
+		searchResultPage.addMultipleItems("1", numberOfAddedItems);
 		double unitPriceGrid = shoppingCartPage.getUnitPrice();
 
 		

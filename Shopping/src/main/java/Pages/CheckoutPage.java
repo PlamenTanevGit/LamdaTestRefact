@@ -38,7 +38,7 @@ public class CheckoutPage {
 		TestUtil.clickOnElement(updateInnerIcon());
 		Thread.sleep(300);
 		TestUtil.clickOnElement(updateInnerIcon());
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 	
 	}
 	

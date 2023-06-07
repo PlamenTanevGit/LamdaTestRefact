@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -104,6 +105,52 @@ public class AccountRegisterPage {
 		return TestUtil.findElement(LocatorType.XPATH, "//label[@for='input-account-guest']");
 	}
 
+
+	/**
+	 * Guest Checkout Billing Address Details
+	 */
+
+	 public WebElement MyDeliveryBillingAddressCheckbox () {
+		return TestUtil.findElement(LocatorType.XPATH, "//label[normalize-space()='My delivery and billing addresses are the same.']");
+	}
+
+	 public WebElement ShippingFirstName () {
+		return TestUtil.findElement(LocatorType.XPATH, "//input[@id='input-shipping-firstname']");
+	}
+
+	public WebElement ShippingLastName () {
+		return TestUtil.findElement(LocatorType.XPATH, "//input[@id='input-shipping-lastname']");
+	}
+
+	public WebElement ShippingCompany () {
+		return TestUtil.findElement(LocatorType.XPATH, "//input[@id='input-shipping-company']");
+	}
+
+	public WebElement ShippingAddress1 () {
+		return TestUtil.findElement(LocatorType.XPATH, "//input[@id='input-shipping-address-1']");
+	}
+
+	public WebElement ShippingAddress2 () {
+		return TestUtil.findElement(LocatorType.XPATH, "//input[@id='input-shipping-address-2']");
+	}
+
+	public WebElement ShippingCity () {
+		return TestUtil.findElement(LocatorType.XPATH, "//input[@id='input-shipping-city']");
+	}
+
+	public WebElement ShippingPostCode () {
+		return TestUtil.findElement(LocatorType.XPATH, "//input[@id='input-shipping-postcode']");
+	}
+
+	public WebElement ShippingCountry () {
+		return TestUtil.findElement(LocatorType.CSS, "#input-shipping-country");
+	}
+
+	public WebElement ShippingRegionStateDropdown  () {
+		return TestUtil.findElement(LocatorType.CSS, "#input-shipping-zone");
+	}
+
+
 	public void clickOnGuestCheckOut() {
 		TestUtil.clickOnElement(guestCheckoutRadioButton());		
 	}
@@ -131,8 +178,19 @@ public class AccountRegisterPage {
 
 	}
 
+	public String setBillngFirstName(String firstName) {
+		TestUtil.typeOnField(ShippingFirstName(), firstName);
+		return firstName;
+
+	}
+
 	public String setLastName(String lastName) {
 		TestUtil.typeOnField(lastNameField(), lastName);
+		return lastName;
+	}
+
+	public String setBillingLastName(String lastName) {
+		TestUtil.typeOnField(ShippingLastName(), lastName);
 		return lastName;
 	}
 
@@ -161,8 +219,18 @@ public class AccountRegisterPage {
 		return company;
 	}
 
+	public String setShippingCompany(String company) {
+		TestUtil.typeOnField(ShippingCompany(), company);
+		return company;
+	}
+
 	public String setAddress1(String address1) {
 		TestUtil.typeOnField(address1Field(), address1);
+		return address1;
+	}
+
+	public String setShippingAddress1(String address1) {
+		TestUtil.typeOnField(ShippingAddress1(), address1);
 		return address1;
 	}
 
@@ -171,13 +239,29 @@ public class AccountRegisterPage {
 		return address2;
 	}
 
+	public String setShippingAddress2(String address2) {
+		TestUtil.typeOnField(ShippingAddress2(), address2);
+		return address2;
+	}
+
 	public String setCity(String city) {
 		TestUtil.typeOnField(cityField(), city);
 		return city;
 	}
 
+	public String setShippingCity(String city) {
+		TestUtil.typeOnField(ShippingCity(), city);
+		return city;
+	}
+
 	public String setPostCode(String postCode) {
 		TestUtil.typeOnField(postCodeField(), postCode);
+		return postCode;
+
+	}
+
+	public String setShippingPostCode(String postCode) {
+		TestUtil.typeOnField(ShippingPostCode(), postCode);
 		return postCode;
 
 	}
@@ -190,16 +274,69 @@ public class AccountRegisterPage {
 		return searchedCountry;
 	}
 
-	public String selectRegionState(String searchedRegion) throws InterruptedException{
-		TestUtil.selectDropdownOptionByTagName(regionDropdown(), "option", searchedRegion);
+	public String selectShippingCountry(String searchedShippingCountry) throws InterruptedException {
+	
+		TestUtil.selectDropdownOptionByTagNameJS(ShippingCountry(), "option", searchedShippingCountry);
+		Thread.sleep(750);		
+		ShippingFirstName().click();
+	
+	return searchedShippingCountry;
+}
+
+	public String selectRegionState(String searchedBillngRegion) throws InterruptedException{
+		TestUtil.selectDropdownOptionByTagName(regionDropdown(), "option", searchedBillngRegion);
+		Thread.sleep(750);		
+		firstNameField().click();
+		return searchedBillngRegion;
+	}
+
+	public String selectShippingRegionState(String searchedRegion) throws InterruptedException{
+	
+		TestUtil.selectDropdownOptionByTagNameJS(ShippingRegionStateDropdown(), "option", searchedRegion);
 		Thread.sleep(250);		
 		firstNameField().click();
 		return searchedRegion;
 	}
 
+	public void removeItem() {
+		clickOnRemoveButton();
+		driver.navigate().refresh();		
+	}
+	
+	public void clickOnRemoveButton() {
+		TestUtil.clickOnElement(RemoveButton());		
+	}
+
+	public void setQuantity(String quantity) {
+		QuantityField().clear();
+		QuantityField().sendKeys(quantity);		
+		TestUtil.pause(1);
+	}
+	
+	public WebElement RemoveButton () {
+		return TestUtil.findElement(LocatorType.CSS, "button:nth-of-type(2) > .fa-times-circle.fas");	
+
+	}
+	
+	public WebElement QuantityField () {
+		return TestUtil.findElement(LocatorType.CSS, ".remove-spin-button");	
+
+	}
+	
+	public WebElement UNIT_PRICE () {
+		return TestUtil.findElement(LocatorType.CSS, "div#checkout-cart > .table > tbody > tr > td:nth-of-type(4)");	
+
+	}
+	
+	public WebElement TOTAL () {
+		return TestUtil.findElement(LocatorType.CSS, "#checkout-cart tbody tr .text-right:nth-of-type(5)");
+
+	}
+	
 
 	public WebElement subTotalValue() {
-		return TestUtil.findElement(LocatorType.CSS, "table#checkout-total > tbody > tr:nth-of-type(1) > .text-right > strong");
+//		return TestUtil.findElement(LocatorType.XPATH, "/html[1]/body[1]/div[1]/div[5]/div[1]/div[1]/div[1]/form[1]//tr[1]/td[2]/strong[1]");
+		return driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[5]/div[1]/div[1]/div[1]/form[1]//tr[1]/td[2]/strong[1]") );
 
 	}
 
@@ -214,7 +351,7 @@ public class AccountRegisterPage {
 	}
 
 	public WebElement VAT() {
-		return TestUtil.findElement(LocatorType.XPATH, "table#checkout-total > tbody > tr:nth-of-type(4) > .text-right > strong");
+		return TestUtil.findElement(LocatorType.CSS, "table#checkout-total > tbody > tr:nth-of-type(4) > .text-right > strong");
 
 	}
 
@@ -235,6 +372,14 @@ public class AccountRegisterPage {
 		}
 
 		return TestUtil.element;
+	}
+	
+	public double getUNIT_PRICE() {
+		return TestUtil.getDoubleFromStringValue(UNIT_PRICE().getText());
+	}
+	
+	public double getTOTAL() {
+		return TestUtil.getDoubleFromStringValue(TOTAL().getText());
 	}
 
 	public double getSubTotalAmount() {

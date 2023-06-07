@@ -106,7 +106,7 @@ public class HomePage {
 	public void searchForProducts (String product) throws InterruptedException {
 		enterProductInSearchField ( product);
 		clickOnSearch();
-		Thread.sleep(2000);
+		TestUtil.pause(5);
 		
 	}
 	

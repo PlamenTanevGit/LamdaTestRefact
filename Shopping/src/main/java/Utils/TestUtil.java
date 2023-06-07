@@ -37,6 +37,7 @@ import Pages.AccountRegisterPage;
 import Pages.AddPersonalDetails;
 import Pages.CheckoutPage;
 import Pages.ConfirmOrderPage;
+import Pages.FascadePage;
 import Pages.HomePage;
 import Pages.LoginPage;
 import Pages.MyAccountPage;
@@ -79,6 +80,7 @@ public class TestUtil {
 	protected LoginPage loginPage;
 	protected MyAccountPage myAccountPage;
 	protected AddPersonalDetails addPersonalDetails;
+	protected FascadePage fascadePage;
 
 	public static void initConfiguration() {
 		try {
@@ -109,7 +111,9 @@ public class TestUtil {
 
 	public static void openUrl(String url) {
 		driver.navigate().to(url);
+		
 		Reporter.log("Successfully opened url '" + url + "'");
+		
 	}
 
 	public static void assertIsDisplayed(WebElement element) {
@@ -130,6 +134,7 @@ public class TestUtil {
 			return wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id(locatorPath))));		
 		case XPATH: 
 			return wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(locatorPath))));		
+//			return driver.findElement(By.xpath(locatorPath));
 		case NAME:
 			return wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.name(locatorPath))));		
 		case CLASSNAME:
@@ -271,6 +276,20 @@ public class TestUtil {
 		return searchedOption;
 	}
 
+
+	public static String selectDropdownOptionByTagNameJS(WebElement dropdown, String tagName, String searchedOption) throws InterruptedException {		
+		actions = new Actions(driver);
+		TestUtil.clickOnElement(dropdown);	
+		List<WebElement> options = driver.findElements(By.tagName(tagName));
+		for (WebElement option : options) {
+			if (option.getText().equals(searchedOption)) {
+				TestUtil.JSclickOnWebElement(option);
+				break;
+			}
+		}
+		return searchedOption;
+	}
+
 	public static void JSclickOnWebElement(WebElement element) {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
@@ -402,6 +421,15 @@ public class TestUtil {
 		return randomString;
 	}
 	
+	   public static void pause(int seconds) {
+	        try {
+	            Thread.sleep(seconds * 1000);
+
+	        } catch (Exception e) {
+	            System.out.println("After waiting for " + seconds + " seconds");
+	        }
+	    }
+	
 	public static double getDoubleFromWebElement (WebElement element) {
 		
 		String unitPriceStringValueShoppingCart = element.getText();
@@ -453,13 +481,14 @@ public class TestUtil {
 		loginPage = new LoginPage(driver);
 		myAccountPage = new MyAccountPage(driver);
 		addPersonalDetails = new AddPersonalDetails(driver);
+		this.fascadePage = new FascadePage(driver);
 	}
 
 	@AfterClass
 	public void afterClass() {
 
 		if (driver != null) {
-			driver.quit();
+//			driver.quit();
 		}
 
 	}
@@ -467,7 +496,7 @@ public class TestUtil {
 	@AfterSuite
 	public void afterSuite() {
 		if (driver != null) {
-			driver.quit();
+//			driver.quit();
 		}
 		Reporter.log("Driver quit");
 		endTime = System.nanoTime();

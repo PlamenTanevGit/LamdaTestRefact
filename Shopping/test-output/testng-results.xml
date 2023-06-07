@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[]]>
@@ -11,83 +11,98 @@
       <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
     </line>
     <line>
-      <![CDATA[ Enter value : HTC Touch HD]]>
-    </line>
-    <line>
-      <![CDATA[Successfully click on element ]]>
-    </line>
-    <line>
-      <![CDATA[Successfully click on element ]]>
-    </line>
-    <line>
-      <![CDATA[Successfully click on element ]]>
-    </line>
-    <line>
-      <![CDATA[Successfully click on element ]]>
+      <![CDATA[ Enter value : Iphone]]>
     </line>
     <line>
       <![CDATA[Driver quit]]>
     </line>
     <line>
-      <![CDATA[Duration of Suite is : 10 sec.]]>
+      <![CDATA[Duration of Suite is : 7 sec.]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-05-31T17:51:01 EEST" name="Default suite" finished-at="2023-05-31T17:51:11 EEST" duration-ms="10686">
+  <suite started-at="2023-06-06T11:00:15 EEST" name="Default suite" finished-at="2023-06-06T11:00:23 EEST" duration-ms="7495">
     <groups>
     </groups>
-    <test started-at="2023-05-31T17:51:01 EEST" name="Default test" finished-at="2023-05-31T17:51:11 EEST" duration-ms="10686">
-      <class name="ShoppingTests.TESTS_AddRemoveMultipleItems">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ShoppingTests.TESTS_AddRemoveMultipleItems@6356695f]" started-at="2023-05-31T17:51:01 EEST" name="beforeSuite" finished-at="2023-05-31T17:51:01 EEST" duration-ms="7" status="PASS">
+    <test started-at="2023-06-06T11:00:15 EEST" name="Default test" finished-at="2023-06-06T11:00:23 EEST" duration-ms="7495">
+      <class name="ShoppingTests.DifferentCalculations">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:15 EEST" name="beforeSuite" finished-at="2023-06-06T11:00:15 EEST" duration-ms="6" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.TESTS_AddRemoveMultipleItems@6356695f]" started-at="2023-05-31T17:51:01 EEST" name="beforeClass" finished-at="2023-05-31T17:51:02 EEST" duration-ms="1521" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:15 EEST" name="beforeClass" finished-at="2023-06-06T11:00:17 EEST" duration-ms="1408" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[FIREFOX is Initialised]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="t2_shopingCart_AddMultipleItemsVerification()[pri:0, instance:ShoppingTests.TESTS_AddRemoveMultipleItems@6356695f]" started-at="2023-05-31T17:51:02 EEST" name="t2_shopingCart_AddMultipleItemsVerification" description="This test performs search product and verifies the found product" finished-at="2023-05-31T17:51:11 EEST" duration-ms="8753" status="PASS">
+        <test-method signature="test()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:17 EEST" name="test" description="The test performs Assertions on different quantities calculations " finished-at="2023-06-06T11:00:23 EEST" duration-ms="6068" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "Pages.SearchResultPage.getPriceFromArticle(String)" because "this.searchResultPage" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.SearchResultPage.getPriceFromArticle(String)" because "this.searchResultPage" is null
+at Pages.FascadePage.checkoutProduct(FascadePage.java:43)
+at ShoppingTests.DifferentCalculations.test(DifferentCalculations.java:223)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
             <line>
               <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
             </line>
             <line>
-              <![CDATA[ Enter value : HTC Touch HD]]>
-            </line>
-            <line>
-              <![CDATA[Successfully click on element ]]>
-            </line>
-            <line>
-              <![CDATA[Successfully click on element ]]>
-            </line>
-            <line>
-              <![CDATA[Successfully click on element ]]>
-            </line>
-            <line>
-              <![CDATA[Successfully click on element ]]>
+              <![CDATA[ Enter value : Iphone]]>
             </line>
           </reporter-output>
-        </test-method> <!-- t2_shopingCart_AddMultipleItemsVerification -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.TESTS_AddRemoveMultipleItems@6356695f]" started-at="2023-05-31T17:51:11 EEST" name="afterClass" finished-at="2023-05-31T17:51:11 EEST" duration-ms="385" status="PASS">
+        </test-method> <!-- test -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:23 EEST" name="afterClass" finished-at="2023-06-06T11:00:23 EEST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ShoppingTests.TESTS_AddRemoveMultipleItems@6356695f]" started-at="2023-05-31T17:51:11 EEST" name="afterSuite" finished-at="2023-05-31T17:51:11 EEST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:23 EEST" name="afterSuite" finished-at="2023-06-06T11:00:23 EEST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Driver quit]]>
             </line>
             <line>
-              <![CDATA[Duration of Suite is : 10 sec.]]>
+              <![CDATA[Duration of Suite is : 7 sec.]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- ShoppingTests.TESTS_AddRemoveMultipleItems -->
+      </class> <!-- ShoppingTests.DifferentCalculations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

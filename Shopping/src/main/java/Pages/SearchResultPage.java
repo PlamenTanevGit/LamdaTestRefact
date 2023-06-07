@@ -75,8 +75,12 @@ public class SearchResultPage  {
 	}
 	
 	public WebElement product  (String productNum) {
-		return TestUtil.findElement(LocatorType.XPATH,
-				"//body/div[@class='mz-pure-container']//div[@class='row']/div["+productNum+"]");
+//		return TestUtil.findElement(LocatorType.XPATH,
+//				"//body/div[@class='mz-pure-container']//div[@class='row']/div["+productNum+"]");
+//		
+
+		return TestUtil.findElement(LocatorType.CSS,
+				".content-products.entry-content.order-4.order-md-3 > div > div:nth-of-type("+productNum+")");
 	}	
 	
 	public WebElement addToCartButton() {
@@ -109,11 +113,11 @@ public class SearchResultPage  {
 
 	}
 	
-	public void checkoutMultipleItems(String itemNumber, int itemsNumber) throws InterruptedException {
+	public void addMultipleItems(String itemNumber, int itemsNumber) throws InterruptedException {
 			TestUtil.movesToTheElement(product(itemNumber));
 			for (int i = 0; i < itemsNumber; i++) {
 				TestUtil.clickOnElement(addToCartButton());
-				Thread.sleep(150);			
+				Thread.sleep(500);			
 			}
 			TestUtil.clickOnElement(checkoutButoon());	
 	
