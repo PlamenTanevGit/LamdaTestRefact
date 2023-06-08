@@ -13,7 +13,7 @@ public class TESTS_HomePage extends TestUtil {
 
 	@Test(enabled = true, description = "Verification of the Left side menu items")
 	public void t1_verify_HomePageElements() throws InterruptedException {
-		
+
 		String[] elements = { "Components", "Cameras", "Phone, Tablets & Ipod", "Software", "MP3 Players",
 				"Laptops & Notebooks", "Desktops and Monitors", "Printers & Scanners", "Mice and Trackballs",
 				"Fashion and Accessories", "Beauty and Saloon", "Autoparts and Accessories", "Washing machine",
@@ -22,10 +22,10 @@ public class TESTS_HomePage extends TestUtil {
 		/**
 		 * Open the home page and verify components on Home page
 		 */
-		TestUtil.openUrl(config.getProperty("homePage"));
+		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
 		homePage.homePageComponentsVerify();
 		homePage.openSideBar();
-		
+
 		/**
 		 * Multiple Assertions on all items on the left Top Categories menu by looping through thme
 		 */

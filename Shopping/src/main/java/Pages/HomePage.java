@@ -90,7 +90,7 @@ public class HomePage {
 	}
 
 	public void openSideBar() {
-		WebDriverWait wait = new WebDriverWait(driver, DriverFactory.TIMEOUT);
+		WebDriverWait wait = new WebDriverWait(driver, 10);
 		TestUtil.clickOnElement(topRowButtonsSection_shopByCattergory_Button());
 		wait.until(ExpectedConditions.visibilityOf(components()));
 	}

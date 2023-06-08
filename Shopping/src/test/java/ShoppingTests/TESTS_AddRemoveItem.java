@@ -17,19 +17,19 @@ public class TESTS_AddRemoveItem extends TestUtil{
 	 *  - Assert message for empty shopping cart is Displayed  "Your shopping cart is empty!"
 	 */
 
-	@Test(alwaysRun = true, 
-			dataProviderClass = DP.class, 
-			dataProvider = "productInputs", 
+	@Test(alwaysRun = true,
+			dataProviderClass = DP.class,
+			dataProvider = "productInputs",
 			description = "This test performs search product and verifies the found product"
-			)
+	)
 	public void t1_shoppingCartVerificationAndRemoveProducts(String productName, String model, String quantity,
-			String unitPrice, String totalPrice) throws InterruptedException {
+															 String unitPrice, String totalPrice) throws InterruptedException {
 		/**
 		 * Navigate to home page
 		 * and 
 		 * search for products
 		 */
-		TestUtil.openUrl(config.getProperty("homePage"));
+		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
 
 		homePage.searchForProducts(productName);
 		/**

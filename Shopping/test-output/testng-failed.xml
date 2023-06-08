@@ -3,15 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="ShoppingTests.DifferentCalculations">
+      <class name="ShoppingTests.TESTS_Login">
         <methods>
+          <include name="t1_Login_Valid_UserCredentials"/>
           <include name="beforeSuite"/>
+          <include name="t2_Login_Invalid_UserCredentials"/>
           <include name="afterClass"/>
           <include name="beforeClass"/>
-          <include name="test"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- ShoppingTests.DifferentCalculations -->
+      </class> <!-- ShoppingTests.TESTS_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

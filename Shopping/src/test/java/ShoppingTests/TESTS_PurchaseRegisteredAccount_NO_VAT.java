@@ -19,7 +19,7 @@ public class TESTS_PurchaseRegisteredAccount_NO_VAT extends TestUtil {
 		/**
 		 * Navigat to home page
 		 */
-		TestUtil.openUrl(config.getProperty("homePage"));
+		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
 		/**
 		 * Enter product and click on Search 
 		 * - store product Price in variable
@@ -61,6 +61,7 @@ public class TESTS_PurchaseRegisteredAccount_NO_VAT extends TestUtil {
 		addPersonalDetails.selectRegion(or.getProperty("region1"));		
 		
 		checkoutPage.clickOnUpdate();
+		Thread.sleep(1000);
 		
 		super.assertElementIsNotDisplayed(By.cssSelector("#checkout-total tr:nth-of-type(4) td:nth-of-type(1)"));
 		

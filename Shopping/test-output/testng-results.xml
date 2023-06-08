@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="3" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[]]>
@@ -11,43 +11,84 @@
       <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
     </line>
     <line>
-      <![CDATA[ Enter value : Iphone]]>
+      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
     </line>
     <line>
       <![CDATA[Driver quit]]>
     </line>
     <line>
-      <![CDATA[Duration of Suite is : 7 sec.]]>
+      <![CDATA[Duration of Suite is : 27 sec.]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-06T11:00:15 EEST" name="Default suite" finished-at="2023-06-06T11:00:23 EEST" duration-ms="7495">
+  <suite started-at="2023-06-07T17:25:13 EEST" name="Default suite" finished-at="2023-06-07T17:25:40 EEST" duration-ms="27526">
     <groups>
     </groups>
-    <test started-at="2023-06-06T11:00:15 EEST" name="Default test" finished-at="2023-06-06T11:00:23 EEST" duration-ms="7495">
-      <class name="ShoppingTests.DifferentCalculations">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:15 EEST" name="beforeSuite" finished-at="2023-06-06T11:00:15 EEST" duration-ms="6" status="PASS">
+    <test started-at="2023-06-07T17:25:13 EEST" name="Default test" finished-at="2023-06-07T17:25:40 EEST" duration-ms="27526">
+      <class name="ShoppingTests.TESTS_Login">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ShoppingTests.TESTS_Login@1fa268de]" started-at="2023-06-07T17:25:13 EEST" name="beforeSuite" finished-at="2023-06-07T17:25:13 EEST" duration-ms="9" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:15 EEST" name="beforeClass" finished-at="2023-06-06T11:00:17 EEST" duration-ms="1408" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.TESTS_Login@1fa268de]" started-at="2023-06-07T17:25:13 EEST" name="beforeClass" finished-at="2023-06-07T17:25:15 EEST" duration-ms="1705" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[FIREFOX is Initialised]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="test()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:17 EEST" name="test" description="The test performs Assertions on different quantities calculations " finished-at="2023-06-06T11:00:23 EEST" duration-ms="6068" status="FAIL">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="t1_Login_Valid_UserCredentials()[pri:0, instance:ShoppingTests.TESTS_Login@1fa268de]" started-at="2023-06-07T17:25:15 EEST" name="t1_Login_Valid_UserCredentials" description="This Test performs Login with valid Credentials " finished-at="2023-06-07T17:25:29 EEST" duration-ms="14156" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot invoke "Pages.SearchResultPage.getPriceFromArticle(String)" because "this.searchResultPage" is null]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='input-email']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NUV-5CG1152V3W', ip: '192.168.0.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9102cafa2ffa9b77446ee198ce48b648
+*** Element info: {Using=xpath, value=//input[@id='input-email']}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "Pages.SearchResultPage.getPriceFromArticle(String)" because "this.searchResultPage" is null
-at Pages.FascadePage.checkoutProduct(FascadePage.java:43)
-at ShoppingTests.DifferentCalculations.test(DifferentCalculations.java:223)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='input-email']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NUV-5CG1152V3W', ip: '192.168.0.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9102cafa2ffa9b77446ee198ce48b648
+*** Element info: {Using=xpath, value=//input[@id='input-email']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at jdk.proxy2/jdk.proxy2.$Proxy12.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at Utils.TestUtil.locateElement(TestUtil.java:157)
+at Utils.TestUtil.findElement(TestUtil.java:215)
+at Pages.LoginPage.emailAddressField(LoginPage.java:23)
+at Pages.LoginPage.doLogin(LoginPage.java:44)
+at ShoppingTests.TESTS_Login.t1_Login_Valid_UserCredentials(TESTS_Login.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -78,31 +119,115 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
             <line>
               <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
             </line>
+          </reporter-output>
+        </test-method> <!-- t1_Login_Valid_UserCredentials -->
+        <test-method signature="t2_Login_Invalid_UserCredentials()[pri:0, instance:ShoppingTests.TESTS_Login@1fa268de]" started-at="2023-06-07T17:25:29 EEST" name="t2_Login_Invalid_UserCredentials" description="This Test performs Login with Invalid Credentials and Asserts warning message is displayed" finished-at="2023-06-07T17:25:40 EEST" duration-ms="11223" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='input-email']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NUV-5CG1152V3W', ip: '192.168.0.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9102cafa2ffa9b77446ee198ce48b648
+*** Element info: {Using=xpath, value=//input[@id='input-email']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@id='input-email']"}
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'NUV-5CG1152V3W', ip: '192.168.0.163', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.7'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52438}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9102cafa2ffa9b77446ee198ce48b648
+*** Element info: {Using=xpath, value=//input[@id='input-email']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)
+at jdk.proxy2/jdk.proxy2.$Proxy12.findElement(Unknown Source)
+at org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)
+at Utils.TestUtil.locateElement(TestUtil.java:157)
+at Utils.TestUtil.findElement(TestUtil.java:215)
+at Pages.LoginPage.emailAddressField(LoginPage.java:23)
+at Pages.LoginPage.doLogin(LoginPage.java:44)
+at ShoppingTests.TESTS_Login.t2_Login_Invalid_UserCredentials(TESTS_Login.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
             <line>
-              <![CDATA[ Enter value : Iphone]]>
+              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
             </line>
           </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:23 EEST" name="afterClass" finished-at="2023-06-06T11:00:23 EEST" duration-ms="0" status="PASS">
+        </test-method> <!-- t2_Login_Invalid_UserCredentials -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.TESTS_Login@1fa268de]" started-at="2023-06-07T17:25:40 EEST" name="afterClass" finished-at="2023-06-07T17:25:40 EEST" duration-ms="404" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ShoppingTests.DifferentCalculations@6d763516]" started-at="2023-06-06T11:00:23 EEST" name="afterSuite" finished-at="2023-06-06T11:00:23 EEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ShoppingTests.TESTS_Login@1fa268de]" started-at="2023-06-07T17:25:40 EEST" name="afterSuite" finished-at="2023-06-07T17:25:40 EEST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Driver quit]]>
             </line>
             <line>
-              <![CDATA[Duration of Suite is : 7 sec.]]>
+              <![CDATA[Duration of Suite is : 27 sec.]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- ShoppingTests.DifferentCalculations -->
+      </class> <!-- ShoppingTests.TESTS_Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

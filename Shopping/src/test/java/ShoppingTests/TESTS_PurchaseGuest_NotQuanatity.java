@@ -23,7 +23,7 @@ public class TESTS_PurchaseGuest_NotQuanatity extends TestUtil {
 		int numberOfAddedItems = 1;
 		String productPrice = null;
 
-		TestUtil.openUrl(config.getProperty("homePage"));
+		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
 
 		homePage.enterProductInSearchField(or.getProperty("product1"));
 		homePage.clickOnSearch();

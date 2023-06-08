@@ -15,23 +15,23 @@ public class TESTS_HomePageCSV extends TestUtil {
 	 * This test will do the search for multiple valid items
 	 *  and 
 	 * Assert that search is successful and items are showing after searched in the search field
-	 * 
+	 *
 	 * the test is using dataProvider as CSV frile
-	 * 
+	 *
 	 */
 
-	
-	@Test(enabled = true, 
-			dataProviderClass = DP.class, 
-			dataProvider = "getDataFromCSV" 
-			)
+
+	@Test(enabled = true,
+			dataProviderClass = DP.class,
+			dataProvider = "getDataFromCSV"
+	)
 	public void t2_csvTest (String product, String numberOfResults)
 			throws InterruptedException {
-		
+
 		/**
 		 * Navigate to the Home Page
 		 */
-		TestUtil.openUrl(config.getProperty("homePage"));
+		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
 		/**
 		 * enter product in the Search Field
 		 */
@@ -39,7 +39,7 @@ public class TESTS_HomePageCSV extends TestUtil {
 		/**
 		 * Assertions for products results
 		 */
-		List<WebElement> Str = super.getElementList("//div[@id='entry_217822']//ul[@class='dropdown-menu autocomplete w-100']/li", LocatorType.XPATH);		
+		List<WebElement> Str = super.getElementList("//div[@id='entry_217822']//ul[@class='dropdown-menu autocomplete w-100']/li", LocatorType.XPATH);
 		/**
 		 * Assertions for numbers of results
 		 */
@@ -54,18 +54,18 @@ public class TESTS_HomePageCSV extends TestUtil {
 		}
 
 	}
-	
-	
-	
-	@Test(enabled = false, 
-			dataProviderClass = DP.class, 
+
+
+
+	@Test(enabled = false,
+			dataProviderClass = DP.class,
 			dataProvider = "getDataFromCSV")
 	public void dbg(String product, String numberOfResults)
 			throws InterruptedException {
-		
+
 		System.out.println(product);
 		System.out.println(numberOfResults);
 	}
-	
-		
+
+
 }

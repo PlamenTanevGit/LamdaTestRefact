@@ -26,7 +26,7 @@ public class TESTS_PurchaseGuest_VAT extends TestUtil {
 		int numberOfAddedItems = 1;
 		String productPrice = null;
 
-		TestUtil.openUrl(config.getProperty("homePage"));
+		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
 
 		homePage.enterProductInSearchField(or.getProperty("product3"));
 		homePage.clickOnSearch();

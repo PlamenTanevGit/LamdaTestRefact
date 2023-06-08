@@ -276,7 +276,7 @@ public class AccountRegisterPage {
 
 	public String selectShippingCountry(String searchedShippingCountry) throws InterruptedException {
 	
-		TestUtil.selectDropdownOptionByTagNameJS(ShippingCountry(), "option", searchedShippingCountry);
+		TestUtil.selectDropdownOptionByTagName(ShippingCountry(), "option", searchedShippingCountry);
 		Thread.sleep(750);		
 		ShippingFirstName().click();
 	
@@ -292,7 +292,7 @@ public class AccountRegisterPage {
 
 	public String selectShippingRegionState(String searchedRegion) throws InterruptedException{
 	
-		TestUtil.selectDropdownOptionByTagNameJS(ShippingRegionStateDropdown(), "option", searchedRegion);
+		TestUtil.selectDropdownOptionByTagName(ShippingRegionStateDropdown(), "option", searchedRegion);
 		Thread.sleep(250);		
 		firstNameField().click();
 		return searchedRegion;

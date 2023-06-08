@@ -7,7 +7,7 @@ import Utils.TestUtil;
 
 
 public class TESTS_AddRemoveMultipleItems extends TestUtil{
-	
+
 	/***
 	 * The test will do : 
 	 *  - Search for Product
@@ -15,11 +15,11 @@ public class TESTS_AddRemoveMultipleItems extends TestUtil{
 	 *  - for on View Checkout 
 	 *  - Remove the Multiple items from the cart ( by click on Remove Quantity Button ) 
 	 *  - Assert message for empty shopping cart is Displayed  "Your shopping cart is empty!"
-	 *  
+	 *
 	 */
-	
-	@Test(alwaysRun = true, 
-			description = "This test performs search product and verifies the found product")	
+
+	@Test(alwaysRun = true,
+			description = "This test performs search product and verifies the found product")
 	public void t2_shopingCart_AddMultipleItemsVerification() throws InterruptedException {
 		int numberOfAddedItems = 3;
 		String productPrice = null;
@@ -27,7 +27,7 @@ public class TESTS_AddRemoveMultipleItems extends TestUtil{
 		/**
 		 * Navigate to home Page
 		 */
-		TestUtil.openUrl(config.getProperty("homePage"));
+		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
 		/**
 		 * Add products in the search field 
 		 * and 
@@ -58,8 +58,8 @@ public class TESTS_AddRemoveMultipleItems extends TestUtil{
 		 */
 		shoppingCartPage.clickOnRemoveQuantity();
 		TestUtil.assertIsDisplayed(shoppingCartPage.messageEmptyCart());
-	
+
 	}
 
-	
+
 }

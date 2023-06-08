@@ -16,16 +16,16 @@ public class TESTS_DirectCheckout extends TestUtil {
 	 *  - verify the VAT value 
 	 *  - finish the Order and assert landing on home page
 	 */
-	
-	
+
+
 	@Test(alwaysRun = true,
 			description = "The test performs Add to Cart followed by Direct Checkout then filling the form and finish the Order ")
 	public void DirectCheckoutItem_With_VAT() throws InterruptedException {
-		
+
 		int numberOfAddedItems = 1;
 		String productPrice = null;
 
-		TestUtil.openUrl(config.getProperty("homePage"));
+		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
 
 		homePage.enterProductInSearchField(or.getProperty("product3"));
 		homePage.clickOnSearch();
@@ -34,7 +34,7 @@ public class TESTS_DirectCheckout extends TestUtil {
 		searchResultPage.addMultipleItems("1", numberOfAddedItems);
 		double unitPriceGrid = shoppingCartPage.getUnitPrice();
 
-		
+
 		Assert.assertEquals(unitPriceGrid, (priceDouble));
 		/**
 		 * Fill the Registered account form
@@ -49,7 +49,7 @@ public class TESTS_DirectCheckout extends TestUtil {
 		addPersonalDetails.setAddress1(or.getProperty("address1")+TestUtil.randomString(5));
 		addPersonalDetails.setAddress2(or.getProperty("address2")+TestUtil.randomString(5));
 		addPersonalDetails.setCity(or.getProperty("city1"));
-		addPersonalDetails.setPostCode(or.getProperty("postCode"));		
+		addPersonalDetails.setPostCode(or.getProperty("postCode"));
 		addPersonalDetails.selectCountry(or.getProperty("country1"));
 		addPersonalDetails.selectRegion(or.getProperty("region1"));
 		/**
@@ -65,30 +65,30 @@ public class TESTS_DirectCheckout extends TestUtil {
 		checkoutPage.clickOnUpdate();
 		accountRegisterPage.checkPrivacyPolicy();
 		accountRegisterPage.checkTermsAndConditions();
-		
+
 		double subTotal_midCheckout  = accountRegisterPage.getSubTotalAmount();
-		double flatShippingRate_midCheckout  = accountRegisterPage.getFlatShippingRateAmmount();		
+		double flatShippingRate_midCheckout  = accountRegisterPage.getFlatShippingRateAmmount();
 		accountRegisterPage.clickOnContinue();
-		
+
 		double subTotal_confirmOrder = confirmOrderPage.getSubTotalAmount();
 		double flatShippingRate_confirmOrder = confirmOrderPage.getFlatShippingRateAmount();
 		/**
 		 * Assert values of 
 		 *  - SubTotal
 		 *  - Flat Shipping rate
-		 *  
+		 *
 		 *  from the mid checkout and final checkout 
 		 */
 		Assert.assertEquals(subTotal_midCheckout, subTotal_confirmOrder);
-		Assert.assertEquals(flatShippingRate_midCheckout, flatShippingRate_confirmOrder);	
+		Assert.assertEquals(flatShippingRate_midCheckout, flatShippingRate_confirmOrder);
 		/**
 		 * Confirm the Order 
 		 * and 
 		 * Assert landing on the home page
 		 */
-		confirmOrderPage.confirmOrder();		
+		confirmOrderPage.confirmOrder();
 		successPage.continiueClick();
 		TestUtil.assertIsDisplayed(homePage.searchField());
 	}
-	
+
 }

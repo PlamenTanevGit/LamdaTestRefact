@@ -1,9 +1,6 @@
 package Utils;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -82,7 +79,20 @@ public class TestUtil {
 	protected AddPersonalDetails addPersonalDetails;
 	protected FascadePage fascadePage;
 
+	private static final String PROPERTIES_FILE = "config.properties";
+	private static final String ENVIRONMENT_URL_KEY = "environment.url";
+
+	private static final Properties properties = new Properties();
+
 	public static void initConfiguration() {
+
+		try (InputStream inputStream = TestUtil.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE)) {
+			properties.load(inputStream);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+
 		try {
 			fis = new FileInputStream(System.getProperty("user.dir") + "\\properties\\Config.properties");
 		} catch (FileNotFoundException e) {
@@ -109,11 +119,22 @@ public class TestUtil {
 
 	}
 
+	public static String getEnvironmentUrl() {
+			return properties.getProperty(ENVIRONMENT_URL_KEY);
+	}
+
+	public static void pause(int seconds) {
+        try {
+            Thread.sleep(seconds * 1000);
+
+        } catch (Exception e) {
+            System.out.println("After waiting for " + seconds + " seconds");
+        }
+    }
+
 	public static void openUrl(String url) {
 		driver.navigate().to(url);
-		
 		Reporter.log("Successfully opened url '" + url + "'");
-		
 	}
 
 	public static void assertIsDisplayed(WebElement element) {
@@ -134,7 +155,6 @@ public class TestUtil {
 			return wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id(locatorPath))));		
 		case XPATH: 
 			return wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath(locatorPath))));		
-//			return driver.findElement(By.xpath(locatorPath));
 		case NAME:
 			return wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.name(locatorPath))));		
 		case CLASSNAME:
@@ -276,20 +296,6 @@ public class TestUtil {
 		return searchedOption;
 	}
 
-
-	public static String selectDropdownOptionByTagNameJS(WebElement dropdown, String tagName, String searchedOption) throws InterruptedException {		
-		actions = new Actions(driver);
-		TestUtil.clickOnElement(dropdown);	
-		List<WebElement> options = driver.findElements(By.tagName(tagName));
-		for (WebElement option : options) {
-			if (option.getText().equals(searchedOption)) {
-				TestUtil.JSclickOnWebElement(option);
-				break;
-			}
-		}
-		return searchedOption;
-	}
-
 	public static void JSclickOnWebElement(WebElement element) {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
@@ -421,15 +427,6 @@ public class TestUtil {
 		return randomString;
 	}
 	
-	   public static void pause(int seconds) {
-	        try {
-	            Thread.sleep(seconds * 1000);
-
-	        } catch (Exception e) {
-	            System.out.println("After waiting for " + seconds + " seconds");
-	        }
-	    }
-	
 	public static double getDoubleFromWebElement (WebElement element) {
 		
 		String unitPriceStringValueShoppingCart = element.getText();
@@ -488,7 +485,7 @@ public class TestUtil {
 	public void afterClass() {
 
 		if (driver != null) {
-//			driver.quit();
+			driver.quit();
 		}
 
 	}
@@ -496,7 +493,7 @@ public class TestUtil {
 	@AfterSuite
 	public void afterSuite() {
 		if (driver != null) {
-//			driver.quit();
+			driver.quit();
 		}
 		Reporter.log("Driver quit");
 		endTime = System.nanoTime();

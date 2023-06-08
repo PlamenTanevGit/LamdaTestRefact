@@ -30,7 +30,7 @@ public class TESTS_PurchaseRegisteredAccount_VAT extends TestUtil {
 		/**
 		 * Open the home Page URL
 		 */
-		TestUtil.openUrl(config.getProperty("homePage"));
+		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
 		
 		/**
 		 * perform search for Product
