@@ -12,25 +12,11 @@
 		
 	</listeners>
 	
-	<test thread-count="5" name="Login Tests">
-		<classes>
-			<class name="ShoppingTests.TESTS_Login" />
-		</classes>
-	</test>
 	
-	<test thread-count="5" name="Home Page Tests">
-		<classes>
-			<class name="ShoppingTests.TESTS_HomePage" />
-		</classes>
-	</test>
+
 	
-	<test thread-count="5" name="Home Page Tests - CSV">
-		<classes>
-			<class name="ShoppingTests.TESTS_HomePageCSV" />
-		</classes>
-	</test>
-	
-	<test thread-count="5" name="Home Page Tests - Data Provider">
+		
+		<test thread-count="5" name="Home Page Tests - Data Provider">
 		<classes>
 			<class name="ShoppingTests.TESTS_HomePageDP" />
 		</classes>
@@ -47,6 +33,53 @@
 			<class name="ShoppingTests.TESTS_AddRemoveItem" />
 		</classes>
 	</test>
+
+	
+	<test thread-count="5" name=" Different Calculations">
+		<classes>
+			<class name="ShoppingTests.DifferentCalculations" />
+		</classes>
+	</test>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--  CUTTED 
+	
+		<test thread-count="5" name="Continue Shopping ">
+		<classes>
+			<class name="ShoppingTests.TESTS_ContinueShopping" />
+		</classes>
+	</test>
+	
+		<test thread-count="5" name="Login Tests">
+		<classes>
+			<class name="ShoppingTests.TESTS_Login" />
+		</classes>
+	</test>
+	
+	
+		<test thread-count="5" name="Home Page Tests">
+		<classes>
+			<class name="ShoppingTests.TESTS_HomePage" />
+		</classes>
+	</test>
+	
+	
+
+	
+	<test thread-count="5" name="Home Page Tests - CSV">
+		<classes>
+			<class name="ShoppingTests.TESTS_HomePageCSV" />
+		</classes>
+	</test>s
+	
+	
+
 	
 	
 	<test thread-count="5" name="Purchase - Registered Account from country having VAT">
@@ -69,11 +102,7 @@
 			<class name="ShoppingTests.TESTS_PurchaseGuest_VAT" />
 		</classes>
 	</test>
-	<test thread-count="5" name="Continue Shopping ">
-		<classes>
-			<class name="ShoppingTests.TESTS_ContinueShopping" />
-		</classes>
-	</test>
+
 	
 		<test thread-count="5" name="Not Enough Quantity Message ">
 		<classes>
@@ -81,5 +110,9 @@
 		</classes>
 	</test>
 
+	-->
+
+	
+	
 	<!--  -->
 </suite><!-- Suite -->

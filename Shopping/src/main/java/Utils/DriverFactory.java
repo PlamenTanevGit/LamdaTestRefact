@@ -21,12 +21,12 @@ public class DriverFactory {
 	public static final int TIMEOUT = 10;
 	private static final int PAGE_TIMEOUT = 35;
 	private static final int SCRIPT_TIMEOUT = 35;
-	public static WebDriver driver;
-	public static EventFiringWebDriver edriver;
+	public  WebDriver driver;
+	public  EventFiringWebDriver edriver;
 
-	public static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
+	public  ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 
-	public static WebDriver initialise(Browsers browsers) {
+	public  WebDriver initialise(Browsers browsers) {
 		ChromeOptions chromeOptions = new ChromeOptions();
 		FirefoxOptions firefoxOptions = new FirefoxOptions();
 
@@ -89,11 +89,11 @@ public class DriverFactory {
 
 	}
 
-	public static WebDriver getDriver() {
+	public  WebDriver getDriver() {
 		return tlDriver.get();
 	}
 
-	public static void waitForAjax() {
+	public  void waitForAjax() {
 		WebDriverWait wait = new WebDriverWait(driver, TIMEOUT);
 		wait.until((ExpectedCondition<Boolean>) wd -> ((JavascriptExecutor) wd)
 				.executeScript("return document.readyState").equals("complete"));

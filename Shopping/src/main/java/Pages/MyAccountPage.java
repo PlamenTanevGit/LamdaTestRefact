@@ -10,15 +10,17 @@ import Utils.TestUtil;
 public class MyAccountPage {
 	
 	private WebDriver driver;
+	private TestUtil testUtil;
 	
 	public MyAccountPage(WebDriver driver) {
 		this.driver = driver;
+		this.testUtil = new TestUtil(driver);
 
 	}
 	
 
 	public WebElement title () {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//h2[contains(text(),'My Account')]");
 	}
 	

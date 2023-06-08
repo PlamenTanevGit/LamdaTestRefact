@@ -14,6 +14,7 @@ public class FascadePage  {
 	private SearchResultPage searchResultPage;	
 	private AddPersonalDetails addPersonalDetails;
 	private CheckoutPage checkoutPage;
+	private TestUtil testUtil;
 	
 	public FascadePage(WebDriver driver) {
 		this.driver = driver;
@@ -22,11 +23,12 @@ public class FascadePage  {
 		this.homePage = new HomePage(driver);
 		this.searchResultPage = new SearchResultPage(driver);
 		this.checkoutPage = new CheckoutPage(driver);
+		this.testUtil = new TestUtil(driver);
 	}
 
 
 	public void navigateToHomePage(String homePageUrl) {
-		TestUtil.openUrl(homePageUrl);
+		testUtil.openUrl(homePageUrl);
 	}
 
 	public void searchProduct (String product ) {
@@ -206,8 +208,8 @@ public class FascadePage  {
 		double UNIT_PRICE = accountRegisterPage.getUNIT_PRICE();
 		double TOTAL = accountRegisterPage.getTOTAL();
 
-		Assert.assertEquals(UNIT_PRICE, TestUtil.getDoubleFromStringValue(UNIT__PRICE));
-		Assert.assertEquals(TOTAL, TestUtil.getDoubleFromStringValue(TOTAL_));	
+		Assert.assertEquals(UNIT_PRICE, testUtil.getDoubleFromStringValue(UNIT__PRICE));
+		Assert.assertEquals(TOTAL, testUtil.getDoubleFromStringValue(TOTAL_));	
 		Assert.assertEquals(TOTAL, UNIT_PRICE);
 		/**
 		 * Assertion for :
@@ -215,9 +217,9 @@ public class FascadePage  {
 		 * - Flat Shipping Rate Value
 		 * - Total Value 
 		 */
-		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), TestUtil.getDoubleFromStringValue(SubTotal));
-		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), TestUtil.getDoubleFromStringValue(FlatShipping));
-		Assert.assertEquals(accountRegisterPage.getTotalAmount(VAT_YES_NO), TestUtil.getDoubleFromStringValue(Total));	
+		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), testUtil.getDoubleFromStringValue(SubTotal));
+		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), testUtil.getDoubleFromStringValue(FlatShipping));
+		Assert.assertEquals(accountRegisterPage.getTotalAmount(VAT_YES_NO), testUtil.getDoubleFromStringValue(Total));	
 	}
 
 	public void assertionsYesVat (String VAT_YES_NO, String UNIT__PRICE, String TOTAL_, String SubTotal, String FlatShipping, String Eco, String VATValue, String Total) {
@@ -225,8 +227,8 @@ public class FascadePage  {
 		double UNIT_PRICE = accountRegisterPage.getUNIT_PRICE();
 		double TOTAL = accountRegisterPage.getTOTAL();
 
-		Assert.assertEquals(UNIT_PRICE, TestUtil.getDoubleFromStringValue(UNIT__PRICE));
-		Assert.assertEquals(TOTAL, TestUtil.getDoubleFromStringValue(TOTAL_));	
+		Assert.assertEquals(UNIT_PRICE, testUtil.getDoubleFromStringValue(UNIT__PRICE));
+		Assert.assertEquals(TOTAL, testUtil.getDoubleFromStringValue(TOTAL_));	
 		Assert.assertEquals(TOTAL, UNIT_PRICE);
 		/**
 		 * Assertion for :
@@ -236,11 +238,11 @@ public class FascadePage  {
 		 * - VAT value
 		 * - Total Value 
 		 */
-		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), TestUtil.getDoubleFromStringValue(SubTotal));
-		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), TestUtil.getDoubleFromStringValue(FlatShipping));
-		Assert.assertEquals(accountRegisterPage.getEcoTaxAmount(), TestUtil.getDoubleFromStringValue(Eco));
-		Assert.assertEquals(accountRegisterPage.getVATAmount(), TestUtil.getDoubleFromStringValue(VATValue));
-		Assert.assertEquals(accountRegisterPage.getTotalAmount("VAT_YES"), TestUtil.getDoubleFromStringValue(Total));		
+		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), testUtil.getDoubleFromStringValue(SubTotal));
+		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), testUtil.getDoubleFromStringValue(FlatShipping));
+		Assert.assertEquals(accountRegisterPage.getEcoTaxAmount(), testUtil.getDoubleFromStringValue(Eco));
+		Assert.assertEquals(accountRegisterPage.getVATAmount(), testUtil.getDoubleFromStringValue(VATValue));
+		Assert.assertEquals(accountRegisterPage.getTotalAmount("VAT_YES"), testUtil.getDoubleFromStringValue(Total));		
 
 
 	}

@@ -55,12 +55,12 @@ public class DifferentCalculations extends TestUtil {
 		 * Fill the Registered account form
 		 */
 		addPersonalDetails = new AddPersonalDetails(driver, 
-				or.getProperty("firstName")+TestUtil.randomString(5), 
-				or.getProperty("lastName")+TestUtil.randomString(5), 
-				or.getProperty("email")+TestUtil.randomString(5)+"@mm.com", 
+				or.getProperty("firstName")+randomString(5), 
+				or.getProperty("lastName")+randomString(5), 
+				or.getProperty("email")+randomString(5)+"@mm.com", 
 				or.getProperty("telephone"), 				
-				or.getProperty("company")+TestUtil.randomString(3), 
-				or.getProperty("address1")+TestUtil.randomString(5), 
+				or.getProperty("company")+randomString(3), 
+				or.getProperty("address1")+randomString(5), 
 				or.getProperty("postCode"), 
 				or.getProperty("city2"), 
 				or.getProperty("country2"), 
@@ -133,12 +133,12 @@ public class DifferentCalculations extends TestUtil {
 		 * Fill the Registered account form
 		 */
 		addPersonalDetails = new AddPersonalDetails(driver, 
-				or.getProperty("firstName")+TestUtil.randomString(5), 
-				or.getProperty("lastName")+TestUtil.randomString(5), 
-				or.getProperty("email")+TestUtil.randomString(5)+"@mm.com", 
+				or.getProperty("firstName")+randomString(5), 
+				or.getProperty("lastName")+randomString(5), 
+				or.getProperty("email")+randomString(5)+"@mm.com", 
 				or.getProperty("telephone"), 				
-				or.getProperty("company")+TestUtil.randomString(3), 
-				or.getProperty("address1")+TestUtil.randomString(5), 
+				or.getProperty("company")+randomString(3), 
+				or.getProperty("address1")+randomString(5), 
 				or.getProperty("postCode"), 
 				or.getProperty("city1"), 
 				or.getProperty("country1"), 
@@ -163,8 +163,8 @@ public class DifferentCalculations extends TestUtil {
 		double UNIT_PRICE = accountRegisterPage.getUNIT_PRICE();
 		double TOTAL = accountRegisterPage.getTOTAL();
 
-		Assert.assertEquals(UNIT_PRICE, TestUtil.getDoubleFromStringValue(UNIT__PRICE));
-		Assert.assertEquals(TOTAL, TestUtil.getDoubleFromStringValue(TOTAL_));		
+		Assert.assertEquals(UNIT_PRICE, getDoubleFromStringValue(UNIT__PRICE));
+		Assert.assertEquals(TOTAL, getDoubleFromStringValue(TOTAL_));		
 		/**
 		 * Assertion for :
 		 * - Sub-Total Amount value
@@ -173,9 +173,9 @@ public class DifferentCalculations extends TestUtil {
 		 * - VAT value
 		 * - Total Value 
 		 */
-		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), TestUtil.getDoubleFromStringValue(SubTotal));
-		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), TestUtil.getDoubleFromStringValue(FlatShipping));
-		Assert.assertEquals(accountRegisterPage.getTotalAmount("VAT_NO"), TestUtil.getDoubleFromStringValue(Total));		
+		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), getDoubleFromStringValue(SubTotal));
+		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), getDoubleFromStringValue(FlatShipping));
+		Assert.assertEquals(accountRegisterPage.getTotalAmount("VAT_NO"), getDoubleFromStringValue(Total));		
 		
 		/**
 		 * click on Remove to clean the Cart
@@ -189,7 +189,7 @@ public class DifferentCalculations extends TestUtil {
 	@Test(alwaysRun = true,
 			dataProvider = "calculationsInputsWithoutVAT",
 			description = "The test performs Assertions on different quantities calculations ")
-	public void testFacadeRegisteredAccountNoVAT (
+	public void t3_FacadeRegisteredAccountNoVAT (
 			String quantity, 
 			String UNIT__PRICE, 
 			String TOTAL_, 
@@ -206,13 +206,13 @@ public class DifferentCalculations extends TestUtil {
 			config.getProperty("homePage"), 
 			or.getProperty("product3"), 
 			numberOfAddedItems,
-			or.getProperty("firstName")+TestUtil.randomString(5), 
-			or.getProperty("lastName")+TestUtil.randomString(5), 
-			or.getProperty("email")+TestUtil.randomString(5)+"@mm.com", 
+			or.getProperty("firstName")+randomString(5), 
+			or.getProperty("lastName")+randomString(5), 
+			or.getProperty("email")+randomString(5)+"@mm.com", 
 			or.getProperty("telephone"), 	
 			or.getProperty("password"),			
-			or.getProperty("company")+TestUtil.randomString(3), 
-			or.getProperty("address1")+TestUtil.randomString(5), 
+			or.getProperty("company")+randomString(3), 
+			or.getProperty("address1")+randomString(5), 
 			or.getProperty("postCode"), 
 			or.getProperty("city1"), 
 			or.getProperty("country1"), 
@@ -224,8 +224,8 @@ public class DifferentCalculations extends TestUtil {
 		double UNIT_PRICE = accountRegisterPage.getUNIT_PRICE();
 		double TOTAL = accountRegisterPage.getTOTAL();
 
-		Assert.assertEquals(UNIT_PRICE, TestUtil.getDoubleFromStringValue(UNIT__PRICE));
-		Assert.assertEquals(TOTAL, TestUtil.getDoubleFromStringValue(TOTAL_));		
+		Assert.assertEquals(UNIT_PRICE, getDoubleFromStringValue(UNIT__PRICE));
+		Assert.assertEquals(TOTAL, getDoubleFromStringValue(TOTAL_));		
 		/**
 		 * Assertion for :
 		 * - Sub-Total Amount value
@@ -234,9 +234,9 @@ public class DifferentCalculations extends TestUtil {
 		 * - VAT value
 		 * - Total Value 
 		 */
-		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), TestUtil.getDoubleFromStringValue(SubTotal));
-		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), TestUtil.getDoubleFromStringValue(FlatShipping));
-		Assert.assertEquals(accountRegisterPage.getTotalAmount("VAT_NO"), TestUtil.getDoubleFromStringValue(Total));		
+		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), getDoubleFromStringValue(SubTotal));
+		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), getDoubleFromStringValue(FlatShipping));
+		Assert.assertEquals(accountRegisterPage.getTotalAmount("VAT_NO"), getDoubleFromStringValue(Total));		
 		
 		/**
 		 * click on Remove to clean the Cart
@@ -250,7 +250,7 @@ public class DifferentCalculations extends TestUtil {
 	@Test(alwaysRun = true,
 			dataProvider = "calculationsInputsWithoutVAT",
 			description = "The test performs Assertions on different quantities calculations ")
-	public void testFacadeGuestAccount (
+	public void t4_FacadeGuestAccount (
 			String quantity, 
 			String UNIT__PRICE, 
 			String TOTAL_, 
@@ -264,12 +264,12 @@ public class DifferentCalculations extends TestUtil {
 			config.getProperty("homePage"), 
 			or.getProperty("product3"), 
 			1,
-			or.getProperty("firstName")+TestUtil.randomString(5), 
-			or.getProperty("lastName")+TestUtil.randomString(5), 
-			or.getProperty("email")+TestUtil.randomString(5)+"@mm.com", 
+			or.getProperty("firstName")+randomString(5), 
+			or.getProperty("lastName")+randomString(5), 
+			or.getProperty("email")+randomString(5)+"@mm.com", 
 			or.getProperty("telephone"),		
-			or.getProperty("company")+TestUtil.randomString(3), 
-			or.getProperty("address1")+TestUtil.randomString(5), 
+			or.getProperty("company")+randomString(3), 
+			or.getProperty("address1")+randomString(5), 
 			or.getProperty("postCode"), 
 			or.getProperty("city1"), 
 			or.getProperty("country1"), 
@@ -289,7 +289,7 @@ public class DifferentCalculations extends TestUtil {
 	@Test(alwaysRun = true,
 			dataProvider = "calculationsInputsWithoutVAT",
 			description = "The test performs Assertions on different quantities calculations ")
-	public void testFacadeGuestAccountShippingAddress (
+	public void t4_FacadeGuestAccountShippingAddress (
 			String quantity, 
 			String UNIT__PRICE, 
 			String TOTAL_, 
@@ -303,12 +303,12 @@ public class DifferentCalculations extends TestUtil {
 			or.getProperty("product3"), 
 			1,
 				// Billing Address Details
-			or.getProperty("firstName")+TestUtil.randomString(5), 
-			or.getProperty("lastName")+TestUtil.randomString(5), 
-			or.getProperty("email")+TestUtil.randomString(5)+"@mm.com", 
+			or.getProperty("firstName")+randomString(5), 
+			or.getProperty("lastName")+randomString(5), 
+			or.getProperty("email")+randomString(5)+"@mm.com", 
 			or.getProperty("telephone"),		
-			or.getProperty("company")+TestUtil.randomString(3), 
-			or.getProperty("address1")+TestUtil.randomString(5), 
+			or.getProperty("company")+randomString(3), 
+			or.getProperty("address1")+randomString(5), 
 			or.getProperty("postCode"), 
 			or.getProperty("city1"), 
 			or.getProperty("country1"), 
@@ -317,11 +317,11 @@ public class DifferentCalculations extends TestUtil {
 			quantity,
 
 				// Shipping Address Details
-			or.getProperty("firstName")+TestUtil.randomString(5), 
-			or.getProperty("lastName")+TestUtil.randomString(5), 
-			or.getProperty("company")+TestUtil.randomString(3), 
-			or.getProperty("address1")+TestUtil.randomString(5), 
-			or.getProperty("address2")+TestUtil.randomString(5), 
+			or.getProperty("firstName")+randomString(5), 
+			or.getProperty("lastName")+randomString(5), 
+			or.getProperty("company")+randomString(3), 
+			or.getProperty("address1")+randomString(5), 
+			or.getProperty("address2")+randomString(5), 
 			or.getProperty("city1"),
 			or.getProperty("postCode"),
 
@@ -343,7 +343,7 @@ public class DifferentCalculations extends TestUtil {
 	@Test(alwaysRun = true,
 			dataProvider = "calculationsInputsWithVAT",
 			description = "The test performs Assertions on different quantities calculations ")
-	public void testFacadeGuestAccountShippingAddressWithVAT (
+	public void t5_FacadeGuestAccountShippingAddressWithVAT (
 			String quantity, 
 			String UNIT__PRICE, 
 			String TOTAL_, 
@@ -358,12 +358,12 @@ public class DifferentCalculations extends TestUtil {
 					config.getProperty("homePage"), 
 					or.getProperty("product3"), 
 					1,
-					or.getProperty("firstName")+TestUtil.randomString(5), 
-					or.getProperty("lastName")+TestUtil.randomString(5), 
-					or.getProperty("email")+TestUtil.randomString(5)+"@mm.com", 
+					or.getProperty("firstName")+randomString(5), 
+					or.getProperty("lastName")+randomString(5), 
+					or.getProperty("email")+randomString(5)+"@mm.com", 
 					or.getProperty("telephone"),		
-					or.getProperty("company")+TestUtil.randomString(3), 
-					or.getProperty("address1")+TestUtil.randomString(5), 
+					or.getProperty("company")+randomString(3), 
+					or.getProperty("address1")+randomString(5), 
 					or.getProperty("postCode"), 
 					or.getProperty("city2"), 
 					or.getProperty("country2"), 

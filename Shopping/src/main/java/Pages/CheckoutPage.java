@@ -10,35 +10,37 @@ import Utils.TestUtil;
 public class CheckoutPage {
 	
 	private WebDriver driver;
+	private TestUtil testUtil;
 
 	public CheckoutPage(WebDriver driver) {
 		this.driver = driver;
+		this.testUtil = new TestUtil(driver);
 
 	}
 
 	public WebElement topLeftIcon() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//li[@class='breadcrumb-item active']");
 	}
 	
 	
 	public WebElement updateInnerIcon() {
-		return TestUtil.findElement(LocatorType.CSS,
+		return testUtil.findElement(LocatorType.CSS,
 				"td:nth-of-type(3)  .input-group-append > button:nth-of-type(1)");
 	}
 	
 	public WebElement VATlabel() {
-		return TestUtil.findElement(LocatorType.CSS,
+		return testUtil.findElement(LocatorType.CSS,
 				"#checkout-total tr:nth-of-type(4) td:nth-of-type(1)");
 	}
 
 	
 	
 	public void clickOnUpdate() throws InterruptedException {
-		TestUtil.clickOnElement(updateInnerIcon());
-		Thread.sleep(300);
-		TestUtil.clickOnElement(updateInnerIcon());
-		Thread.sleep(3000);
+		testUtil.clickOnElement(updateInnerIcon());
+		testUtil.pausems(3);
+		testUtil.clickOnElement(updateInnerIcon());
+		testUtil.pause(3);
 	
 	}
 	

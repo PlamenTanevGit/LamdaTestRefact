@@ -29,7 +29,7 @@ public class TESTS_AddRemoveItem extends TestUtil{
 		 * and 
 		 * search for products
 		 */
-		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
+		openUrl(getEnvironmentUrl());
 
 		homePage.searchForProducts(productName);
 		/**
@@ -39,16 +39,16 @@ public class TESTS_AddRemoveItem extends TestUtil{
 		 * Assert View Cart Button
 		 */
 		searchResultPage.addToCart("1");
-		TestUtil.assertIsDisplayed(searchResultPage.addToCartPopUp());
-		TestUtil.verifyEqualTexts(searchResultPage.checkoutButoon(), "Checkout");
-		TestUtil.verifyEqualTexts(searchResultPage.viewCartButton(), "View Cart");
+		assertIsDisplayed(searchResultPage.addToCartPopUp());
+		verifyEqualTexts(searchResultPage.checkoutButoon(), "Checkout");
+		verifyEqualTexts(searchResultPage.viewCartButton(), "View Cart");
 		/**
 		 * Select View Cart 
 		 * and
 		 * Assert correct page title 
 		 */
 		searchResultPage.selectViewCart();
-		TestUtil.pageTitleVerify("Shopping Cart");
+		pageTitleVerify("Shopping Cart");
 		/**
 		 * Assertion of shopping cart components
 		 *  - productName, 
@@ -65,7 +65,7 @@ public class TESTS_AddRemoveItem extends TestUtil{
 		 * "Your shopping cart is empty!"
 		 */
 		shoppingCartPage.clickOnRemoveQuantity();
-		TestUtil.assertIsDisplayed(shoppingCartPage.messageEmptyCart());
+		assertIsDisplayed(shoppingCartPage.messageEmptyCart());
 
 	}
 

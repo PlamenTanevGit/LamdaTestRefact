@@ -173,7 +173,8 @@ public class ExtentReportListener extends TestUtil implements ITestListener {
             ITestContext context = result.getTestContext();
             WebDriver driver = (WebDriver) context.getAttribute("WebDriver");
 
-            String img6 = TestUtil.ScreenCapture();
+            TestUtil testUtil = new TestUtil();
+            String img6 = testUtil.ScreenCapture();
             ThreadLocalTest.get().fail("<b>" + "<font color=" + "red>" + "Screenshot of failure" + "</font>" + "</b>",
                     MediaEntityBuilder.createScreenCaptureFromPath(img6).build());
 
@@ -206,7 +207,8 @@ public class ExtentReportListener extends TestUtil implements ITestListener {
             ITestContext context = result.getTestContext();
             WebDriver driver = (WebDriver) context.getAttribute("WebDriver");
 
-            String img6 = TestUtil.ScreenCapture();
+            TestUtil testUtil = new TestUtil();
+            String img6 = testUtil.ScreenCapture();
             ThreadLocalTest.get().fail("<b>" + "<font color=" + "red>" + "Screenshot of failure" + "</font>" + "</b>",
                     MediaEntityBuilder.createScreenCaptureFromPath(img6).build());
 

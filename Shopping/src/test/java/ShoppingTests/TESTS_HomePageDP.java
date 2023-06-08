@@ -42,7 +42,7 @@ public class TESTS_HomePageDP extends TestUtil {
 		/**
 		 * Navigate to the Home Page
 		 */
-		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
+		openUrl(getEnvironmentUrl());
 		/**
 		 * Enter product in the Search field and click on Search button
 		 */

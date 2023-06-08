@@ -15,149 +15,151 @@ public class SearchResultPage  {
 	private ShoppingCartPage shoppingCartPage;
 	private AccountRegisterPage accountRegisterPage;
 	private WebDriverWait	wait;
+	private TestUtil testUtil;
 	
 	public SearchResultPage(WebDriver driver) {
 		this.driver = driver;
 		this.shoppingCartPage = new ShoppingCartPage(driver);
 		this.accountRegisterPage = new AccountRegisterPage(driver);
 		this.wait =  new WebDriverWait(driver, 5);
+		this.testUtil = new TestUtil(driver);
 	}
 
 	public WebElement topLeftIcon() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//li[@class='breadcrumb-item active']");
 	}
 
 	public WebElement filterMenuTitle() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//h3[normalize-space()='Filter']");
 	}
 	
 	public WebElement filterMenuPriceLabel() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"(//div[contains(@class,'mz-filter-group-header')][normalize-space()='Price'])[2]");
 	}
 	
 	public WebElement filterMenuManufacturerLabel() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='mz-filter-content-0']//div[contains(@class,'mz-filter-group-header')][normalize-space()='Manufacturer']");
 	}
 	
 	public WebElement filterMenuSearchLabel() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='mz-filter-content-0']//div[contains(@class,'mz-filter-group-header')][normalize-space()='Search']");
 	}
 	
 	public WebElement filterMenuColorLabel() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='mz-filter-content-0']//div[contains(@class,'mz-filter-group-header')][normalize-space()='Color']");
 	}
 	
 	public WebElement filterMenuAvailabilityLabel() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='mz-filter-content-0']//div[@class='mz-filter-group-header '][normalize-space()='Availability']");
 	}
 	
 	public WebElement filterMenuDiscountLabel() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='mz-filter-content-0']//div[contains(@class,'mz-filter-group-header')][normalize-space()='Discount']");
 	}
 	
 	public WebElement filterMenuRatingLabel() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='mz-filter-content-0']//div[contains(@class,'mz-filter-group-header')][normalize-space()='Rating']");
 	}
 	
 	
 	public WebElement searchResultsTitle(String product) {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//h1[normalize-space()='Search - "+product+"']");
 	}
 	
 	public WebElement product  (String productNum) {
-//		return TestUtil.findElement(LocatorType.XPATH,
+//		return testUtil.findElement(LocatorType.XPATH,
 //				"//body/div[@class='mz-pure-container']//div[@class='row']/div["+productNum+"]");
 //		
 
-		return TestUtil.findElement(LocatorType.CSS,
+		return testUtil.findElement(LocatorType.CSS,
 				".content-products.entry-content.order-4.order-md-3 > div > div:nth-of-type("+productNum+")");
 	}	
 	
 	public WebElement addToCartButton() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"(//i[@class='fas fa-shopping-cart'])[1]");
 	}
 	
 	public WebElement addToCartPopUp() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='notification-box-top']");
 	}
 	
 	public WebElement viewCartButton() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='notification-box-top']//a[normalize-space()='View Cart']");
 	}
 	
 	public WebElement checkoutButoon() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='notification-box-top']//a[normalize-space()='Checkout']");
 	}
 
 	public void addToCartMultipleItems(String itemNumber, int itemsNumber) throws InterruptedException {
-		TestUtil.movesToTheElement(product(itemNumber));
+		testUtil.movesToTheElement(product(itemNumber));
 		for (int i = 0; i < itemsNumber; i++) {
-			TestUtil.clickOnElement(addToCartButton());
-			Thread.sleep(250);			
+			testUtil.clickOnElement(addToCartButton());
+			testUtil.pausems(3);			
 		}
-		TestUtil.clickOnElement(viewCartButton());
+		testUtil.clickOnElement(viewCartButton());
 
 	}
 	
 	public void addMultipleItems(String itemNumber, int itemsNumber) throws InterruptedException {
-			TestUtil.movesToTheElement(product(itemNumber));
+			testUtil.movesToTheElement(product(itemNumber));
 			for (int i = 0; i < itemsNumber; i++) {
-				TestUtil.clickOnElement(addToCartButton());
-				Thread.sleep(500);			
+				testUtil.clickOnElement(addToCartButton());
+				testUtil.pausems(5);		
 			}
-			TestUtil.clickOnElement(checkoutButoon());	
+			testUtil.clickOnElement(checkoutButoon());	
 	
 	}
 	
 	public void addToCart(String itemNumber) {
-		TestUtil.movesToTheElement(product(itemNumber));
-		TestUtil.clickOnElement(addToCartButton());
+		testUtil.movesToTheElement(product(itemNumber));
+		testUtil.clickOnElement(addToCartButton());
 		wait.until(ExpectedConditions.visibilityOf(addToCartPopUp()));
 
 	}
 	
 	public void selectViewCart() {
-		TestUtil.movesToTheElement(viewCartButton());
-		TestUtil.clickOnElement(viewCartButton());			
+		testUtil.movesToTheElement(viewCartButton());
+		testUtil.clickOnElement(viewCartButton());			
 		wait.until(ExpectedConditions.visibilityOf(shoppingCartPage.shoppingCart_topLeftIcon()));
 
 	}
 	
 	public void selectCheckout() {
-		TestUtil.movesToTheElement(checkoutButoon());
-		TestUtil.clickOnElement(checkoutButoon());			
+		testUtil.movesToTheElement(checkoutButoon());
+		testUtil.clickOnElement(checkoutButoon());			
 		wait.until(ExpectedConditions.visibilityOf(accountRegisterPage.yourPersonalDetailsWindow()));
 	}
 	
 	public String getPriceFromArticle (String artcileNumber) {		
-		return TestUtil.findElement
+		return testUtil.findElement
 	(LocatorType.XPATH, "//div[@class='row']//div[1]//div[1]//div[2]//div[1]//span["+artcileNumber+"]").getText();
 		
 	}
 	
 	public double getThePriceAmount (String price) {
-		return TestUtil.getDoubleFromStringValue(price);
+		return testUtil.getDoubleFromStringValue(price);
 	}
 	
 	
 	
 	public void componentsVerify () {
 		
-		TestUtil.assertIsDisplayed(topLeftIcon());
+		testUtil.assertIsDisplayed(topLeftIcon());
 		
 		Assert.assertTrue(filterMenuTitle().getText().equals("FILTER"));
 		Assert.assertTrue(filterMenuPriceLabel().getText().equals("PRICE"));

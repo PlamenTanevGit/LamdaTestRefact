@@ -51,19 +51,19 @@ public class TestUtil {
 
 	// Properties Initialize
 	public static Properties config = new Properties();
-	public static Properties or = new Properties();
-	public static java.io.FileInputStream fis;
-	public static java.io.FileInputStream fis2;
+	public  Properties or = new Properties();
+	public  java.io.FileInputStream fis;
+	public  java.io.FileInputStream fis2;
 
-	protected static WebDriver driver;
-	protected static WebDriverWait wait;
-	public static SoftAssert softAssert;
-	public static WebElement element;
-	private static JavascriptExecutor js;
-	private static String screenshotName;
-	private static Actions actions;
-	private static long startTime;
-	private static long endTime;
+	public WebDriver driver;
+	public WebDriverWait wait;
+	public  SoftAssert softAssert;
+	public  WebElement element;
+	public JavascriptExecutor js;
+	String screenshotName;
+	Actions actions;
+	long startTime;
+	long endTime;
 
 	/** Pages */
 	protected HomePage homePage;
@@ -79,12 +79,17 @@ public class TestUtil {
 	protected AddPersonalDetails addPersonalDetails;
 	protected FascadePage fascadePage;
 
-	private static final String PROPERTIES_FILE = "config.properties";
-	private static final String ENVIRONMENT_URL_KEY = "environment.url";
+	private  final String PROPERTIES_FILE = "config.properties";
+	private  final String ENVIRONMENT_URL_KEY = "environment.url";
 
-	private static final Properties properties = new Properties();
+	private  final Properties properties = new Properties();
 
-	public static void initConfiguration() {
+	public TestUtil (WebDriver driver) {
+		this.driver = driver;
+	}
+	
+
+	public  void initConfiguration() {
 
 		try (InputStream inputStream = TestUtil.class.getClassLoader().getResourceAsStream(PROPERTIES_FILE)) {
 			properties.load(inputStream);
@@ -119,11 +124,11 @@ public class TestUtil {
 
 	}
 
-	public static String getEnvironmentUrl() {
+	public  String getEnvironmentUrl() {
 			return properties.getProperty(ENVIRONMENT_URL_KEY);
 	}
 
-	public static void pause(int seconds) {
+	public  void pause(int seconds) {
         try {
             Thread.sleep(seconds * 1000);
 
@@ -132,21 +137,30 @@ public class TestUtil {
         }
     }
 
-	public static void openUrl(String url) {
+	public  void pausems(int mseconds) {
+        try {
+            Thread.sleep(mseconds * 100);
+
+        } catch (Exception e) {
+            System.out.println("After waiting for " + (mseconds *100) + " ms seconds");
+        }
+    }
+
+	public  void openUrl(String url) {
 		driver.navigate().to(url);
 		Reporter.log("Successfully opened url '" + url + "'");
 	}
 
-	public static void assertIsDisplayed(WebElement element) {
+	public  void assertIsDisplayed(WebElement element) {
 		Assert.assertTrue(element.isDisplayed());
 	}
 
-	public static void assertElementIsNotDisplayed (By locator) {
+	public  void assertElementIsNotDisplayed (By locator) {
 		List<WebElement> searchedElemeents = driver.findElements(locator);
 		Assert.assertTrue(searchedElemeents.isEmpty());
 	}
 
-	public static WebElement locateElement(LocatorType locatorType, String locatorPath) {
+	public  WebElement locateElement(LocatorType locatorType, String locatorPath) {
 
 		wait = new WebDriverWait(driver, DriverFactory.TIMEOUT);
 
@@ -172,7 +186,7 @@ public class TestUtil {
 
 	}
 
-	public static List<WebElement> getElementList(String locator, LocatorType type) {
+	public  List<WebElement> getElementList(String locator, LocatorType type) {
 		
 		List<WebElement> elementList = new ArrayList<WebElement>();
 		if (type==LocatorType.ID) {
@@ -210,7 +224,7 @@ public class TestUtil {
 		return elementList;
 	}
 
-	public static WebElement findElement(LocatorType locatorType, String locatorPath) {
+	public  WebElement findElement(LocatorType locatorType, String locatorPath) {
 		try {
 			element = locateElement(locatorType, locatorPath);
 		} catch (StaleElementReferenceException e) {
@@ -220,7 +234,7 @@ public class TestUtil {
 		return element;
 	}
 
-	public static WebElement typeOnField(WebElement element, String value) {
+	public  WebElement typeOnField(WebElement element, String value) {
 		HighLightElement(element);
 		element.clear();
 		element.sendKeys(value);
@@ -229,7 +243,7 @@ public class TestUtil {
 		return element;
 	}
 
-	public static void HighLightElement(WebElement element) {
+	public  void HighLightElement(WebElement element) {
 
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].setAttribute('style','background: yellow; border: 2px solid red;')", element);
@@ -241,13 +255,13 @@ public class TestUtil {
 		js.executeScript("arguments[0].setAttribute('style','border: solid 2px white')", element);
 	}
 
-	public static void scrollDown(WebElement Element) {
+	public  void scrollDown(WebElement Element) {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", Element);
 
 	}
 
-	public static void jSClick(WebElement element) {
+	public  void jSClick(WebElement element) {
 		wait = new WebDriverWait(driver, DriverFactory.TIMEOUT);
 		js = (JavascriptExecutor) driver;
 		element = wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -255,7 +269,7 @@ public class TestUtil {
 		Reporter.log("Successfully click on element " + element.getText());
 	}
 
-	public static void clickOnElement(WebElement element) {
+	public  void clickOnElement(WebElement element) {
 		wait = new WebDriverWait(driver, DriverFactory.TIMEOUT);
 		try {
 			element = wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -266,7 +280,7 @@ public class TestUtil {
 		}
 	}
 
-	public static void pseudoClickJavascript(String cssPath, String key) {
+	public  void pseudoClickJavascript(String cssPath, String key) {
 
 		switch (key) {
 		
@@ -283,25 +297,25 @@ public class TestUtil {
 		}
 
 	}
-	public static String selectDropdownOptionByTagName(WebElement dropdown, String tagName, String searchedOption) throws InterruptedException {		
+	public  String selectDropdownOptionByTagName(WebElement dropdown, String tagName, String searchedOption) throws InterruptedException {		
 		actions = new Actions(driver);
-		TestUtil.clickOnElement(dropdown);	
+		clickOnElement(dropdown);	
 		List<WebElement> options = driver.findElements(By.tagName(tagName));
 		for (WebElement option : options) {
 			if (option.getText().equals(searchedOption)) {
-				TestUtil.clickOnElement(option);
+				clickOnElement(option);
 				break;
 			}
 		}
 		return searchedOption;
 	}
 
-	public static void JSclickOnWebElement(WebElement element) {
+	public  void JSclickOnWebElement(WebElement element) {
 		js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].click();", element);
 	}
 
-	public static String ScreenCapture() throws IOException {
+	public  String ScreenCapture() throws IOException {
 		System.setProperty("org.uncommons.reportng.escape-output", "false");
 		zoomOutPage(50);
 		Date d = new Date();
@@ -319,7 +333,7 @@ public class TestUtil {
 
 	}
 
-	public static void select(WebElement select1, String value) {
+	public  void select(WebElement select1, String value) {
 
 		Select select = new Select(select1);
 		select.selectByVisibleText(value);
@@ -327,7 +341,7 @@ public class TestUtil {
 
 	}
 
-	public static void pageTitleVerify(String expected) {
+	public  void pageTitleVerify(String expected) {
 		String actual = driver.getTitle();
 		Assert.assertEquals(actual, expected);
 		Reporter.log("Page title  is Verified");
@@ -335,12 +349,12 @@ public class TestUtil {
 
 	}
 
-	public static void zoomOutPage(int percent) {
-		JavascriptExecutor js = (JavascriptExecutor) TestUtil.driver;
+	public  void zoomOutPage(int percent) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("document.body.style.zoom='" + percent + "%'");
 	}
 
-	public static void verifyEqualTexts(WebElement element, String expected) {
+	public  void verifyEqualTexts(WebElement element, String expected) {
 
 		Assert.assertEquals(element.getText(), expected);
 		Reporter.log("Text : " + element.getText() + " - is Verified");
@@ -348,7 +362,7 @@ public class TestUtil {
 
 	}
 
-	public static void movesToTheElement(WebElement element) {
+	public  void movesToTheElement(WebElement element) {
 		actions = new Actions(driver);
 		wait = new WebDriverWait(driver, 5);
 
@@ -365,52 +379,52 @@ public class TestUtil {
 		}
 	}
 
-	public static int convertDoubleToInt(double doubleAmount) {	
+	public  int convertDoubleToInt(double doubleAmount) {	
 		Double newData = new Double(doubleAmount);
 		return newData.intValue();
 	}
 	
-	public static int convertStringToInt (String value) {
+	public  int convertStringToInt (String value) {
 		return Integer.parseInt(value);
 	}
 
-	public static List<WebElement> visiblilityOfAllElements(By locator, int timeout) {
+	public  List<WebElement> visiblilityOfAllElements(By locator, int timeout) {
 		wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(locator)));
 		return driver.findElements(locator);
 	}
 
-	public static WebElement waitForElementToBePresent(By locator, int timeout) {
+	public  WebElement waitForElementToBePresent(By locator, int timeout) {
 		wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		return getElement(locator);
 	}
 
-	public static WebElement waitForElementToBeClickable(By locator, int timeout) {
+	public  WebElement waitForElementToBeClickable(By locator, int timeout) {
 		wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 		return getElement(locator);
 	}
 
-	public static WebElement waitForElementToBeVisbile(By locator, int timeout) {
+	public  WebElement waitForElementToBeVisbile(By locator, int timeout) {
 		WebElement element = getElement(locator);
 		wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.visibilityOf(element));
 		return element;
 	}
 
-	public static void clickWhenReady(By locator, int timeout) {
+	public  void clickWhenReady(By locator, int timeout) {
 		wait = new WebDriverWait(driver, timeout);
 		wait.until(ExpectedConditions.elementToBeClickable(locator));
 		getElement(locator).click();
 	}
 
-	public static WebElement getElement(By locator) {
+	public  WebElement getElement(By locator) {
 		WebElement element = driver.findElement(locator);
 		return element;
 	}
 
-	public static String randomString(int lenght) {
+	public  String randomString(int lenght) {
 		String characters = "abcdefghijklmnopqrstuvwxyz";
 		String randomString = "";
 
@@ -427,20 +441,21 @@ public class TestUtil {
 		return randomString;
 	}
 	
-	public static double getDoubleFromWebElement (WebElement element) {
+	public  double getDoubleFromWebElement (WebElement element) {
 		
 		String unitPriceStringValueShoppingCart = element.getText();
 		String unitPriceStringValueShoppingCartModified = unitPriceStringValueShoppingCart.replace("$", "");
 		return Double.parseDouble(unitPriceStringValueShoppingCartModified);
 	}
 	
-	public static double getDoubleFromStringValue (String stringValue ) {
+	public  double getDoubleFromStringValue (String stringValue ) {
 		String price1 = stringValue.replace("$", "");		
 		return  Double.parseDouble(price1);
 	}
 	
 	public String getScreenshot() throws WebDriverException {
-		File srcFile = ((TakesScreenshot) DriverFactory.getDriver()).getScreenshotAs(OutputType.FILE);
+		DriverFactory drvierFactory = new DriverFactory();
+		File srcFile = ((TakesScreenshot) drvierFactory.getDriver()).getScreenshotAs(OutputType.FILE);
 		String path = System.getProperty("user.dir") + "/screenshot/" + System.currentTimeMillis() + ".png";
 		File destination = new File(path);
 
@@ -463,7 +478,8 @@ public class TestUtil {
 
 	@BeforeClass
 	public void beforeClass() {
-		driver = DriverFactory.initialise(Browsers.CHROME);
+		DriverFactory drvierFactory = new DriverFactory();
+		driver = drvierFactory.initialise(Browsers.CHROME);
 		Reporter.log(Browsers.FIREFOX + " is Initialised");
 		initConfiguration();
 

@@ -27,7 +27,7 @@ public class TESTS_AddRemoveMultipleItems extends TestUtil{
 		/**
 		 * Navigate to home Page
 		 */
-		TestUtil.openUrl(TestUtil.getEnvironmentUrl());
+		openUrl(getEnvironmentUrl());
 		/**
 		 * Add products in the search field 
 		 * and 
@@ -57,7 +57,7 @@ public class TESTS_AddRemoveMultipleItems extends TestUtil{
 		 * "Your shopping cart is empty!"
 		 */
 		shoppingCartPage.clickOnRemoveQuantity();
-		TestUtil.assertIsDisplayed(shoppingCartPage.messageEmptyCart());
+		assertIsDisplayed(shoppingCartPage.messageEmptyCart());
 
 	}
 

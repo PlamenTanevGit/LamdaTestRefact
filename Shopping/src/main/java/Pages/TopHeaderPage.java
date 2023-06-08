@@ -16,6 +16,7 @@ public class TopHeaderPage  {
 	private Actions actions;
 	private AccountRegisterPage accountRegisterPage;
 	private LoginPage loginPage;
+	private TestUtil testUtil;
 	
 	public TopHeaderPage(WebDriver driver) {
 		this.driver = driver;
@@ -23,76 +24,77 @@ public class TopHeaderPage  {
 		this.actions = new Actions(driver);
 		this.wait = new WebDriverWait(driver, 5);
 		this.loginPage = new LoginPage(driver);
+		this.testUtil = new TestUtil(driver);
 	}
 
 	
 	public WebElement topHeaderMenusRow() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='entry_217831']");
 	}	
 	
 	public WebElement shopByCattegory() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//a[normalize-space()='Shop by Category']");
 	}
 
 	public WebElement homeMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//a[normalize-space()='Home']");
 	}
 	
 	public WebElement specialMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='entry_217831']//div[normalize-space()='Special']");
 	}
 	
 	public WebElement blogMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='entry_217831']//div[normalize-space()='Blog']");
 	}
 	
 	public WebElement megaMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='entry_217831']//div[normalize-space()='Mega Menu']");
 	}
 	
 	public WebElement addOnsMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='entry_217831']//div[normalize-space()='AddOns']");
 	}
 	
 	public WebElement myAccountMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//div[@id='entry_217831']//div[normalize-space()='My account']");
 	}
 	
 	public WebElement dashboardMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//span[normalize-space()='Dashboard']");
 	}
 	
 	public WebElement  myOrderMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//span[normalize-space()='My order']");
 	}
 	
 	public WebElement returnMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//span[normalize-space()='Return']");
 	}
 	
 	public WebElement trackingMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//a[@class='icon-left both dropdown-item']//span[@class='title'][normalize-space()='Tracking']");
 	}
 	
 	public WebElement myVoucherMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//span[normalize-space()='My voucher']");
 	}
 	
 	public WebElement logoutMenu() {
-		return TestUtil.findElement(LocatorType.XPATH,
+		return testUtil.findElement(LocatorType.XPATH,
 				"//span[normalize-space()='Logout']");
 	}
 	
@@ -101,12 +103,12 @@ public class TopHeaderPage  {
         actions.moveToElement(myAccountMenu()).build().perform();
         wait.until(ExpectedConditions.visibilityOf(dashboardMenu()));
         
-		TestUtil.verifyEqualTexts(dashboardMenu(),"Dashboard");
-		TestUtil.verifyEqualTexts(myOrderMenu(),"My order");
-		TestUtil.verifyEqualTexts(returnMenu(),"Return");
-		TestUtil.verifyEqualTexts(trackingMenu(),"Tracking");
-		TestUtil.verifyEqualTexts(myVoucherMenu(),"My voucher");
-		TestUtil.verifyEqualTexts(logoutMenu(),"Logout");
+		testUtil.verifyEqualTexts(dashboardMenu(),"Dashboard");
+		testUtil.verifyEqualTexts(myOrderMenu(),"My order");
+		testUtil.verifyEqualTexts(returnMenu(),"Return");
+		testUtil.verifyEqualTexts(trackingMenu(),"Tracking");
+		testUtil.verifyEqualTexts(myVoucherMenu(),"My voucher");
+		testUtil.verifyEqualTexts(logoutMenu(),"Logout");
 		
 	}
 	
@@ -125,22 +127,22 @@ public class TopHeaderPage  {
 	}
 	
 	public void headerElmentsVerify() {
-		TestUtil.assertIsDisplayed(topHeaderMenusRow());
-		TestUtil.assertIsDisplayed(shopByCattegory());
-		TestUtil.assertIsDisplayed(homeMenu());
-		TestUtil.assertIsDisplayed(specialMenu());
-		TestUtil.assertIsDisplayed(blogMenu());
-		TestUtil.assertIsDisplayed(megaMenu());
-		TestUtil.assertIsDisplayed(addOnsMenu());
-		TestUtil.assertIsDisplayed(myAccountMenu());
+		testUtil.assertIsDisplayed(topHeaderMenusRow());
+		testUtil.assertIsDisplayed(shopByCattegory());
+		testUtil.assertIsDisplayed(homeMenu());
+		testUtil.assertIsDisplayed(specialMenu());
+		testUtil.assertIsDisplayed(blogMenu());
+		testUtil.assertIsDisplayed(megaMenu());
+		testUtil.assertIsDisplayed(addOnsMenu());
+		testUtil.assertIsDisplayed(myAccountMenu());
 
-		TestUtil.verifyEqualTexts(shopByCattegory(),"Shop by Category");
-		TestUtil.verifyEqualTexts(homeMenu(),"Home");
-		TestUtil.verifyEqualTexts(specialMenu(),"Special");
-		TestUtil.verifyEqualTexts(blogMenu(),"Blog");
-		TestUtil.verifyEqualTexts(megaMenu(),"Mega Menu");
-		TestUtil.verifyEqualTexts(addOnsMenu(),"AddOns");
-		TestUtil.verifyEqualTexts(myAccountMenu(),"My account");
+		testUtil.verifyEqualTexts(shopByCattegory(),"Shop by Category");
+		testUtil.verifyEqualTexts(homeMenu(),"Home");
+		testUtil.verifyEqualTexts(specialMenu(),"Special");
+		testUtil.verifyEqualTexts(blogMenu(),"Blog");
+		testUtil.verifyEqualTexts(megaMenu(),"Mega Menu");
+		testUtil.verifyEqualTexts(addOnsMenu(),"AddOns");
+		testUtil.verifyEqualTexts(myAccountMenu(),"My account");
 
 	}
 

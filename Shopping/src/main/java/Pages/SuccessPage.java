@@ -9,26 +9,28 @@ import Utils.TestUtil;
 public class SuccessPage {
 	
 	private WebDriver driver;
+	private TestUtil testUtil;
 	
 	public SuccessPage(WebDriver driver) {
 		this.driver = driver;
+		this.testUtil = new TestUtil(driver);
 	}
 
 	public WebElement topLeftIcon() {
-		return TestUtil.findElement(LocatorType.XPATH,"//li[@class='breadcrumb-item active']");
+		return testUtil.findElement(LocatorType.XPATH,"//li[@class='breadcrumb-item active']");
 	}
 
 	public WebElement successMessageOrder () {
-		return TestUtil.findElement(LocatorType.XPATH,  "//div[@id='common-success']//p[text()='Your order has been successfully processed!']");
+		return testUtil.findElement(LocatorType.XPATH,  "//div[@id='common-success']//p[text()='Your order has been successfully processed!']");
 	}
 	
 	public WebElement continueButton () {
-		return TestUtil.findElement(LocatorType.XPATH, "//div[@id='common-success']//a[text()='Continue']");
+		return testUtil.findElement(LocatorType.XPATH, "//div[@id='common-success']//a[text()='Continue']");
 	}
 	
 	
 	public void continiueClick() {
-		TestUtil.clickOnElement(continueButton());
+		testUtil.clickOnElement(continueButton());
 		
 	}
 	

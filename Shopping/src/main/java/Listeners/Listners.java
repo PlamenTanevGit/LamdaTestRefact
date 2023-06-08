@@ -31,12 +31,12 @@ public class Listners extends DriverFactory implements ITestListener, ISuiteList
 
 	@Override
 	public void onTestFailure(ITestResult result) {
-
+		TestUtil testUtil = new TestUtil();
 		Reporter.log(result.getName() + " is Failed");
 
 		try {
 			Reporter.log("Click to see Screenshot");
-			Reporter.log("<a target=\"_blank\" href=" + TestUtil.ScreenCapture() + ">Screenshot</a>");
+			Reporter.log("<a target=\"_blank\" href=" + testUtil.ScreenCapture() + ">Screenshot</a>");
 
 		} catch (IOException e1) {
 			e1.printStackTrace();
