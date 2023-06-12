@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import Utils.DriverFactory;
 import Utils.LocatorType;
 import Utils.TestUtil;
 
@@ -16,9 +15,8 @@ public class HomePage {
 	private TestUtil testUtil;
 
 	public HomePage(WebDriver driver) {
-		this.driver = driver;
-		this.testUtil = new TestUtil(driver);
-
+		this.testUtil = new TestUtil();
+		this.driver =testUtil.getDriver();
 	}
 
 	public WebElement searchField() {

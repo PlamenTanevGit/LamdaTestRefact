@@ -14,7 +14,7 @@ public class MyAccountPage {
 	
 	public MyAccountPage(WebDriver driver) {
 		this.driver = driver;
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 
 	}
 	

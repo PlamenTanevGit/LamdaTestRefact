@@ -24,7 +24,7 @@ public class ShoppingCartPage {
 		this.checkoutPage = new CheckoutPage(driver);
 		this.homePage = new HomePage(driver);
 		this.wait = new WebDriverWait(driver, 5);
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 	}
 
 	

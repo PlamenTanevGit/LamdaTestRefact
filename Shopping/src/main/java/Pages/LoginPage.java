@@ -17,7 +17,7 @@ public class LoginPage  {
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		this.myAccountPage = new MyAccountPage(driver);
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 
 	}
 

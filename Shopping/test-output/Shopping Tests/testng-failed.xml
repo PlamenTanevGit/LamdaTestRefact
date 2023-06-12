@@ -6,30 +6,17 @@
     <listener class-name="Listeners.ExtentReportListener"/>
     <listener class-name="Listeners.Listners"/>
   </listeners>
-  <test thread-count="5" name="Purchase with logged user test(failed)">
+  <test thread-count="5" name=" Different Calculations(failed)">
     <classes>
-      <class name="ShoppingTests.TESTS_PurchaseWithLoggedUser">
+      <class name="ShoppingTests.DifferentCalculations">
         <methods>
           <include name="beforeSuite"/>
           <include name="afterClass"/>
-          <include name="LoginAndPurchase"/>
+          <include name="t4_FacadeGuestAccountShippingAddress" invocation-numbers="0"/>
           <include name="beforeClass"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- ShoppingTests.TESTS_PurchaseWithLoggedUser -->
+      </class> <!-- ShoppingTests.DifferentCalculations -->
     </classes>
-  </test> <!-- Purchase with logged user test(failed) -->
-  <test thread-count="5" name="Add to Cart and Direct Checkout (failed)">
-    <classes>
-      <class name="ShoppingTests.TESTS_DirectCheckout">
-        <methods>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="beforeClass"/>
-          <include name="DirectCheckoutItem_With_VAT"/>
-          <include name="afterSuite"/>
-        </methods>
-      </class> <!-- ShoppingTests.TESTS_DirectCheckout -->
-    </classes>
-  </test> <!-- Add to Cart and Direct Checkout (failed) -->
+  </test> <!--  Different Calculations(failed) -->
 </suite> <!-- Failed suite [Shopping Tests] -->

@@ -13,7 +13,7 @@ public class ConfirmOrderPage {
 
 	public ConfirmOrderPage(WebDriver driver) {
 		this.driver = driver;
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 
 	}
 

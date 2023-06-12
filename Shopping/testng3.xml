@@ -11,7 +11,7 @@
 		 -->
 
 	</listeners>
-	<test  name=" Different Calculations" parallel="methods" thread-count="2">
+	<test  name=" Different Calculations" thread-count="2">
 		<classes>
 			<class name="ShoppingTests.DifferentCalculations" />
 		<!--	</classes>

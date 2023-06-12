@@ -24,7 +24,7 @@ public class TopHeaderPage  {
 		this.actions = new Actions(driver);
 		this.wait = new WebDriverWait(driver, 5);
 		this.loginPage = new LoginPage(driver);
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 	}
 
 	

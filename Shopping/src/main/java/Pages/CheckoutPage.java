@@ -14,7 +14,7 @@ public class CheckoutPage {
 
 	public CheckoutPage(WebDriver driver) {
 		this.driver = driver;
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 
 	}
 

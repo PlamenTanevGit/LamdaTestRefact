@@ -22,7 +22,7 @@ public class SearchResultPage  {
 		this.shoppingCartPage = new ShoppingCartPage(driver);
 		this.accountRegisterPage = new AccountRegisterPage(driver);
 		this.wait =  new WebDriverWait(driver, 5);
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 	}
 
 	public WebElement topLeftIcon() {

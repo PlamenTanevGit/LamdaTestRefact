@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Shopping Tests]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="Listeners.ExtentReportListener"/>
+    <listener class-name="Listeners.Listners"/>
+  </listeners>
+  <test thread-count="5" name=" Different Calculations(failed)">
     <classes>
-      <class name="ShoppingTests.TESTS_Login">
+      <class name="ShoppingTests.DifferentCalculations">
         <methods>
-          <include name="t1_Login_Valid_UserCredentials"/>
           <include name="beforeSuite"/>
-          <include name="t2_Login_Invalid_UserCredentials"/>
           <include name="afterClass"/>
+          <include name="t4_FacadeGuestAccountShippingAddress" invocation-numbers="0"/>
           <include name="beforeClass"/>
           <include name="afterSuite"/>
         </methods>
-      </class> <!-- ShoppingTests.TESTS_Login -->
+      </class> <!-- ShoppingTests.DifferentCalculations -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!--  Different Calculations(failed) -->
+</suite> <!-- Failed suite [Shopping Tests] -->

@@ -13,7 +13,7 @@ public class SuccessPage {
 	
 	public SuccessPage(WebDriver driver) {
 		this.driver = driver;
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 	}
 
 	public WebElement topLeftIcon() {

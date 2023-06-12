@@ -14,7 +14,7 @@ public class SpecialPage  {
 	
 	public SpecialPage(WebDriver driver) {
 		this.driver=driver;
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 
 	}
 

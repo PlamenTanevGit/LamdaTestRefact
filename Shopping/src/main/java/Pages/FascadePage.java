@@ -23,7 +23,7 @@ public class FascadePage  {
 		this.homePage = new HomePage(driver);
 		this.searchResultPage = new SearchResultPage(driver);
 		this.checkoutPage = new CheckoutPage(driver);
-		this.testUtil = new TestUtil(driver);
+		this.testUtil = new TestUtil();
 	}
 
 

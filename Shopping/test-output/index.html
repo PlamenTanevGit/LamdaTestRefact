@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,8 +39,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Shopping_Tests" class="navigator-link">
+              <span class="suite-name border-failed">Shopping Tests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\PlamenTanev\AppData\Local\Temp\testng-eclipse-837851698\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Shopping_Tests" class="navigator-link ">
+                    <span>C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\testng3.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Shopping_Tests" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Shopping_Tests" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Shopping_Tests" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Shopping_Tests" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Shopping_Tests" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Shopping_Tests" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,26 +93,75 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">10 methods, 1 failed,   9 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Shopping_Tests" class="hide-methods failed suite-Shopping_Tests"> (hide)</a> <!-- hide-methods failed suite-Shopping_Tests -->
+                      <a href="#" panel-name="suite-Shopping_Tests" class="show-methods failed suite-Shopping_Tests"> (show)</a> <!-- show-methods failed suite-Shopping_Tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Shopping_Tests">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.DifferentCalculations" class="method navigator-link" hash-for-method="t4_FacadeGuestAccountShippingAddress(1,, 101.0, 101.0, 101.0, 5.0, 106.0)">t4_FacadeGuestAccountShippingAddress(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Shopping_Tests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Shopping_Tests" class="hide-methods passed suite-Shopping_Tests"> (hide)</a> <!-- hide-methods passed suite-Shopping_Tests -->
+                      <a href="#" panel-name="suite-Shopping_Tests" class="show-methods passed suite-Shopping_Tests"> (show)</a> <!-- show-methods passed suite-Shopping_Tests -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Shopping_Tests">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ShoppingTests.TESTS_HomePageDP" class="method navigator-link" hash-for-method="t3_search_ProductInTheSearchFieldAndVerifyResults(Palm Treo Pro, $337.99, 2)">t3_search_ProductInTheSearchFieldAndVerifyResults(Palm Treo Pro, $337.99, 2)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.DifferentCalculations" class="method navigator-link" hash-for-method="t1_calculationsWithVAT_Country(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)">t1_calculationsWithVAT_Country(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="ShoppingTests.TESTS_HomePageDP" class="method navigator-link" hash-for-method="t3_search_ProductInTheSearchFieldAndVerifyResults(HTC Touch HD, $146.00, 8)">t3_search_ProductInTheSearchFieldAndVerifyResults(HTC Touch HD, $146.00, 8)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.TESTS_AddRemoveItem" class="method navigator-link" hash-for-method="t1_shoppingCartVerificationAndRemoveProducts(HTC Touch HD, Product 1, 1, $146.00, $146.00)">t1_shoppingCartVerificationAndRemoveProducts(HTC Touch HD, Product 1, 1, $146.00, $146.00)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.DifferentCalculations" class="method navigator-link" hash-for-method="t2_calculationsWithoutVAT_Country(1,, 101.0, 101.0, 101.0, 5.0, 106.0)">t2_calculationsWithoutVAT_Country(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.TESTS_AddRemoveMultipleItems" class="method navigator-link" hash-for-method="t2_shopingCart_AddMultipleItemsVerification">t2_shopingCart_AddMultipleItemsVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.DifferentCalculations" class="method navigator-link" hash-for-method="t3_FacadeRegisteredAccountNoVAT(1,, 101.0, 101.0, 101.0, 5.0, 106.0)">t3_FacadeRegisteredAccountNoVAT(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.TESTS_HomePageDP" class="method navigator-link" hash-for-method="t3_search_ProductInTheSearchFieldAndVerifyResults(Palm Treo Pro, $337.99, 2)">t3_search_ProductInTheSearchFieldAndVerifyResults(Palm Treo Pro, $337.99, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.TESTS_HomePageDP" class="method navigator-link" hash-for-method="t3_search_ProductInTheSearchFieldAndVerifyResults(HTC Touch HD, $146.00, 8)">t3_search_ProductInTheSearchFieldAndVerifyResults(HTC Touch HD, $146.00, 8)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.DifferentCalculations" class="method navigator-link" hash-for-method="t4_FacadeGuestAccount(1,, 101.0, 101.0, 101.0, 5.0, 106.0)">t4_FacadeGuestAccount(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Shopping_Tests" title="ShoppingTests.DifferentCalculations" class="method navigator-link" hash-for-method="t5_FacadeGuestAccountShippingAddressWithVAT(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)">t5_FacadeGuestAccountShippingAddressWithVAT(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Shopping_Tests -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -123,8 +172,32 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Shopping_Tests" class="panel Shopping_Tests">
+          <div class="suite-Shopping_Tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ShoppingTests.DifferentCalculations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t4_FacadeGuestAccountShippingAddress(1,, 101.0, 101.0, 101.0, 5.0, 106.0)">
+                  </a> <!-- t4_FacadeGuestAccountShippingAddress(1,, 101.0, 101.0, 101.0, 5.0, 106.0) -->
+                  <span class="method-name">t4_FacadeGuestAccountShippingAddress</span>
+                  <span class="parameters">(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [101.0] but found [123.2]
+	at Pages.FascadePage.assertionsNoVat(FascadePage.java:211)
+	at ShoppingTests.DifferentCalculations.t4_FacadeGuestAccountShippingAddress(DifferentCalculations.java:333)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(The test performs Assertions on different quantities calculations )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Shopping_Tests-class-failed -->
+          <div class="suite-Shopping_Tests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">ShoppingTests.TESTS_HomePageDP</span>
@@ -151,136 +224,2836 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Shopping_Tests-class-passed -->
+          <div class="suite-Shopping_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ShoppingTests.DifferentCalculations</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_calculationsWithVAT_Country(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)">
+                  </a> <!-- t1_calculationsWithVAT_Country(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2) -->
+                  <span class="method-name">t1_calculationsWithVAT_Country</span>
+                  <span class="parameters">(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)</span>
+                  <em>
+(The test performs Assertions on different quantities calculations )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_calculationsWithoutVAT_Country(1,, 101.0, 101.0, 101.0, 5.0, 106.0)">
+                  </a> <!-- t2_calculationsWithoutVAT_Country(1,, 101.0, 101.0, 101.0, 5.0, 106.0) -->
+                  <span class="method-name">t2_calculationsWithoutVAT_Country</span>
+                  <span class="parameters">(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+                  <em>
+(The test performs Assertions on different quantities calculations )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t3_FacadeRegisteredAccountNoVAT(1,, 101.0, 101.0, 101.0, 5.0, 106.0)">
+                  </a> <!-- t3_FacadeRegisteredAccountNoVAT(1,, 101.0, 101.0, 101.0, 5.0, 106.0) -->
+                  <span class="method-name">t3_FacadeRegisteredAccountNoVAT</span>
+                  <span class="parameters">(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+                  <em>
+(The test performs Assertions on different quantities calculations )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t4_FacadeGuestAccount(1,, 101.0, 101.0, 101.0, 5.0, 106.0)">
+                  </a> <!-- t4_FacadeGuestAccount(1,, 101.0, 101.0, 101.0, 5.0, 106.0) -->
+                  <span class="method-name">t4_FacadeGuestAccount</span>
+                  <span class="parameters">(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+                  <em>
+(The test performs Assertions on different quantities calculations )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="t5_FacadeGuestAccountShippingAddressWithVAT(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)">
+                  </a> <!-- t5_FacadeGuestAccountShippingAddressWithVAT(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2) -->
+                  <span class="method-name">t5_FacadeGuestAccountShippingAddressWithVAT</span>
+                  <span class="parameters">(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)</span>
+                  <em>
+(The test performs Assertions on different quantities calculations )                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Shopping_Tests-class-passed -->
+          <div class="suite-Shopping_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ShoppingTests.TESTS_AddRemoveMultipleItems</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t2_shopingCart_AddMultipleItemsVerification">
+                  </a> <!-- t2_shopingCart_AddMultipleItemsVerification -->
+                  <span class="method-name">t2_shopingCart_AddMultipleItemsVerification</span>
+                  <em>
+(This test performs search product and verifies the found product)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Shopping_Tests-class-passed -->
+          <div class="suite-Shopping_Tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ShoppingTests.TESTS_AddRemoveItem</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="t1_shoppingCartVerificationAndRemoveProducts(HTC Touch HD, Product 1, 1, $146.00, $146.00)">
+                  </a> <!-- t1_shoppingCartVerificationAndRemoveProducts(HTC Touch HD, Product 1, 1, $146.00, $146.00) -->
+                  <span class="method-name">t1_shoppingCartVerificationAndRemoveProducts</span>
+                  <span class="parameters">(HTC Touch HD, Product 1, 1, $146.00, $146.00)</span>
+                  <em>
+(This test performs search product and verifies the found product)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Shopping_Tests-class-passed -->
+        </div> <!-- panel Shopping_Tests -->
+        <div panel-name="test-xml-Shopping_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\PlamenTanev\AppData\Local\Temp\testng-eclipse-837851698\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\testng3.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Shopping Tests&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;org.uncommons.reportng.HTMLReporter&quot;/&gt;
+    &lt;listener class-name=&quot;Listeners.ExtentReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;Listeners.Listners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; name=&quot; Different Calculations&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;ShoppingTests.DifferentCalculations&quot;/&gt;
       &lt;class name=&quot;ShoppingTests.TESTS_HomePageDP&quot;/&gt;
+      &lt;class name=&quot;ShoppingTests.TESTS_AddRemoveMultipleItems&quot;/&gt;
+      &lt;class name=&quot;ShoppingTests.TESTS_AddRemoveItem&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!--  Different Calculations --&gt;
+&lt;/suite&gt; &lt;!-- Shopping Tests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Shopping_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Shopping Tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name"> Different Calculations (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Shopping_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Shopping Tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Shopping_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Shopping Tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Shopping_Tests');
+function tableData_Shopping_Tests() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(10);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 't3_search_ProductInTheSearchFieldAndVerifyResults')
-data.setCell(0, 2, 'ShoppingTests.TESTS_HomePageDP')
-data.setCell(0, 3, 7145);
+data.setCell(0, 1, 't4_FacadeGuestAccountShippingAddress')
+data.setCell(0, 2, 'ShoppingTests.DifferentCalculations')
+data.setCell(0, 3, 19577);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 't3_search_ProductInTheSearchFieldAndVerifyResults')
-data.setCell(1, 2, 'ShoppingTests.TESTS_HomePageDP')
-data.setCell(1, 3, 5501);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(1, 1, 't4_FacadeGuestAccount')
+data.setCell(1, 2, 'ShoppingTests.DifferentCalculations')
+data.setCell(1, 3, 17937);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 't2_calculationsWithoutVAT_Country')
+data.setCell(2, 2, 'ShoppingTests.DifferentCalculations')
+data.setCell(2, 3, 17934);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 't3_FacadeRegisteredAccountNoVAT')
+data.setCell(3, 2, 'ShoppingTests.DifferentCalculations')
+data.setCell(3, 3, 17888);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 't1_calculationsWithVAT_Country')
+data.setCell(4, 2, 'ShoppingTests.DifferentCalculations')
+data.setCell(4, 3, 17777);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 't5_FacadeGuestAccountShippingAddressWithVAT')
+data.setCell(5, 2, 'ShoppingTests.DifferentCalculations')
+data.setCell(5, 3, 17418);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 't1_shoppingCartVerificationAndRemoveProducts')
+data.setCell(6, 2, 'ShoppingTests.TESTS_AddRemoveItem')
+data.setCell(6, 3, 11772);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 't2_shopingCart_AddMultipleItemsVerification')
+data.setCell(7, 2, 'ShoppingTests.TESTS_AddRemoveMultipleItems')
+data.setCell(7, 3, 7825);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 't3_search_ProductInTheSearchFieldAndVerifyResults')
+data.setCell(8, 2, 'ShoppingTests.TESTS_HomePageDP')
+data.setCell(8, 3, 7062);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 't3_search_ProductInTheSearchFieldAndVerifyResults')
+data.setCell(9, 2, 'ShoppingTests.TESTS_HomePageDP')
+data.setCell(9, 3, 5016);
+window.suiteTableData['Shopping_Tests']= { tableData: data, tableDiv: 'times-div-Shopping_Tests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-Shopping_Tests">
+              </div> <!-- times-div-Shopping_Tests -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Shopping_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Shopping Tests</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
+              <span class="reporter-method-name">t1_calculationsWithVAT_Country(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t1_calculationsWithVAT_Country</span>
+                <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
+                <span class="reporter-method-output"> Enter value : Iphone</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output"> Enter value : testFNkwhtm</span>
+                <span class="reporter-method-output"> Enter value : testLNonwkl</span>
+                <span class="reporter-method-output"> Enter value : testEmailczxwb@mm.com</span>
+                <span class="reporter-method-output"> Enter value : +359123456789</span>
+                <span class="reporter-method-output"> Enter value : CompanyTestawa</span>
+                <span class="reporter-method-output"> Enter value : address1_ynhqr</span>
+                <span class="reporter-method-output"> Enter value : address1_ynhqr</span>
+                <span class="reporter-method-output"> Enter value : 1111</span>
+                <span class="reporter-method-output"> Enter value : Kent</span>
+                <span class="reporter-method-output">Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ </span>
+                <span class="reporter-method-output">Successfully click on element United Kingdom</span>
+                <span class="reporter-method-output">Successfully click on element --- Please Select ---
+Aberdeen
+Aberdeenshire
+Anglesey
+Angus
+Argyll and Bute
+Bedfordshire
+Berkshire
+Blaenau Gwent
+Bridgend
+Bristol
+Buckinghamshire
+Caerphilly
+Cambridgeshire
+Cardiff
+Carmarthenshire
+Ceredigion
+Cheshire
+Clackmannanshire
+Conwy
+Cornwall
+County Antrim
+County Armagh
+County Down
+County Fermanagh
+County Londonderry
+County Tyrone
+Cumbria
+Denbighshire
+Derbyshire
+Devon
+Dorset
+Dumfries and Galloway
+Dundee
+Durham
+East Ayrshire
+East Dunbartonshire
+East Lothian
+East Renfrewshire
+East Riding of Yorkshire
+East Sussex
+Edinburgh
+Essex
+Falkirk
+Fife
+Flintshire
+Glasgow
+Gloucestershire
+Greater London
+Greater Manchester
+Gwynedd
+Hampshire
+Herefordshire
+Hertfordshire
+Highlands
+Inverclyde
+Isle of Wight
+Kent
+Lancashire
+Leicestershire
+Lincolnshire
+Merseyside
+Merthyr Tydfil
+Midlothian
+Monmouthshire
+Moray
+Neath Port Talbot
+Newport
+Norfolk
+North Ayrshire
+North Lanarkshire
+North Yorkshire
+Northamptonshire
+Northumberland
+Nottinghamshire
+Orkney Islands
+Oxfordshire
+Pembrokeshire
+Perth and Kinross
+Powys
+Renfrewshire
+Rhondda Cynon Taff
+Rutland
+Scottish Borders
+Shetland Islands
+Shropshire
+Somerset
+South Ayrshire
+South Lanarkshire
+South Yorkshire
+Staffordshire
+Stirling
+Suffolk
+Surrey
+Swansea
+Torfaen
+Tyne and Wear
+Vale of Glamorgan
+Warwickshire
+West Dunbartonshire
+West Lothian
+West Midlands
+West Sussex
+West Yorkshire
+Western Isles
+Wiltshire
+Worcestershire
+Wrexham</span>
+                <span class="reporter-method-output">Successfully click on element Kent</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">t1_calculationsWithVAT_Country is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
               <span class="reporter-method-name">t3_search_ProductInTheSearchFieldAndVerifyResults(Palm Treo Pro, $337.99, 2)</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t3_search_ProductInTheSearchFieldAndVerifyResults</span>
                 <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
                 <span class="reporter-method-output"> Enter value : Palm Treo Pro</span>
+                <span class="reporter-method-output">t3_search_ProductInTheSearchFieldAndVerifyResults is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">t1_shoppingCartVerificationAndRemoveProducts(HTC Touch HD, Product 1, 1, $146.00, $146.00)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t1_shoppingCartVerificationAndRemoveProducts</span>
+                <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
+                <span class="reporter-method-output"> Enter value : HTC Touch HD</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Text : Checkout - is Verified</span>
+                <span class="reporter-method-output">Text : View Cart - is Verified</span>
+                <span class="reporter-method-output">Page title  is Verified</span>
+                <span class="reporter-method-output">Text : IMAGE - is Verified</span>
+                <span class="reporter-method-output">Text : PRODUCT NAME - is Verified</span>
+                <span class="reporter-method-output">Text : MODEL - is Verified</span>
+                <span class="reporter-method-output">Text : QUANTITY - is Verified</span>
+                <span class="reporter-method-output">Text : UNIT PRICE - is Verified</span>
+                <span class="reporter-method-output">Text : TOTAL - is Verified</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">t1_shoppingCartVerificationAndRemoveProducts is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">t3_FacadeRegisteredAccountNoVAT(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t3_FacadeRegisteredAccountNoVAT</span>
+                <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
+                <span class="reporter-method-output"> Enter value : Iphone</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output"> Enter value : testFNwwfui</span>
+                <span class="reporter-method-output"> Enter value : testLNfdubh</span>
+                <span class="reporter-method-output"> Enter value : testEmailfhxlw@mm.com</span>
+                <span class="reporter-method-output"> Enter value : +359123456789</span>
+                <span class="reporter-method-output"> Enter value : 1234</span>
+                <span class="reporter-method-output"> Enter value : 1234</span>
+                <span class="reporter-method-output"> Enter value : CompanyTesteii</span>
+                <span class="reporter-method-output"> Enter value : address1_symsc</span>
+                <span class="reporter-method-output"> Enter value : address1_symsc</span>
+                <span class="reporter-method-output"> Enter value : 1111</span>
+                <span class="reporter-method-output"> Enter value : Sofia</span>
+                <span class="reporter-method-output">Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ </span>
+                <span class="reporter-method-output">Successfully click on element Bulgaria</span>
+                <span class="reporter-method-output">Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol</span>
+                <span class="reporter-method-output">Successfully click on element Sofia</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">t3_FacadeRegisteredAccountNoVAT is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">t2_shopingCart_AddMultipleItemsVerification</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t2_shopingCart_AddMultipleItemsVerification</span>
+                <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
+                <span class="reporter-method-output"> Enter value : HTC Touch HD</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">t2_shopingCart_AddMultipleItemsVerification is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">t2_calculationsWithoutVAT_Country(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t2_calculationsWithoutVAT_Country</span>
+                <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
+                <span class="reporter-method-output"> Enter value : Iphone</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output"> Enter value : testFNcmphu</span>
+                <span class="reporter-method-output"> Enter value : testLNocndu</span>
+                <span class="reporter-method-output"> Enter value : testEmailxixas@mm.com</span>
+                <span class="reporter-method-output"> Enter value : +359123456789</span>
+                <span class="reporter-method-output"> Enter value : CompanyTestkvm</span>
+                <span class="reporter-method-output"> Enter value : address1_ytofr</span>
+                <span class="reporter-method-output"> Enter value : address1_ytofr</span>
+                <span class="reporter-method-output"> Enter value : 1111</span>
+                <span class="reporter-method-output"> Enter value : Sofia</span>
+                <span class="reporter-method-output">Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ </span>
+                <span class="reporter-method-output">Successfully click on element Bulgaria</span>
+                <span class="reporter-method-output">Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol</span>
+                <span class="reporter-method-output">Successfully click on element Sofia</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">t2_calculationsWithoutVAT_Country is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">t5_FacadeGuestAccountShippingAddressWithVAT(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t5_FacadeGuestAccountShippingAddressWithVAT</span>
+                <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
+                <span class="reporter-method-output"> Enter value : Iphone</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output"> Enter value : testFNtxnei</span>
+                <span class="reporter-method-output"> Enter value : testLNgaazc</span>
+                <span class="reporter-method-output"> Enter value : testEmailgmtnl@mm.com</span>
+                <span class="reporter-method-output"> Enter value : +359123456789</span>
+                <span class="reporter-method-output"> Enter value : CompanyTestoky</span>
+                <span class="reporter-method-output"> Enter value : address1_ugoiy</span>
+                <span class="reporter-method-output"> Enter value : address1_ugoiy</span>
+                <span class="reporter-method-output"> Enter value : 1111</span>
+                <span class="reporter-method-output"> Enter value : Kent</span>
+                <span class="reporter-method-output">Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ </span>
+                <span class="reporter-method-output">Successfully click on element United Kingdom</span>
+                <span class="reporter-method-output">Successfully click on element --- Please Select ---
+Aberdeen
+Aberdeenshire
+Anglesey
+Angus
+Argyll and Bute
+Bedfordshire
+Berkshire
+Blaenau Gwent
+Bridgend
+Bristol
+Buckinghamshire
+Caerphilly
+Cambridgeshire
+Cardiff
+Carmarthenshire
+Ceredigion
+Cheshire
+Clackmannanshire
+Conwy
+Cornwall
+County Antrim
+County Armagh
+County Down
+County Fermanagh
+County Londonderry
+County Tyrone
+Cumbria
+Denbighshire
+Derbyshire
+Devon
+Dorset
+Dumfries and Galloway
+Dundee
+Durham
+East Ayrshire
+East Dunbartonshire
+East Lothian
+East Renfrewshire
+East Riding of Yorkshire
+East Sussex
+Edinburgh
+Essex
+Falkirk
+Fife
+Flintshire
+Glasgow
+Gloucestershire
+Greater London
+Greater Manchester
+Gwynedd
+Hampshire
+Herefordshire
+Hertfordshire
+Highlands
+Inverclyde
+Isle of Wight
+Kent
+Lancashire
+Leicestershire
+Lincolnshire
+Merseyside
+Merthyr Tydfil
+Midlothian
+Monmouthshire
+Moray
+Neath Port Talbot
+Newport
+Norfolk
+North Ayrshire
+North Lanarkshire
+North Yorkshire
+Northamptonshire
+Northumberland
+Nottinghamshire
+Orkney Islands
+Oxfordshire
+Pembrokeshire
+Perth and Kinross
+Powys
+Renfrewshire
+Rhondda Cynon Taff
+Rutland
+Scottish Borders
+Shetland Islands
+Shropshire
+Somerset
+South Ayrshire
+South Lanarkshire
+South Yorkshire
+Staffordshire
+Stirling
+Suffolk
+Surrey
+Swansea
+Torfaen
+Tyne and Wear
+Vale of Glamorgan
+Warwickshire
+West Dunbartonshire
+West Lothian
+West Midlands
+West Sussex
+West Yorkshire
+Western Isles
+Wiltshire
+Worcestershire
+Wrexham</span>
+                <span class="reporter-method-output">Successfully click on element Kent</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">t5_FacadeGuestAccountShippingAddressWithVAT is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">t4_FacadeGuestAccount(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t4_FacadeGuestAccount</span>
+                <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
+                <span class="reporter-method-output"> Enter value : Iphone</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output"> Enter value : testFNmivsn</span>
+                <span class="reporter-method-output"> Enter value : testLNlgejx</span>
+                <span class="reporter-method-output"> Enter value : testEmailprtks@mm.com</span>
+                <span class="reporter-method-output"> Enter value : +359123456789</span>
+                <span class="reporter-method-output"> Enter value : CompanyTestgfk</span>
+                <span class="reporter-method-output"> Enter value : address1_hcend</span>
+                <span class="reporter-method-output"> Enter value : address1_hcend</span>
+                <span class="reporter-method-output"> Enter value : 1111</span>
+                <span class="reporter-method-output"> Enter value : Sofia</span>
+                <span class="reporter-method-output">Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ </span>
+                <span class="reporter-method-output">Successfully click on element Bulgaria</span>
+                <span class="reporter-method-output">Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol</span>
+                <span class="reporter-method-output">Successfully click on element Sofia</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">t4_FacadeGuestAccount is Passed</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">t3_search_ProductInTheSearchFieldAndVerifyResults(HTC Touch HD, $146.00, 8)</span>
               <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t3_search_ProductInTheSearchFieldAndVerifyResults</span>
                 <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
                 <span class="reporter-method-output"> Enter value : HTC Touch HD</span>
+                <span class="reporter-method-output">t3_search_ProductInTheSearchFieldAndVerifyResults is Passed</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">t4_FacadeGuestAccountShippingAddress(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Starting test method:t4_FacadeGuestAccountShippingAddress</span>
+                <span class="reporter-method-output">Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'</span>
+                <span class="reporter-method-output"> Enter value : Iphone</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output"> Enter value : testFNajfio</span>
+                <span class="reporter-method-output"> Enter value : testLNarrku</span>
+                <span class="reporter-method-output"> Enter value : testEmailrjtph@mm.com</span>
+                <span class="reporter-method-output"> Enter value : +359123456789</span>
+                <span class="reporter-method-output"> Enter value : CompanyTestlbx</span>
+                <span class="reporter-method-output"> Enter value : address1_abzdp</span>
+                <span class="reporter-method-output"> Enter value : address1_abzdp</span>
+                <span class="reporter-method-output"> Enter value : 1111</span>
+                <span class="reporter-method-output"> Enter value : Sofia</span>
+                <span class="reporter-method-output">Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ </span>
+                <span class="reporter-method-output">Successfully click on element Bulgaria</span>
+                <span class="reporter-method-output">Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol</span>
+                <span class="reporter-method-output">Successfully click on element Sofia</span>
+                <span class="reporter-method-output"> Enter value : testFNftrhy</span>
+                <span class="reporter-method-output"> Enter value : testLNfojjh</span>
+                <span class="reporter-method-output"> Enter value : CompanyTestrjz</span>
+                <span class="reporter-method-output"> Enter value : address1_mpdxm</span>
+                <span class="reporter-method-output"> Enter value : address2_xyjyo</span>
+                <span class="reporter-method-output"> Enter value : Sofia</span>
+                <span class="reporter-method-output"> Enter value : 1111</span>
+                <span class="reporter-method-output">Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ </span>
+                <span class="reporter-method-output">Successfully click on element Bulgaria</span>
+                <span class="reporter-method-output">Successfully click on element --- Please Select ---
+Aberdeen
+Aberdeenshire
+Anglesey
+Angus
+Argyll and Bute
+Bedfordshire
+Berkshire
+Blaenau Gwent
+Bridgend
+Bristol
+Buckinghamshire
+Caerphilly
+Cambridgeshire
+Cardiff
+Carmarthenshire
+Ceredigion
+Cheshire
+Clackmannanshire
+Conwy
+Cornwall
+County Antrim
+County Armagh
+County Down
+County Fermanagh
+County Londonderry
+County Tyrone
+Cumbria
+Denbighshire
+Derbyshire
+Devon
+Dorset
+Dumfries and Galloway
+Dundee
+Durham
+East Ayrshire
+East Dunbartonshire
+East Lothian
+East Renfrewshire
+East Riding of Yorkshire
+East Sussex
+Edinburgh
+Essex
+Falkirk
+Fife
+Flintshire
+Glasgow
+Gloucestershire
+Greater London
+Greater Manchester
+Gwynedd
+Hampshire
+Herefordshire
+Hertfordshire
+Highlands
+Inverclyde
+Isle of Wight
+Kent
+Lancashire
+Leicestershire
+Lincolnshire
+Merseyside
+Merthyr Tydfil
+Midlothian
+Monmouthshire
+Moray
+Neath Port Talbot
+Newport
+Norfolk
+North Ayrshire
+North Lanarkshire
+North Yorkshire
+Northamptonshire
+Northumberland
+Nottinghamshire
+Orkney Islands
+Oxfordshire
+Pembrokeshire
+Perth and Kinross
+Powys
+Renfrewshire
+Rhondda Cynon Taff
+Rutland
+Scottish Borders
+Shetland Islands
+Shropshire
+Somerset
+South Ayrshire
+South Lanarkshire
+South Yorkshire
+Staffordshire
+Stirling
+Suffolk
+Surrey
+Swansea
+Torfaen
+Tyne and Wear
+Vale of Glamorgan
+Warwickshire
+West Dunbartonshire
+West Lothian
+West Midlands
+West Sussex
+West Yorkshire
+Western Isles
+Wiltshire
+Worcestershire
+Wrexham</span>
+                <span class="reporter-method-output">Successfully click on element Sofia</span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">Successfully click on element </span>
+                <span class="reporter-method-output">t4_FacadeGuestAccountShippingAddress is Failed</span>
+                <span class="reporter-method-output">Click to see Screenshot</span>
+                <span class="reporter-method-output"><a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png></a></span>
+                <span class="reporter-method-output"><br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png' height='200' width='200' /><br></span>
+                <span class="reporter-method-output"><a target="_blank" href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png>Screenshot</a></span>
+                <span class="reporter-method-output"><a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png></a></span>
+                <span class="reporter-method-output"><br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png' height='200' width='200' /><br></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Shopping_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">6 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ShoppingTests.TESTS_HomePageDP</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ShoppingTests.TESTS_AddRemoveMultipleItems</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">ShoppingTests.TESTS_AddRemoveItem</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Shopping_Tests" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">ShoppingTests.TESTS_HomePageDP</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">ShoppingTests.DifferentCalculations</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">beforeSuite</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
-              <div class="configuration-class before">
+              <div class="configuration-method before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">35 ms</span>
-              </div> <!-- configuration-class before -->
+                <span class="method-start">26 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">t1_calculationsWithVAT_Country(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)</span>
+                <span class="method-start">1321 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">19107 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">19401 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">t2_calculationsWithoutVAT_Country(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+                <span class="method-start">20220 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">38156 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">38442 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">t3_FacadeRegisteredAccountNoVAT(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+                <span class="method-start">39254 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">57143 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">57417 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">t4_FacadeGuestAccount(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+                <span class="method-start">58223 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">76161 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">76460 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">t4_FacadeGuestAccountShippingAddress(1,, 101.0, 101.0, 101.0, 5.0, 106.0)</span>
+                <span class="method-start">77300 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">97241 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">97541 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">t5_FacadeGuestAccountShippingAddressWithVAT(1,, 123.2, 123.2, 101.0, 5.0, 4.0, 21.2, 131.2)</span>
+                <span class="method-start">98340 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">115760 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ShoppingTests.TESTS_HomePageDP</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">116035 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">t3_search_ProductInTheSearchFieldAndVerifyResults(Palm Treo Pro, $337.99, 2)</span>
-                <span class="method-start">3122 ms</span>
+                <span class="method-start">116870 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">121887 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">122149 ms</span>
+              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">t3_search_ProductInTheSearchFieldAndVerifyResults(HTC Touch HD, $146.00, 8)</span>
-                <span class="method-start">10277 ms</span>
+                <span class="method-start">122953 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-method after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">15783 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">130015 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ShoppingTests.TESTS_AddRemoveMultipleItems</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">130300 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">t2_shopingCart_AddMultipleItemsVerification</span>
+                <span class="method-start">131128 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">138954 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ShoppingTests.TESTS_AddRemoveItem</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeClass</span>
+                <span class="method-start">139231 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">t1_shoppingCartVerificationAndRemoveProducts(HTC Touch HD, Product 1, 1, $146.00, $146.00)</span>
+                <span class="method-start">140028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">151801 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">ShoppingTests.DifferentCalculations</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">afterSuite</span>
-                <span class="method-start">16510 ms</span>
+                <span class="method-start">152301 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -24,7 +24,7 @@ public class DriverFactory {
 	public  WebDriver driver;
 	public  EventFiringWebDriver edriver;
 
-	public  ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
+	public  static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<WebDriver>();
 
 	public  WebDriver initialise(Browsers browsers) {
 		ChromeOptions chromeOptions = new ChromeOptions();
@@ -64,12 +64,13 @@ public class DriverFactory {
 			break;
 		}
 
+
 		driver.manage().timeouts().implicitlyWait(TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().pageLoadTimeout(PAGE_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().setScriptTimeout(SCRIPT_TIMEOUT, TimeUnit.SECONDS);
 //		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
-
+		//tlDriver.set(driver);
 		/*
 		 * create an EventFiringWebDriver object that will accepts driver but follows
 		 * when events are triggered

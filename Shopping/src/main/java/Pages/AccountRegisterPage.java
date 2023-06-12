@@ -16,9 +16,9 @@ public class AccountRegisterPage {
 	private TestUtil testUtil;
 	
 	public AccountRegisterPage(WebDriver driver) {
-		this.driver = driver;
+		this.testUtil = new TestUtil();
+		this.driver = testUtil.getDriver();
 		this.confirmOrderPage = new ConfirmOrderPage(driver);
-		this.testUtil = new TestUtil(driver);
 
 	}
 
