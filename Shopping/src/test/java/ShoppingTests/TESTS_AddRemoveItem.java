@@ -3,10 +3,11 @@ package ShoppingTests;
 import org.testng.annotations.Test;
 
 import DataProviders.DP;
+import Utils.TestBase;
 import Utils.TestUtil;
 
 
-public class TESTS_AddRemoveItem extends TestUtil{
+public class TESTS_AddRemoveItem extends TestBase{
 
 	/***
 	 * The test will do : 
@@ -39,16 +40,16 @@ public class TESTS_AddRemoveItem extends TestUtil{
 		 * Assert View Cart Button
 		 */
 		searchResultPage.addToCart("1");
-		assertIsDisplayed(searchResultPage.addToCartPopUp());
-		verifyEqualTexts(searchResultPage.checkoutButoon(), "Checkout");
-		verifyEqualTexts(searchResultPage.viewCartButton(), "View Cart");
+		testUtil.assertIsDisplayed(searchResultPage.addToCartPopUp());
+		testUtil.verifyEqualTexts(searchResultPage.checkoutButoon(), "Checkout");
+		testUtil.verifyEqualTexts(searchResultPage.viewCartButton(), "View Cart");
 		/**
 		 * Select View Cart 
 		 * and
 		 * Assert correct page title 
 		 */
 		searchResultPage.selectViewCart();
-		pageTitleVerify("Shopping Cart");
+		testUtil.pageTitleVerify("Shopping Cart");
 		/**
 		 * Assertion of shopping cart components
 		 *  - productName, 
@@ -65,7 +66,7 @@ public class TESTS_AddRemoveItem extends TestUtil{
 		 * "Your shopping cart is empty!"
 		 */
 		shoppingCartPage.clickOnRemoveQuantity();
-		assertIsDisplayed(shoppingCartPage.messageEmptyCart());
+		testUtil.assertIsDisplayed(shoppingCartPage.messageEmptyCart());
 
 	}
 

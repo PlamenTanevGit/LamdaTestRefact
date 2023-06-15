@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -12,15 +13,11 @@ import Utils.TestUtil;
 public class SearchResultPage  {
 	
 	private WebDriver driver;
-	private ShoppingCartPage shoppingCartPage;
-	private AccountRegisterPage accountRegisterPage;
 	private WebDriverWait	wait;
 	private TestUtil testUtil;
 	
 	public SearchResultPage(WebDriver driver) {
 		this.driver = driver;
-		this.shoppingCartPage = new ShoppingCartPage(driver);
-		this.accountRegisterPage = new AccountRegisterPage(driver);
 		this.wait =  new WebDriverWait(driver, 5);
 		this.testUtil = new TestUtil();
 	}
@@ -109,7 +106,8 @@ public class SearchResultPage  {
 		testUtil.movesToTheElement(product(itemNumber));
 		for (int i = 0; i < itemsNumber; i++) {
 			testUtil.clickOnElement(addToCartButton());
-			testUtil.pausems(3);			
+			// testUtil.pausems(3);	
+			testUtil.waitForElementPresntUsingFluentWait(By.cssSelector(".module-title.h4.m-0"), 5, 1);		
 		}
 		testUtil.clickOnElement(viewCartButton());
 
@@ -119,7 +117,8 @@ public class SearchResultPage  {
 			testUtil.movesToTheElement(product(itemNumber));
 			for (int i = 0; i < itemsNumber; i++) {
 				testUtil.clickOnElement(addToCartButton());
-				testUtil.pausems(5);		
+				// testUtil.pausems(5);	
+				testUtil.waitForElementPresntUsingFluentWait(By.cssSelector(".module-title.h4.m-0"), 5, 1);			
 			}
 			testUtil.clickOnElement(checkoutButoon());	
 	
@@ -133,6 +132,7 @@ public class SearchResultPage  {
 	}
 	
 	public void selectViewCart() {
+		ShoppingCartPage shoppingCartPage = new ShoppingCartPage(driver);
 		testUtil.movesToTheElement(viewCartButton());
 		testUtil.clickOnElement(viewCartButton());			
 		wait.until(ExpectedConditions.visibilityOf(shoppingCartPage.shoppingCart_topLeftIcon()));
@@ -140,6 +140,7 @@ public class SearchResultPage  {
 	}
 	
 	public void selectCheckout() {
+		AccountRegisterPage accountRegisterPage = new AccountRegisterPage(driver);
 		testUtil.movesToTheElement(checkoutButoon());
 		testUtil.clickOnElement(checkoutButoon());			
 		wait.until(ExpectedConditions.visibilityOf(accountRegisterPage.yourPersonalDetailsWindow()));

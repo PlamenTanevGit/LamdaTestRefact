@@ -2,8 +2,6 @@ package Utils;
 
 import java.util.Locale;
 
-import org.openqa.selenium.WebDriver;
-
 import com.github.javafaker.Faker;
 
 public class FakerData {

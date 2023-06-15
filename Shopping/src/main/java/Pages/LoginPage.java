@@ -10,13 +10,11 @@ import Utils.TestUtil;
 public class LoginPage  {
 	
 	private WebDriver driver;
-	private MyAccountPage myAccountPage;
 	private TestUtil testUtil;
 
 		
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
-		this.myAccountPage = new MyAccountPage(driver);
 		this.testUtil = new TestUtil();
 
 	}

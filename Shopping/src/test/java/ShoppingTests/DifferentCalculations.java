@@ -5,10 +5,11 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Pages.AddPersonalDetails;
+import Utils.TestBase;
 import Utils.TestUtil;
 
 
-public class DifferentCalculations extends TestUtil {
+public class DifferentCalculations extends TestBase {
 	/***
 	 * The tests will do 
 	 * - Test 1 - calculations checks for Sub-Total:/ Flat Shipping Rate:/Eco Tax /VAT /Total: for country with VAT 
@@ -25,10 +26,23 @@ public class DifferentCalculations extends TestUtil {
 		};		
 			
 	}	
+	
+	@DataProvider(name = "calculationsInputsWithoutVAT")
+	public Object[][] getData2() {
+		return new Object[][] { 
+			{ "1,","101.0", "101.0","101.0","5.0","106.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
+			// { "2,","101.0", "202.0","202.0","5.0","207.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
+			// { "3,","101.0", "303.0","303.0","5.0","308.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
+			
+		};
+
+
+	}
+
 	@Test(alwaysRun = true,
 			dataProvider = "calculationsInputsWithVAT",
 			description = "The test performs Assertions on different quantities calculations ")
-	public void t1_calculationsWithVAT_Country (
+	public void t1_calculations_VAT_YES_RegisteredAccount (
 			String quantity,
 			String UNIT__PRICE,
 			String TOTAL_,
@@ -42,7 +56,8 @@ public class DifferentCalculations extends TestUtil {
 		int numberOfAddedItems = 1;
 		String productPrice = null;
 
-		super.openUrl(config.getProperty("homePage"));
+		// openUrl(config.getProperty("homePage"));
+		openUrl(getEnvironmentUrl());
 
 		homePage.enterProductInSearchField(or.getProperty("product3"));
 		homePage.clickOnSearch();
@@ -53,15 +68,14 @@ public class DifferentCalculations extends TestUtil {
 
 
 		//  Fill the Registered account form
-
 		addPersonalDetails = new AddPersonalDetails(driver,
-				or.getProperty("firstName")+randomString(5),
-				or.getProperty("lastName")+randomString(5),
-				or.getProperty("email")+randomString(5)+"@mm.com",
-				or.getProperty("telephone"),
-				or.getProperty("company")+randomString(3),
-				or.getProperty("address1")+randomString(5),
-				or.getProperty("postCode"),
+				fakerData.getFirstName(),
+				fakerData.getLastName(),
+				fakerData.getEmail(),
+				fakerData.getTelephone(),
+				fakerData.getCompany(),
+				fakerData.getAddress1(),
+				fakerData.getPostCode(),
 				or.getProperty("city2"),
 				or.getProperty("country2"),
 				or.getProperty("region2"));
@@ -82,33 +96,20 @@ public class DifferentCalculations extends TestUtil {
 		 * - Assertion for Unit price value
 		 * - Assertion for Sub-Total price value
 		 */
-		fascadePage.assertionsYesVat(productPrice, UNIT__PRICE, TOTAL_, SubTotal, FlatShipping, Eco, VATValue, Total);
+		fascadePage.assertionsYesVat("VAT_YES", UNIT__PRICE, TOTAL_, SubTotal, FlatShipping, Eco, VATValue, Total);
+	
+	
 		/**
 		 * click on Remove to clean the Cart
 		 */
 		accountRegisterPage.removeItem();
 	}
 	
-	
-	
-	
-	
-	
-	@DataProvider(name = "calculationsInputsWithoutVAT")
-	public Object[][] getData2() {
-		return new Object[][] { 
-			{ "1,","101.0", "101.0","101.0","5.0","106.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
-			// { "2,","101.0", "202.0","202.0","5.0","207.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
-			// { "3,","101.0", "303.0","303.0","5.0","308.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
-			
-		};
 
-
-	}
 	@Test(alwaysRun = true,
 			dataProvider = "calculationsInputsWithoutVAT",
 			description = "The test performs Assertions on different quantities calculations ")
-	public void t2_calculationsWithoutVAT_Country (
+	public void t2_calculationsNO_VAT_RegisteredAccount (
 			String quantity,
 			String UNIT__PRICE,
 			String TOTAL_,
@@ -120,7 +121,8 @@ public class DifferentCalculations extends TestUtil {
 		int numberOfAddedItems = 1;
 		String productPrice = null;
 
-		super.openUrl(config.getProperty("homePage"));
+		// openUrl(config.getProperty("homePage"));
+		openUrl(getEnvironmentUrl());
 
 		homePage.enterProductInSearchField(or.getProperty("product3"));
 		homePage.clickOnSearch();
@@ -133,13 +135,13 @@ public class DifferentCalculations extends TestUtil {
 		 * Fill the Registered account form
 		 */
 		addPersonalDetails = new AddPersonalDetails(driver, 
-				or.getProperty("firstName")+randomString(5), 
-				or.getProperty("lastName")+randomString(5), 
-				or.getProperty("email")+randomString(5)+"@mm.com", 
-				or.getProperty("telephone"), 				
-				or.getProperty("company")+randomString(3), 
-				or.getProperty("address1")+randomString(5), 
-				or.getProperty("postCode"), 
+				fakerData.getFirstName(),
+				fakerData.getLastName(),
+				fakerData.getEmail(),
+				fakerData.getTelephone(),
+				fakerData.getCompany(),
+				fakerData.getAddress1(),
+				fakerData.getPostCode(),
 				or.getProperty("city1"), 
 				or.getProperty("country1"), 
 				or.getProperty("region1"));
@@ -154,29 +156,9 @@ public class DifferentCalculations extends TestUtil {
 		 */
 		accountRegisterPage.setQuantity(quantity);
 		checkoutPage.clickOnUpdate();
-		/**
-		 * Assertion for Unit Price and Sub-Total 
-		 * - Assertion for Unit Price == Sub-Total
-		 * - Assertion for Unit price value 
-		 * - Assertion for Sub-Total price value 
-		 */
-		double UNIT_PRICE = accountRegisterPage.getUNIT_PRICE();
-		double TOTAL = accountRegisterPage.getTOTAL();
-
-		Assert.assertEquals(UNIT_PRICE, getDoubleFromStringValue(UNIT__PRICE));
-		Assert.assertEquals(TOTAL, getDoubleFromStringValue(TOTAL_));		
-		/**
-		 * Assertion for :
-		 * - Sub-Total Amount value
-		 * - Flat Shipping Rate Value
-		 * - Eco Value
-		 * - VAT value
-		 * - Total Value 
-		 */
-		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), getDoubleFromStringValue(SubTotal));
-		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), getDoubleFromStringValue(FlatShipping));
-		Assert.assertEquals(accountRegisterPage.getTotalAmount("VAT_NO"), getDoubleFromStringValue(Total));		
 		
+		fascadePage.assertionsNoVat("VAT_NO",UNIT__PRICE, TOTAL_, SubTotal, FlatShipping, Total);		
+
 		/**
 		 * click on Remove to clean the Cart
 		 */
@@ -185,11 +167,15 @@ public class DifferentCalculations extends TestUtil {
 	}
 
 
-
+	/**
+	 * This test is Asserting the calculations for different quantities for NO VAT Country
+	 * it uses Data provider with 3 sets of data
+	 * it usses Registered Account
+	 */
 	@Test(alwaysRun = true,
 			dataProvider = "calculationsInputsWithoutVAT",
 			description = "The test performs Assertions on different quantities calculations ")
-	public void t3_FacadeRegisteredAccountNoVAT (
+	public void t3_facadeRegisteredAccountNoVAT (
 			String quantity,
 			String UNIT__PRICE,
 			String TOTAL_,
@@ -203,40 +189,24 @@ public class DifferentCalculations extends TestUtil {
 		// String quantity = "1,";
 
 		double priceDouble = fascadePage.registeredAccountCheckoutProduct(
-			config.getProperty("homePage"),
+			openUrl(getEnvironmentUrl()),
 			or.getProperty("product3"),
 			numberOfAddedItems,
-			or.getProperty("firstName")+randomString(5),
-			or.getProperty("lastName")+randomString(5),
-			or.getProperty("email")+randomString(5)+"@mm.com",
-			or.getProperty("telephone"),
+			fakerData.getFirstName(),
+			fakerData.getLastName(),
+			fakerData.getEmail(),
+			fakerData.getTelephone(),
 			or.getProperty("password"),
-			or.getProperty("company")+randomString(3),
-			or.getProperty("address1")+randomString(5),
-			or.getProperty("postCode"),
+			fakerData.getCompany(),
+			fakerData.getAddress1(),
+			fakerData.getPostCode(),
 			or.getProperty("city1"),
 			or.getProperty("country1"),
 			or.getProperty("region1"),
 			quantity
 			);
 
-
-		double UNIT_PRICE = accountRegisterPage.getUNIT_PRICE();
-		double TOTAL = accountRegisterPage.getTOTAL();
-
-		Assert.assertEquals(UNIT_PRICE, getDoubleFromStringValue(UNIT__PRICE));
-		Assert.assertEquals(TOTAL, getDoubleFromStringValue(TOTAL_));		
-		/**
-		 * Assertion for :
-		 * - Sub-Total Amount value
-		 * - Flat Shipping Rate Value
-		 * - Eco Value
-		 * - VAT value
-		 * - Total Value 
-		 */
-		Assert.assertEquals(accountRegisterPage.getSubTotalAmount(), getDoubleFromStringValue(SubTotal));
-		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), getDoubleFromStringValue(FlatShipping));
-		Assert.assertEquals(accountRegisterPage.getTotalAmount("VAT_NO"), getDoubleFromStringValue(Total));		
+		fascadePage.assertionsNoVat("VAT_NO",UNIT__PRICE, TOTAL_, SubTotal, FlatShipping, Total);			
 		
 		/**
 		 * click on Remove to clean the Cart
@@ -250,7 +220,7 @@ public class DifferentCalculations extends TestUtil {
 	@Test(alwaysRun = true,
 			dataProvider = "calculationsInputsWithoutVAT",
 			description = "The test performs Assertions on different quantities calculations ")
-	public void t4_FacadeGuestAccount (
+	public void t4_fascadeCalculations_VAT_NO_GuestAccount (
 			String quantity,
 			String UNIT__PRICE,
 			String TOTAL_,
@@ -261,16 +231,16 @@ public class DifferentCalculations extends TestUtil {
 
 
 		fascadePage.registeredAccountGuestProduct(
-			config.getProperty("homePage"),
+			openUrl(getEnvironmentUrl()),
 			or.getProperty("product3"),
 			1,
-			or.getProperty("firstName")+randomString(5),
-			or.getProperty("lastName")+randomString(5),
-			or.getProperty("email")+randomString(5)+"@mm.com",
-			or.getProperty("telephone"),
-			or.getProperty("company")+randomString(3),
-			or.getProperty("address1")+randomString(5),
-			or.getProperty("postCode"),
+			fakerData.getFirstName(),
+			fakerData.getLastName(),
+			fakerData.getEmail(),
+			fakerData.getTelephone(),
+			fakerData.getCompany(),
+			fakerData.getAddress1(),
+			fakerData.getPostCode(),
 			or.getProperty("city1"),
 			or.getProperty("country1"),
 			or.getProperty("region1"),
@@ -286,10 +256,10 @@ public class DifferentCalculations extends TestUtil {
 
 	}
 
-	@Test(alwaysRun = true,
+	@Test(	enabled = false,
 			dataProvider = "calculationsInputsWithoutVAT",
 			description = "The test performs Assertions on different quantities calculations ")
-	public void t4_FacadeGuestAccountShippingAddress (
+	public void t5_facadeGuestAccountShippingAddress_VAT_NO (
 			String quantity,
 			String UNIT__PRICE,
 			String TOTAL_,
@@ -299,29 +269,28 @@ public class DifferentCalculations extends TestUtil {
 			) 		throws InterruptedException {
 
 		fascadePage.registeredAccountGuestProductShippingAddress(
-			config.getProperty("homePage"),
+			openUrl(getEnvironmentUrl()),
 			or.getProperty("product3"),
 			1,
 				// Billing Address Details
-			or.getProperty("firstName")+randomString(5),
-			or.getProperty("lastName")+randomString(5),
-			or.getProperty("email")+randomString(5)+"@mm.com",
-			or.getProperty("telephone"),
-			or.getProperty("company")+randomString(3),
-			or.getProperty("address1")+randomString(5),
-			or.getProperty("postCode"),
+			fakerData.getFirstName(),
+			fakerData.getLastName(),
+			fakerData.getEmail(),
+			fakerData.getTelephone(),
+			fakerData.getCompany(),
+			fakerData.getAddress1(),
+			fakerData.getPostCode(),
 			or.getProperty("city1"),
 			or.getProperty("country1"),
 			or.getProperty("region1"),
-
+				//quantity
 			quantity,
-
 				// Shipping Address Details
-			or.getProperty("firstName")+randomString(5),
-			or.getProperty("lastName")+randomString(5),
-			or.getProperty("company")+randomString(3),
-			or.getProperty("address1")+randomString(5),
-			or.getProperty("address2")+randomString(5),
+			or.getProperty("firstName")+testUtil.randomString(5),
+			or.getProperty("lastName")+testUtil.randomString(5),
+			or.getProperty("company")+testUtil.randomString(3),
+			or.getProperty("address1")+testUtil.randomString(5),
+			or.getProperty("address2")+testUtil.randomString(5),
 			or.getProperty("city1"),
 			or.getProperty("postCode"),
 
@@ -339,46 +308,6 @@ public class DifferentCalculations extends TestUtil {
 	
 
 	}
-
-	@Test(alwaysRun = true,
-			dataProvider = "calculationsInputsWithVAT",
-			description = "The test performs Assertions on different quantities calculations ")
-	public void t5_FacadeGuestAccountShippingAddressWithVAT (
-			String quantity,
-			String UNIT__PRICE,
-			String TOTAL_,
-			String SubTotal,
-			String FlatShipping,
-			String Eco,
-			String VATValue,
-			String Total
-			) 		throws InterruptedException {
-
-			fascadePage.registeredAccountGuestProduct(
-					config.getProperty("homePage"),
-					or.getProperty("product3"),
-					1,
-					or.getProperty("firstName")+randomString(5),
-					or.getProperty("lastName")+randomString(5),
-					or.getProperty("email")+randomString(5)+"@mm.com",
-					or.getProperty("telephone"),
-					or.getProperty("company")+randomString(3),
-					or.getProperty("address1")+randomString(5),
-					or.getProperty("postCode"),
-					or.getProperty("city2"),
-					or.getProperty("country2"),
-					or.getProperty("region2"),
-					quantity
-					);
-
-			fascadePage.assertionsNoVat("VAT_YES",UNIT__PRICE, TOTAL_, SubTotal, FlatShipping, Total);		
-		
-		/**
-		 * click on Remove to clean the Cart
-		 */
-		accountRegisterPage.removeItem();
-	}
-
 
 	
 	

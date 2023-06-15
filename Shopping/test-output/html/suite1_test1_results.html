@@ -12,7 +12,7 @@
 <body>
 <h1> Different Calculations</h1>
 <p>
-  Test duration: 151.669s
+  Test duration: 97.932s
 </p>
 
 
@@ -25,28 +25,476 @@
             
 <tr>
   <td class="method">
-                  <span class="description" title="The test performs Assertions on different quantities calculations ">t4_FacadeGuestAccountShippingAddress</span>
+                  <span class="description" title="The test performs Assertions on different quantities calculations ">t2_calculationsWithoutVAT_Country</span>
       </td>
   <td class="duration">
-    19.577s
+    2.255s
   </td>
   <td class="result">
         
           <i>Method arguments: </i><span class="arguments">"1,", "101.0", "101.0", "101.0", "5.0", "106.0"</span><br />
     
             <div class="testOutput">
-                        Starting test method:t4_FacadeGuestAccountShippingAddress
+                        Starting test method:t2_calculationsWithoutVAT_Country
+                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login'
+                                <a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_13_EEST_2023.png></a>
+                                <br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_13_EEST_2023.png' height='200' width='200' /><br>
+                                t2_calculationsWithoutVAT_Country is Failed
+                                Click to see Screenshot
+                                <a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_13_EEST_2023.png></a>
+                                <br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_13_EEST_2023.png' height='200' width='200' /><br>
+                                <a target="_blank" href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_13_EEST_2023.png>Screenshot</a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found<br/>
+&nbsp; (Session info: chrome=113.0.5672.127)<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;NUV-5CG1152V3W&apos;, ip: &apos;192.168.0.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60144}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 8b290dc5027b4aa99943857f2513f1ca</b></a><br />
+    <div class="stackTrace" id="exception-0">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:489)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy14.executeScript(Unknown Source)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver.executeScript(EventFiringWebDriver.java:229)<br />
+              Utils.TestUtil.HighLightElement(TestUtil.java:213)<br />
+              Utils.TestUtil.typeOnField(TestUtil.java:196)<br />
+              Pages.HomePage.enterProductInSearchField(HomePage.java:100)<br />
+              ShoppingTests.DifferentCalculations.t2_calculationsWithoutVAT_Country(DifferentCalculations.java:128)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)<br />
+              java.base/java.lang.Thread.run(Thread.java:833)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="The test performs Assertions on different quantities calculations ">t3_FacadeRegisteredAccountNoVAT</span>
+      </td>
+  <td class="duration">
+    10.294s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"1,", "101.0", "101.0", "101.0", "5.0", "106.0"</span><br />
+    
+            <div class="testOutput">
+                        Starting test method:t3_FacadeRegisteredAccountNoVAT
                                 Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
                                  Enter value : Iphone
                                 Successfully click on element 
-                                 Enter value : testFNajfio
-                                 Enter value : testLNarrku
-                                 Enter value : testEmailrjtph@mm.com
-                                 Enter value : +359123456789
-                                 Enter value : CompanyTestlbx
-                                 Enter value : address1_abzdp
-                                 Enter value : address1_abzdp
-                                 Enter value : 1111
+                                 Enter value : Jerica
+                                 Enter value : Brown
+                                 Enter value : paula.denesik@hotmail.com
+                                 Enter value : 0800 023 6145
+                                 Enter value : 1234
+                                 Enter value : 1234
+                                 Enter value : Jacobson LLC
+                                 Enter value : 856 Jolanda Land, South Garfieldville, ME MC7B 0NB
+                                 Enter value : 856 Jolanda Land, South Garfieldville, ME MC7B 0NB
+                                 Enter value : H4H 5WL
+                                 Enter value : Sofia
+                                Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ 
+                                Successfully click on element Bulgaria
+                                Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol
+                                <a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_25_EEST_2023.png></a>
+                                <br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_25_EEST_2023.png' height='200' width='200' /><br>
+                                t3_FacadeRegisteredAccountNoVAT is Failed
+                                Click to see Screenshot
+                                <a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_25_EEST_2023.png></a>
+                                <br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_25_EEST_2023.png' height='200' width='200' /><br>
+                                <a target="_blank" href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_25_EEST_2023.png>Screenshot</a>
+                  </div>
+    
+
+        <a href="javascript:toggleElement('exception-1', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found<br/>
+&nbsp; (Session info: chrome=113.0.5672.127)<br/>
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;NUV-5CG1152V3W&apos;, ip: &apos;192.168.0.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;<br/>
+Driver info: org.openqa.selenium.chrome.ChromeDriver<br/>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\PLAMEN~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:60197}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}<br/>
+Session ID: 3bd58d1a59eb8502e737c765b690b6d1</b></a><br />
+    <div class="stackTrace" id="exception-1">
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)<br />
+              java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)<br />
+              java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)<br />
+              org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)<br />
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)<br />
+              org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:166)<br />
+              jdk.internal.reflect.GeneratedMethodAccessor10.invoke(Unknown Source)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy15.getText(Unknown Source)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.getText(EventFiringWebDriver.java:463)<br />
+              Utils.TestUtil.selectDropdownOptionByTagName(TestUtil.java:263)<br />
+              Pages.AccountRegisterPage.selectRegionState(AccountRegisterPage.java:289)<br />
+              Pages.AddPersonalDetails.selectRegion(AddPersonalDetails.java:375)<br />
+              Pages.AddPersonalDetails.&lt;init&gt;(AddPersonalDetails.java:76)<br />
+              Pages.FascadePage.registeredAccountCheckoutProduct(FascadePage.java:65)<br />
+              ShoppingTests.DifferentCalculations.t3_FacadeRegisteredAccountNoVAT(DifferentCalculations.java:192)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
+              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)<br />
+              org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)<br />
+              org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)<br />
+              org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)<br />
+              org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)<br />
+              org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
+              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
+              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)<br />
+              java.base/java.lang.Thread.run(Thread.java:833)<br />
+                </div>
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  <span class="description" title="The test performs Assertions on different quantities calculations ">t4_FacadeGuestAccount</span>
+      </td>
+  <td class="duration">
+    17.789s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">"1,", "101.0", "101.0", "101.0", "5.0", "106.0"</span><br />
+    
+            <div class="testOutput">
+                        Starting test method:t4_FacadeGuestAccount
+                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
+                                 Enter value : Iphone
+                                Successfully click on element 
+                                 Enter value : Bennett
+                                 Enter value : Jacobi
+                                 Enter value : marci.schumm@gmail.com
+                                 Enter value : 01998 115763
+                                 Enter value : Marks-Berge
+                                 Enter value : 2591 Davis Centers, Lemkeview, NE ZD25 7JQ
+                                 Enter value : 2591 Davis Centers, Lemkeview, NE ZD25 7JQ
+                                 Enter value : WB5A 4BA
                                  Enter value : Sofia
                                 Successfully click on element   --- Please Select ---
  Aaland Islands
@@ -334,398 +782,39 @@ Vidin
 Vratza
 Yambol
                                 Successfully click on element Sofia
-                                 Enter value : testFNftrhy
-                                 Enter value : testLNfojjh
-                                 Enter value : CompanyTestrjz
-                                 Enter value : address1_mpdxm
-                                 Enter value : address2_xyjyo
-                                 Enter value : Sofia
-                                 Enter value : 1111
-                                Successfully click on element   --- Please Select ---
- Aaland Islands
- Afghanistan
- Albania
- Algeria
- American Samoa
- Andorra
- Angola
- Anguilla
- Antarctica
- Antigua and Barbuda
- Argentina
- Armenia
- Aruba
- Ascension Island (British)
- Australia
- Austria
- Azerbaijan
- Bahamas
- Bahrain
- Bangladesh
- Barbados
- Belarus
- Belgium
- Belize
- Benin
- Bermuda
- Bhutan
- Bolivia
- Bonaire, Sint Eustatius and Saba
- Bosnia and Herzegovina
- Botswana
- Bouvet Island
- Brazil
- British Indian Ocean Territory
- Brunei Darussalam
- Bulgaria
- Burkina Faso
- Burundi
- Cambodia
- Cameroon
- Canada
- Canary Islands
- Cape Verde
- Cayman Islands
- Central African Republic
- Chad
- Chile
- China
- Christmas Island
- Cocos (Keeling) Islands
- Colombia
- Comoros
- Congo
- Cook Islands
- Costa Rica
- Cote D'Ivoire
- Croatia
- Cuba
- Curacao
- Cyprus
- Czech Republic
- Democratic Republic of Congo
- Denmark
- Djibouti
- Dominica
- Dominican Republic
- East Timor
- Ecuador
- Egypt
- El Salvador
- Equatorial Guinea
- Eritrea
- Estonia
- Ethiopia
- Falkland Islands (Malvinas)
- Faroe Islands
- Fiji
- Finland
- France, Metropolitan
- French Guiana
- French Polynesia
- French Southern Territories
- FYROM
- Gabon
- Gambia
- Georgia
- Germany
- Ghana
- Gibraltar
- Greece
- Greenland
- Grenada
- Guadeloupe
- Guam
- Guatemala
- Guernsey
- Guinea
- Guinea-Bissau
- Guyana
- Haiti
- Heard and Mc Donald Islands
- Honduras
- Hong Kong
- Hungary
- Iceland
- India
- Indonesia
- Iran (Islamic Republic of)
- Iraq
- Ireland
- Isle of Man
- Israel
- Italy
- Jamaica
- Japan
- Jersey
- Jordan
- Kazakhstan
- Kenya
- Kiribati
- Kosovo, Republic of
- Kuwait
- Kyrgyzstan
- Lao People's Democratic Republic
- Latvia
- Lebanon
- Lesotho
- Liberia
- Libyan Arab Jamahiriya
- Liechtenstein
- Lithuania
- Luxembourg
- Macau
- Madagascar
- Malawi
- Malaysia
- Maldives
- Mali
- Malta
- Marshall Islands
- Martinique
- Mauritania
- Mauritius
- Mayotte
- Mexico
- Micronesia, Federated States of
- Moldova, Republic of
- Monaco
- Mongolia
- Montenegro
- Montserrat
- Morocco
- Mozambique
- Myanmar
- Namibia
- Nauru
- Nepal
- Netherlands
- Netherlands Antilles
- New Caledonia
- New Zealand
- Nicaragua
- Niger
- Nigeria
- Niue
- Norfolk Island
- North Korea
- Northern Mariana Islands
- Norway
- Oman
- Pakistan
- Palau
- Palestinian Territory, Occupied
- Panama
- Papua New Guinea
- Paraguay
- Peru
- Philippines
- Pitcairn
- Poland
- Portugal
- Puerto Rico
- Qatar
- Reunion
- Romania
- Russian Federation
- Rwanda
- Saint Kitts and Nevis
- Saint Lucia
- Saint Vincent and the Grenadines
- Samoa
- San Marino
- Sao Tome and Principe
- Saudi Arabia
- Senegal
- Serbia
- Seychelles
- Sierra Leone
- Singapore
- Slovak Republic
- Slovenia
- Solomon Islands
- Somalia
- South Africa
- South Georgia & South Sandwich Islands
- South Korea
- South Sudan
- Spain
- Sri Lanka
- St. Barthelemy
- St. Helena
- St. Martin (French part)
- St. Pierre and Miquelon
- Sudan
- Suriname
- Svalbard and Jan Mayen Islands
- Swaziland
- Sweden
- Switzerland
- Syrian Arab Republic
- Taiwan
- Tajikistan
- Tanzania, United Republic of
- Thailand
- Togo
- Tokelau
- Tonga
- Trinidad and Tobago
- Tristan da Cunha
- Tunisia
- Turkey
- Turkmenistan
- Turks and Caicos Islands
- Tuvalu
- Uganda
- Ukraine
- United Arab Emirates
- United Kingdom
- United States
- United States Minor Outlying Islands
- Uruguay
- Uzbekistan
- Vanuatu
- Vatican City State (Holy See)
- Venezuela
- Viet Nam
- Virgin Islands (British)
- Virgin Islands (U.S.)
- Wallis and Futuna Islands
- Western Sahara
- Yemen
- Zambia
- Zimbabwe
- 
-                                Successfully click on element Bulgaria
-                                Successfully click on element --- Please Select ---
-Aberdeen
-Aberdeenshire
-Anglesey
-Angus
-Argyll and Bute
-Bedfordshire
-Berkshire
-Blaenau Gwent
-Bridgend
-Bristol
-Buckinghamshire
-Caerphilly
-Cambridgeshire
-Cardiff
-Carmarthenshire
-Ceredigion
-Cheshire
-Clackmannanshire
-Conwy
-Cornwall
-County Antrim
-County Armagh
-County Down
-County Fermanagh
-County Londonderry
-County Tyrone
-Cumbria
-Denbighshire
-Derbyshire
-Devon
-Dorset
-Dumfries and Galloway
-Dundee
-Durham
-East Ayrshire
-East Dunbartonshire
-East Lothian
-East Renfrewshire
-East Riding of Yorkshire
-East Sussex
-Edinburgh
-Essex
-Falkirk
-Fife
-Flintshire
-Glasgow
-Gloucestershire
-Greater London
-Greater Manchester
-Gwynedd
-Hampshire
-Herefordshire
-Hertfordshire
-Highlands
-Inverclyde
-Isle of Wight
-Kent
-Lancashire
-Leicestershire
-Lincolnshire
-Merseyside
-Merthyr Tydfil
-Midlothian
-Monmouthshire
-Moray
-Neath Port Talbot
-Newport
-Norfolk
-North Ayrshire
-North Lanarkshire
-North Yorkshire
-Northamptonshire
-Northumberland
-Nottinghamshire
-Orkney Islands
-Oxfordshire
-Pembrokeshire
-Perth and Kinross
-Powys
-Renfrewshire
-Rhondda Cynon Taff
-Rutland
-Scottish Borders
-Shetland Islands
-Shropshire
-Somerset
-South Ayrshire
-South Lanarkshire
-South Yorkshire
-Staffordshire
-Stirling
-Suffolk
-Surrey
-Swansea
-Torfaen
-Tyne and Wear
-Vale of Glamorgan
-Warwickshire
-West Dunbartonshire
-West Lothian
-West Midlands
-West Sussex
-West Yorkshire
-Western Isles
-Wiltshire
-Worcestershire
-Wrexham
-                                Successfully click on element Sofia
                                 Successfully click on element 
-                                Successfully click on element 
-                                t4_FacadeGuestAccountShippingAddress is Failed
+                                <a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_44_EEST_2023.png></a>
+                                <br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_44_EEST_2023.png' height='200' width='200' /><br>
+                                t4_FacadeGuestAccount is Failed
                                 Click to see Screenshot
-                                <a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png></a>
-                                <br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png' height='200' width='200' /><br>
-                                <a target="_blank" href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png>Screenshot</a>
-                                <a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png></a>
-                                <br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Mon_Jun_12_18_01_45_EEST_2023.png' height='200' width='200' /><br>
+                                <a href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_44_EEST_2023.png></a>
+                                <br>  <img src='C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_44_EEST_2023.png' height='200' width='200' /><br>
+                                <a target="_blank" href=C:\Users\PlamenTanev\git\LamdaTestRefact\Shopping\screenshots\Thu_Jun_15_12_19_44_EEST_2023.png>Screenshot</a>
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [101.0] but found [123.2]</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:99)<br />
-              org.testng.Assert.failNotEquals(Assert.java:1037)<br />
-              org.testng.Assert.assertEquals(Assert.java:701)<br />
-              org.testng.Assert.assertEquals(Assert.java:712)<br />
-              Pages.FascadePage.assertionsNoVat(FascadePage.java:211)<br />
-              ShoppingTests.DifferentCalculations.t4_FacadeGuestAccountShippingAddress(DifferentCalculations.java:333)<br />
+        <a href="javascript:toggleElement('exception-2', 'block')" title="Click to expand/collapse"><b>org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?<br/>
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;<br/>
+System info: host: &apos;NUV-5CG1152V3W&apos;, ip: &apos;192.168.0.163&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.7&apos;<br/>
+Driver info: driver.version: EventFiringWebDriver</b></a><br />
+    <div class="stackTrace" id="exception-2">
+              org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)<br />
+              org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)<br />
+              org.openqa.selenium.By$ByXPath.findElement(By.java:353)<br />
+              org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)<br />
+              jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)<br />
+              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
+              java.base/java.lang.reflect.Method.invoke(Method.java:568)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver.lambda$new$1(EventFiringWebDriver.java:105)<br />
+              jdk.proxy2/jdk.proxy2.$Proxy14.findElement(Unknown Source)<br />
+              org.openqa.selenium.support.events.EventFiringWebDriver.findElement(EventFiringWebDriver.java:194)<br />
+              Pages.AccountRegisterPage.subTotalValue(AccountRegisterPage.java:344)<br />
+              Pages.AccountRegisterPage.getSubTotalAmount(AccountRegisterPage.java:391)<br />
+              Pages.FascadePage.assertionsNoVat(FascadePage.java:220)<br />
+              ShoppingTests.DifferentCalculations.t4_FacadeGuestAccount(DifferentCalculations.java:251)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
@@ -738,22 +827,9 @@ Wrexham
               org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)<br />
               org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)<br />
               org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)<br />
-              java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:794)<br />
-              org.testng.TestRunner.run(TestRunner.java:596)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:377)<br />
-              org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)<br />
-              org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)<br />
-              org.testng.SuiteRunner.run(SuiteRunner.java:276)<br />
-              org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)<br />
-              org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)<br />
-              org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)<br />
-              org.testng.TestNG.runSuitesLocally(TestNG.java:1134)<br />
-              org.testng.TestNG.runSuites(TestNG.java:1063)<br />
-              org.testng.TestNG.run(TestNG.java:1031)<br />
-              org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br />
-              org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br />
-              org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)<br />
+              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)<br />
+              java.base/java.lang.Thread.run(Thread.java:833)<br />
                 </div>
       </td>
 </tr>
@@ -771,7 +847,7 @@ Wrexham
                   <span class="description" title="The test performs Assertions on different quantities calculations ">t1_calculationsWithVAT_Country</span>
       </td>
   <td class="duration">
-    17.777s
+    14.113s
   </td>
   <td class="result">
         
@@ -779,17 +855,17 @@ Wrexham
     
             <div class="testOutput">
                         Starting test method:t1_calculationsWithVAT_Country
-                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
+                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login'
                                  Enter value : Iphone
                                 Successfully click on element 
-                                 Enter value : testFNkwhtm
-                                 Enter value : testLNonwkl
-                                 Enter value : testEmailczxwb@mm.com
-                                 Enter value : +359123456789
-                                 Enter value : CompanyTestawa
-                                 Enter value : address1_ynhqr
-                                 Enter value : address1_ynhqr
-                                 Enter value : 1111
+                                 Enter value : Reginald
+                                 Enter value : Gleason
+                                 Enter value : dane.roberts@hotmail.com
+                                 Enter value : 0851 311 6425
+                                 Enter value : Volkman, Sipes and Cronin
+                                 Enter value : Suite 581 327 Esteban Square, West Caseyhaven, MN W85 2NE
+                                 Enter value : Suite 581 327 Esteban Square, West Caseyhaven, MN W85 2NE
+                                 Enter value : Y1P 5ZL
                                  Enter value : Kent
                                 Successfully click on element   --- Please Select ---
  Aaland Islands
@@ -1156,7 +1232,6 @@ Wiltshire
 Worcestershire
 Wrexham
                                 Successfully click on element Kent
-                                Successfully click on element 
                                 Successfully click on element 
                                 Successfully click on element 
                                 t1_calculationsWithVAT_Country is Passed
@@ -1167,972 +1242,10 @@ Wrexham
 </tr>
 <tr>
   <td class="method">
-                  <span class="description" title="The test performs Assertions on different quantities calculations ">t2_calculationsWithoutVAT_Country</span>
-      </td>
-  <td class="duration">
-    17.934s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"1,", "101.0", "101.0", "101.0", "5.0", "106.0"</span><br />
-    
-            <div class="testOutput">
-                        Starting test method:t2_calculationsWithoutVAT_Country
-                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
-                                 Enter value : Iphone
-                                Successfully click on element 
-                                 Enter value : testFNcmphu
-                                 Enter value : testLNocndu
-                                 Enter value : testEmailxixas@mm.com
-                                 Enter value : +359123456789
-                                 Enter value : CompanyTestkvm
-                                 Enter value : address1_ytofr
-                                 Enter value : address1_ytofr
-                                 Enter value : 1111
-                                 Enter value : Sofia
-                                Successfully click on element   --- Please Select ---
- Aaland Islands
- Afghanistan
- Albania
- Algeria
- American Samoa
- Andorra
- Angola
- Anguilla
- Antarctica
- Antigua and Barbuda
- Argentina
- Armenia
- Aruba
- Ascension Island (British)
- Australia
- Austria
- Azerbaijan
- Bahamas
- Bahrain
- Bangladesh
- Barbados
- Belarus
- Belgium
- Belize
- Benin
- Bermuda
- Bhutan
- Bolivia
- Bonaire, Sint Eustatius and Saba
- Bosnia and Herzegovina
- Botswana
- Bouvet Island
- Brazil
- British Indian Ocean Territory
- Brunei Darussalam
- Bulgaria
- Burkina Faso
- Burundi
- Cambodia
- Cameroon
- Canada
- Canary Islands
- Cape Verde
- Cayman Islands
- Central African Republic
- Chad
- Chile
- China
- Christmas Island
- Cocos (Keeling) Islands
- Colombia
- Comoros
- Congo
- Cook Islands
- Costa Rica
- Cote D'Ivoire
- Croatia
- Cuba
- Curacao
- Cyprus
- Czech Republic
- Democratic Republic of Congo
- Denmark
- Djibouti
- Dominica
- Dominican Republic
- East Timor
- Ecuador
- Egypt
- El Salvador
- Equatorial Guinea
- Eritrea
- Estonia
- Ethiopia
- Falkland Islands (Malvinas)
- Faroe Islands
- Fiji
- Finland
- France, Metropolitan
- French Guiana
- French Polynesia
- French Southern Territories
- FYROM
- Gabon
- Gambia
- Georgia
- Germany
- Ghana
- Gibraltar
- Greece
- Greenland
- Grenada
- Guadeloupe
- Guam
- Guatemala
- Guernsey
- Guinea
- Guinea-Bissau
- Guyana
- Haiti
- Heard and Mc Donald Islands
- Honduras
- Hong Kong
- Hungary
- Iceland
- India
- Indonesia
- Iran (Islamic Republic of)
- Iraq
- Ireland
- Isle of Man
- Israel
- Italy
- Jamaica
- Japan
- Jersey
- Jordan
- Kazakhstan
- Kenya
- Kiribati
- Kosovo, Republic of
- Kuwait
- Kyrgyzstan
- Lao People's Democratic Republic
- Latvia
- Lebanon
- Lesotho
- Liberia
- Libyan Arab Jamahiriya
- Liechtenstein
- Lithuania
- Luxembourg
- Macau
- Madagascar
- Malawi
- Malaysia
- Maldives
- Mali
- Malta
- Marshall Islands
- Martinique
- Mauritania
- Mauritius
- Mayotte
- Mexico
- Micronesia, Federated States of
- Moldova, Republic of
- Monaco
- Mongolia
- Montenegro
- Montserrat
- Morocco
- Mozambique
- Myanmar
- Namibia
- Nauru
- Nepal
- Netherlands
- Netherlands Antilles
- New Caledonia
- New Zealand
- Nicaragua
- Niger
- Nigeria
- Niue
- Norfolk Island
- North Korea
- Northern Mariana Islands
- Norway
- Oman
- Pakistan
- Palau
- Palestinian Territory, Occupied
- Panama
- Papua New Guinea
- Paraguay
- Peru
- Philippines
- Pitcairn
- Poland
- Portugal
- Puerto Rico
- Qatar
- Reunion
- Romania
- Russian Federation
- Rwanda
- Saint Kitts and Nevis
- Saint Lucia
- Saint Vincent and the Grenadines
- Samoa
- San Marino
- Sao Tome and Principe
- Saudi Arabia
- Senegal
- Serbia
- Seychelles
- Sierra Leone
- Singapore
- Slovak Republic
- Slovenia
- Solomon Islands
- Somalia
- South Africa
- South Georgia & South Sandwich Islands
- South Korea
- South Sudan
- Spain
- Sri Lanka
- St. Barthelemy
- St. Helena
- St. Martin (French part)
- St. Pierre and Miquelon
- Sudan
- Suriname
- Svalbard and Jan Mayen Islands
- Swaziland
- Sweden
- Switzerland
- Syrian Arab Republic
- Taiwan
- Tajikistan
- Tanzania, United Republic of
- Thailand
- Togo
- Tokelau
- Tonga
- Trinidad and Tobago
- Tristan da Cunha
- Tunisia
- Turkey
- Turkmenistan
- Turks and Caicos Islands
- Tuvalu
- Uganda
- Ukraine
- United Arab Emirates
- United Kingdom
- United States
- United States Minor Outlying Islands
- Uruguay
- Uzbekistan
- Vanuatu
- Vatican City State (Holy See)
- Venezuela
- Viet Nam
- Virgin Islands (British)
- Virgin Islands (U.S.)
- Wallis and Futuna Islands
- Western Sahara
- Yemen
- Zambia
- Zimbabwe
- 
-                                Successfully click on element Bulgaria
-                                Successfully click on element --- Please Select ---
-Blagoevgrad
-Burgas
-Dobrich
-Gabrovo
-Haskovo
-Kardjali
-Kyustendil
-Lovech
-Montana
-Pazardjik
-Pernik
-Pleven
-Plovdiv
-Razgrad
-Ruse
-Shumen
-Silistra
-Sliven
-Smolyan
-Sofia
-Sofia - town
-Stara Zagora
-Targovishte
-Varna
-Veliko Tarnovo
-Vidin
-Vratza
-Yambol
-                                Successfully click on element Sofia
-                                Successfully click on element 
-                                Successfully click on element 
-                                Successfully click on element 
-                                t2_calculationsWithoutVAT_Country is Passed
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="The test performs Assertions on different quantities calculations ">t3_FacadeRegisteredAccountNoVAT</span>
-      </td>
-  <td class="duration">
-    17.888s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"1,", "101.0", "101.0", "101.0", "5.0", "106.0"</span><br />
-    
-            <div class="testOutput">
-                        Starting test method:t3_FacadeRegisteredAccountNoVAT
-                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
-                                 Enter value : Iphone
-                                Successfully click on element 
-                                 Enter value : testFNwwfui
-                                 Enter value : testLNfdubh
-                                 Enter value : testEmailfhxlw@mm.com
-                                 Enter value : +359123456789
-                                 Enter value : 1234
-                                 Enter value : 1234
-                                 Enter value : CompanyTesteii
-                                 Enter value : address1_symsc
-                                 Enter value : address1_symsc
-                                 Enter value : 1111
-                                 Enter value : Sofia
-                                Successfully click on element   --- Please Select ---
- Aaland Islands
- Afghanistan
- Albania
- Algeria
- American Samoa
- Andorra
- Angola
- Anguilla
- Antarctica
- Antigua and Barbuda
- Argentina
- Armenia
- Aruba
- Ascension Island (British)
- Australia
- Austria
- Azerbaijan
- Bahamas
- Bahrain
- Bangladesh
- Barbados
- Belarus
- Belgium
- Belize
- Benin
- Bermuda
- Bhutan
- Bolivia
- Bonaire, Sint Eustatius and Saba
- Bosnia and Herzegovina
- Botswana
- Bouvet Island
- Brazil
- British Indian Ocean Territory
- Brunei Darussalam
- Bulgaria
- Burkina Faso
- Burundi
- Cambodia
- Cameroon
- Canada
- Canary Islands
- Cape Verde
- Cayman Islands
- Central African Republic
- Chad
- Chile
- China
- Christmas Island
- Cocos (Keeling) Islands
- Colombia
- Comoros
- Congo
- Cook Islands
- Costa Rica
- Cote D'Ivoire
- Croatia
- Cuba
- Curacao
- Cyprus
- Czech Republic
- Democratic Republic of Congo
- Denmark
- Djibouti
- Dominica
- Dominican Republic
- East Timor
- Ecuador
- Egypt
- El Salvador
- Equatorial Guinea
- Eritrea
- Estonia
- Ethiopia
- Falkland Islands (Malvinas)
- Faroe Islands
- Fiji
- Finland
- France, Metropolitan
- French Guiana
- French Polynesia
- French Southern Territories
- FYROM
- Gabon
- Gambia
- Georgia
- Germany
- Ghana
- Gibraltar
- Greece
- Greenland
- Grenada
- Guadeloupe
- Guam
- Guatemala
- Guernsey
- Guinea
- Guinea-Bissau
- Guyana
- Haiti
- Heard and Mc Donald Islands
- Honduras
- Hong Kong
- Hungary
- Iceland
- India
- Indonesia
- Iran (Islamic Republic of)
- Iraq
- Ireland
- Isle of Man
- Israel
- Italy
- Jamaica
- Japan
- Jersey
- Jordan
- Kazakhstan
- Kenya
- Kiribati
- Kosovo, Republic of
- Kuwait
- Kyrgyzstan
- Lao People's Democratic Republic
- Latvia
- Lebanon
- Lesotho
- Liberia
- Libyan Arab Jamahiriya
- Liechtenstein
- Lithuania
- Luxembourg
- Macau
- Madagascar
- Malawi
- Malaysia
- Maldives
- Mali
- Malta
- Marshall Islands
- Martinique
- Mauritania
- Mauritius
- Mayotte
- Mexico
- Micronesia, Federated States of
- Moldova, Republic of
- Monaco
- Mongolia
- Montenegro
- Montserrat
- Morocco
- Mozambique
- Myanmar
- Namibia
- Nauru
- Nepal
- Netherlands
- Netherlands Antilles
- New Caledonia
- New Zealand
- Nicaragua
- Niger
- Nigeria
- Niue
- Norfolk Island
- North Korea
- Northern Mariana Islands
- Norway
- Oman
- Pakistan
- Palau
- Palestinian Territory, Occupied
- Panama
- Papua New Guinea
- Paraguay
- Peru
- Philippines
- Pitcairn
- Poland
- Portugal
- Puerto Rico
- Qatar
- Reunion
- Romania
- Russian Federation
- Rwanda
- Saint Kitts and Nevis
- Saint Lucia
- Saint Vincent and the Grenadines
- Samoa
- San Marino
- Sao Tome and Principe
- Saudi Arabia
- Senegal
- Serbia
- Seychelles
- Sierra Leone
- Singapore
- Slovak Republic
- Slovenia
- Solomon Islands
- Somalia
- South Africa
- South Georgia & South Sandwich Islands
- South Korea
- South Sudan
- Spain
- Sri Lanka
- St. Barthelemy
- St. Helena
- St. Martin (French part)
- St. Pierre and Miquelon
- Sudan
- Suriname
- Svalbard and Jan Mayen Islands
- Swaziland
- Sweden
- Switzerland
- Syrian Arab Republic
- Taiwan
- Tajikistan
- Tanzania, United Republic of
- Thailand
- Togo
- Tokelau
- Tonga
- Trinidad and Tobago
- Tristan da Cunha
- Tunisia
- Turkey
- Turkmenistan
- Turks and Caicos Islands
- Tuvalu
- Uganda
- Ukraine
- United Arab Emirates
- United Kingdom
- United States
- United States Minor Outlying Islands
- Uruguay
- Uzbekistan
- Vanuatu
- Vatican City State (Holy See)
- Venezuela
- Viet Nam
- Virgin Islands (British)
- Virgin Islands (U.S.)
- Wallis and Futuna Islands
- Western Sahara
- Yemen
- Zambia
- Zimbabwe
- 
-                                Successfully click on element Bulgaria
-                                Successfully click on element --- Please Select ---
-Blagoevgrad
-Burgas
-Dobrich
-Gabrovo
-Haskovo
-Kardjali
-Kyustendil
-Lovech
-Montana
-Pazardjik
-Pernik
-Pleven
-Plovdiv
-Razgrad
-Ruse
-Shumen
-Silistra
-Sliven
-Smolyan
-Sofia
-Sofia - town
-Stara Zagora
-Targovishte
-Varna
-Veliko Tarnovo
-Vidin
-Vratza
-Yambol
-                                Successfully click on element Sofia
-                                Successfully click on element 
-                                Successfully click on element 
-                                Successfully click on element 
-                                t3_FacadeRegisteredAccountNoVAT is Passed
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
-                  <span class="description" title="The test performs Assertions on different quantities calculations ">t4_FacadeGuestAccount</span>
-      </td>
-  <td class="duration">
-    17.937s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">"1,", "101.0", "101.0", "101.0", "5.0", "106.0"</span><br />
-    
-            <div class="testOutput">
-                        Starting test method:t4_FacadeGuestAccount
-                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
-                                 Enter value : Iphone
-                                Successfully click on element 
-                                 Enter value : testFNmivsn
-                                 Enter value : testLNlgejx
-                                 Enter value : testEmailprtks@mm.com
-                                 Enter value : +359123456789
-                                 Enter value : CompanyTestgfk
-                                 Enter value : address1_hcend
-                                 Enter value : address1_hcend
-                                 Enter value : 1111
-                                 Enter value : Sofia
-                                Successfully click on element   --- Please Select ---
- Aaland Islands
- Afghanistan
- Albania
- Algeria
- American Samoa
- Andorra
- Angola
- Anguilla
- Antarctica
- Antigua and Barbuda
- Argentina
- Armenia
- Aruba
- Ascension Island (British)
- Australia
- Austria
- Azerbaijan
- Bahamas
- Bahrain
- Bangladesh
- Barbados
- Belarus
- Belgium
- Belize
- Benin
- Bermuda
- Bhutan
- Bolivia
- Bonaire, Sint Eustatius and Saba
- Bosnia and Herzegovina
- Botswana
- Bouvet Island
- Brazil
- British Indian Ocean Territory
- Brunei Darussalam
- Bulgaria
- Burkina Faso
- Burundi
- Cambodia
- Cameroon
- Canada
- Canary Islands
- Cape Verde
- Cayman Islands
- Central African Republic
- Chad
- Chile
- China
- Christmas Island
- Cocos (Keeling) Islands
- Colombia
- Comoros
- Congo
- Cook Islands
- Costa Rica
- Cote D'Ivoire
- Croatia
- Cuba
- Curacao
- Cyprus
- Czech Republic
- Democratic Republic of Congo
- Denmark
- Djibouti
- Dominica
- Dominican Republic
- East Timor
- Ecuador
- Egypt
- El Salvador
- Equatorial Guinea
- Eritrea
- Estonia
- Ethiopia
- Falkland Islands (Malvinas)
- Faroe Islands
- Fiji
- Finland
- France, Metropolitan
- French Guiana
- French Polynesia
- French Southern Territories
- FYROM
- Gabon
- Gambia
- Georgia
- Germany
- Ghana
- Gibraltar
- Greece
- Greenland
- Grenada
- Guadeloupe
- Guam
- Guatemala
- Guernsey
- Guinea
- Guinea-Bissau
- Guyana
- Haiti
- Heard and Mc Donald Islands
- Honduras
- Hong Kong
- Hungary
- Iceland
- India
- Indonesia
- Iran (Islamic Republic of)
- Iraq
- Ireland
- Isle of Man
- Israel
- Italy
- Jamaica
- Japan
- Jersey
- Jordan
- Kazakhstan
- Kenya
- Kiribati
- Kosovo, Republic of
- Kuwait
- Kyrgyzstan
- Lao People's Democratic Republic
- Latvia
- Lebanon
- Lesotho
- Liberia
- Libyan Arab Jamahiriya
- Liechtenstein
- Lithuania
- Luxembourg
- Macau
- Madagascar
- Malawi
- Malaysia
- Maldives
- Mali
- Malta
- Marshall Islands
- Martinique
- Mauritania
- Mauritius
- Mayotte
- Mexico
- Micronesia, Federated States of
- Moldova, Republic of
- Monaco
- Mongolia
- Montenegro
- Montserrat
- Morocco
- Mozambique
- Myanmar
- Namibia
- Nauru
- Nepal
- Netherlands
- Netherlands Antilles
- New Caledonia
- New Zealand
- Nicaragua
- Niger
- Nigeria
- Niue
- Norfolk Island
- North Korea
- Northern Mariana Islands
- Norway
- Oman
- Pakistan
- Palau
- Palestinian Territory, Occupied
- Panama
- Papua New Guinea
- Paraguay
- Peru
- Philippines
- Pitcairn
- Poland
- Portugal
- Puerto Rico
- Qatar
- Reunion
- Romania
- Russian Federation
- Rwanda
- Saint Kitts and Nevis
- Saint Lucia
- Saint Vincent and the Grenadines
- Samoa
- San Marino
- Sao Tome and Principe
- Saudi Arabia
- Senegal
- Serbia
- Seychelles
- Sierra Leone
- Singapore
- Slovak Republic
- Slovenia
- Solomon Islands
- Somalia
- South Africa
- South Georgia & South Sandwich Islands
- South Korea
- South Sudan
- Spain
- Sri Lanka
- St. Barthelemy
- St. Helena
- St. Martin (French part)
- St. Pierre and Miquelon
- Sudan
- Suriname
- Svalbard and Jan Mayen Islands
- Swaziland
- Sweden
- Switzerland
- Syrian Arab Republic
- Taiwan
- Tajikistan
- Tanzania, United Republic of
- Thailand
- Togo
- Tokelau
- Tonga
- Trinidad and Tobago
- Tristan da Cunha
- Tunisia
- Turkey
- Turkmenistan
- Turks and Caicos Islands
- Tuvalu
- Uganda
- Ukraine
- United Arab Emirates
- United Kingdom
- United States
- United States Minor Outlying Islands
- Uruguay
- Uzbekistan
- Vanuatu
- Vatican City State (Holy See)
- Venezuela
- Viet Nam
- Virgin Islands (British)
- Virgin Islands (U.S.)
- Wallis and Futuna Islands
- Western Sahara
- Yemen
- Zambia
- Zimbabwe
- 
-                                Successfully click on element Bulgaria
-                                Successfully click on element --- Please Select ---
-Blagoevgrad
-Burgas
-Dobrich
-Gabrovo
-Haskovo
-Kardjali
-Kyustendil
-Lovech
-Montana
-Pazardjik
-Pernik
-Pleven
-Plovdiv
-Razgrad
-Ruse
-Shumen
-Silistra
-Sliven
-Smolyan
-Sofia
-Sofia - town
-Stara Zagora
-Targovishte
-Varna
-Veliko Tarnovo
-Vidin
-Vratza
-Yambol
-                                Successfully click on element Sofia
-                                Successfully click on element 
-                                Successfully click on element 
-                                Successfully click on element 
-                                t4_FacadeGuestAccount is Passed
-                  </div>
-    
-
-      </td>
-</tr>
-<tr>
-  <td class="method">
                   <span class="description" title="The test performs Assertions on different quantities calculations ">t5_FacadeGuestAccountShippingAddressWithVAT</span>
       </td>
   <td class="duration">
-    17.418s
+    12.797s
   </td>
   <td class="result">
         
@@ -2143,14 +1256,14 @@ Yambol
                                 Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
                                  Enter value : Iphone
                                 Successfully click on element 
-                                 Enter value : testFNtxnei
-                                 Enter value : testLNgaazc
-                                 Enter value : testEmailgmtnl@mm.com
-                                 Enter value : +359123456789
-                                 Enter value : CompanyTestoky
-                                 Enter value : address1_ugoiy
-                                 Enter value : address1_ugoiy
-                                 Enter value : 1111
+                                 Enter value : Carmelita
+                                 Enter value : Watsica
+                                 Enter value : aurelio.heathcote@gmail.com
+                                 Enter value : 016977 4453
+                                 Enter value : Rau, Bergnaum and Stokes
+                                 Enter value : 8625 Jordan Throughway, New Stephanview, FL R7U 8WJ
+                                 Enter value : 8625 Jordan Throughway, New Stephanview, FL R7U 8WJ
+                                 Enter value : UM1N 1GA
                                  Enter value : Kent
                                 Successfully click on element   --- Please Select ---
  Aaland Islands
@@ -2517,7 +1630,6 @@ Wiltshire
 Worcestershire
 Wrexham
                                 Successfully click on element Kent
-                                Successfully click on element 
                                 Successfully click on element 
                                 Successfully click on element 
                                 t5_FacadeGuestAccountShippingAddressWithVAT is Passed
@@ -2535,7 +1647,7 @@ Wrexham
                   <span class="description" title="This test performs search product and verifies the found product">t1_shoppingCartVerificationAndRemoveProducts</span>
       </td>
   <td class="duration">
-    11.772s
+    7.563s
   </td>
   <td class="result">
         
@@ -2543,7 +1655,7 @@ Wrexham
     
             <div class="testOutput">
                         Starting test method:t1_shoppingCartVerificationAndRemoveProducts
-                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
+                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login'
                                  Enter value : HTC Touch HD
                                 Successfully click on element 
                                 Text : Checkout - is Verified
@@ -2571,14 +1683,14 @@ Wrexham
                   <span class="description" title="This test performs search product and verifies the found product">t2_shopingCart_AddMultipleItemsVerification</span>
       </td>
   <td class="duration">
-    7.825s
+    6.539s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
                         Starting test method:t2_shopingCart_AddMultipleItemsVerification
-                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
+                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login'
                                  Enter value : HTC Touch HD
                                 Successfully click on element 
                                 Successfully click on element 
@@ -2599,16 +1711,16 @@ Wrexham
                   <span class="description" title="The test will search multiple products in the search and Assert the size of the products as results">t3_search_ProductInTheSearchFieldAndVerifyResults</span>
       </td>
   <td class="duration">
-    7.062s
+    4.762s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"HTC Touch HD", "$146.00", 8</span><br />
+          <i>Method arguments: </i><span class="arguments">"Palm Treo Pro", "$337.99", 2</span><br />
     
             <div class="testOutput">
                         Starting test method:t3_search_ProductInTheSearchFieldAndVerifyResults
-                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
-                                 Enter value : HTC Touch HD
+                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login'
+                                 Enter value : Palm Treo Pro
                                 t3_search_ProductInTheSearchFieldAndVerifyResults is Passed
                   </div>
     
@@ -2620,16 +1732,16 @@ Wrexham
                   <span class="description" title="The test will search multiple products in the search and Assert the size of the products as results">t3_search_ProductInTheSearchFieldAndVerifyResults</span>
       </td>
   <td class="duration">
-    5.016s
+    7.450s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">"Palm Treo Pro", "$337.99", 2</span><br />
+          <i>Method arguments: </i><span class="arguments">"HTC Touch HD", "$146.00", 8</span><br />
     
             <div class="testOutput">
                         Starting test method:t3_search_ProductInTheSearchFieldAndVerifyResults
-                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home'
-                                 Enter value : Palm Treo Pro
+                                Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login'
+                                 Enter value : HTC Touch HD
                                 t3_search_ProductInTheSearchFieldAndVerifyResults is Passed
                   </div>
     

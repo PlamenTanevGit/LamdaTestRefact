@@ -8,9 +8,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import Utils.LocatorType;
-import Utils.TestUtil;
+import Utils.TestBase;
 
-public class TESTS_HomePageDP extends TestUtil {
+public class TESTS_HomePageDP extends TestBase {
 
 
 //	@DataProvider(name = "productInputs")
@@ -56,7 +56,7 @@ public class TESTS_HomePageDP extends TestUtil {
 
 		Assert.assertTrue(searchResultPage.searchResultsTitle(productName).getText().equals("Search - " + productName));
 
-		List<WebElement> Str = super.getElementList("//div[@class='row']/div", LocatorType.XPATH);
+		List<WebElement> Str = testUtil.getElementList("//div[@class='row']/div", LocatorType.XPATH);
 		/**
 		 *  Assertion for
 		 *   - size

@@ -12,14 +12,11 @@ import Utils.TestUtil;
 public class AccountRegisterPage {
 
 	private WebDriver driver;
-	private ConfirmOrderPage confirmOrderPage;
 	private TestUtil testUtil;
 	
 	public AccountRegisterPage(WebDriver driver) {
 		this.testUtil = new TestUtil();
 		this.driver = testUtil.getDriver();
-		this.confirmOrderPage = new ConfirmOrderPage(driver);
-
 	}
 
 	
@@ -160,18 +157,19 @@ public class AccountRegisterPage {
 	public void clickOnContinue() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 4);
 		testUtil.jSClick(continueButton());
+		ConfirmOrderPage confirmOrderPage = new ConfirmOrderPage(driver);
 		wait.until(ExpectedConditions.visibilityOf(confirmOrderPage.confirmOrderTitle()));
-		testUtil.pause(3);
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);
 	}
 
 	public void checkPrivacyPolicy() throws InterruptedException {
 		testUtil.pseudoClickJavascript("label[for='input-account-agree']", "before");
-		testUtil.pause(2);
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);
 	}
 
 	public void checkTermsAndConditions() throws InterruptedException {
 		testUtil.pseudoClickJavascript("label[for='input-agree']", "after");
-		testUtil.pause(2);
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);
 	}
 
 	public String setFirstName(String firstName) {
@@ -270,7 +268,8 @@ public class AccountRegisterPage {
 	
 	public String selectCountry(String searchedCountry) throws InterruptedException {
 			testUtil.selectDropdownOptionByTagName(countryDropdpwn(), "option", searchedCountry);
-			testUtil.pausems(3);		
+			// testUtil.pausems(3);	
+			testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);	
 			firstNameField().click();
 		
 		return searchedCountry;
@@ -279,7 +278,8 @@ public class AccountRegisterPage {
 	public String selectShippingCountry(String searchedShippingCountry) throws InterruptedException {
 	
 		testUtil.selectDropdownOptionByTagName(ShippingCountry(), "option", searchedShippingCountry);
-		testUtil.pausems(8);	
+		// testUtil.pausems(8);	
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);
 		ShippingFirstName().click();
 	
 	return searchedShippingCountry;
@@ -287,7 +287,8 @@ public class AccountRegisterPage {
 
 	public String selectRegionState(String searchedBillngRegion) throws InterruptedException{
 		testUtil.selectDropdownOptionByTagName(regionDropdown(), "option", searchedBillngRegion);
-		testUtil.pausems(8);	
+		// testUtil.pausems(8);	
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);
 		firstNameField().click();
 		return searchedBillngRegion;
 	}
@@ -295,7 +296,8 @@ public class AccountRegisterPage {
 	public String selectShippingRegionState(String searchedRegion) throws InterruptedException{
 	
 		testUtil.selectDropdownOptionByTagName(ShippingRegionStateDropdown(), "option", searchedRegion);
-		testUtil.pausems(3);		
+		// testUtil.pausems(3);	
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);	
 		firstNameField().click();
 		return searchedRegion;
 	}
@@ -312,7 +314,8 @@ public class AccountRegisterPage {
 	public void setQuantity(String quantity) {
 		QuantityField().clear();
 		QuantityField().sendKeys(quantity);		
-		testUtil.pause(1);
+		// testUtil.pause(1);
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);
 	}
 	
 	public WebElement RemoveButton () {

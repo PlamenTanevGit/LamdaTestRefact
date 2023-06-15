@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -101,12 +102,14 @@ public class HomePage {
 	
 	public void clickOnSearch () {
 		testUtil.clickOnElement(searchButton());
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector(".module-title.h4.m-0"), 9, 1);	
 	}
 	
 	public void searchForProducts (String product) throws InterruptedException {
 		enterProductInSearchField ( product);
 		clickOnSearch();
-		testUtil.pause(5);
+		// testUtil.pause(5);
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector(".module-title.h4.m-0"), 5, 1); // waitl for Filtrer section label to show up
 		
 	}
 	

@@ -14,15 +14,11 @@ public class ShoppingCartPage {
 	
 	
 	private WebDriver driver;
-	private CheckoutPage checkoutPage;
-	private HomePage homePage;
 	private WebDriverWait wait ;
 	private TestUtil testUtil;
 	
 	public ShoppingCartPage(WebDriver driver ) {
 		this.driver = driver;		
-		this.checkoutPage = new CheckoutPage(driver);
-		this.homePage = new HomePage(driver);
 		this.wait = new WebDriverWait(driver, 5);
 		this.testUtil = new TestUtil();
 	}
@@ -115,18 +111,20 @@ public class ShoppingCartPage {
 	}
 	
 	public void clickOnContinueShopping () {
-		
+		HomePage homePage = new HomePage(driver);
 		testUtil.clickOnElement(ContinueShoppingButton());
 		wait.until(ExpectedConditions.visibilityOf(homePage.searchButton()));
 	}	
 
 	public void clickOnContinueButton () {
+		HomePage homePage = new HomePage(driver);
 		testUtil.clickOnElement(ContiniueButton());
 		wait.until(ExpectedConditions.visibilityOf(homePage.topRowButtonsSection_shopByCattergory_Button()));
 	}
 	
 
 	public void clickCheckout () {
+			CheckoutPage checkoutPage = new CheckoutPage(driver);
 			testUtil.clickOnElement(CheckoutButton());			
 			wait.until(ExpectedConditions.visibilityOf(checkoutPage.topLeftIcon()));
 	}

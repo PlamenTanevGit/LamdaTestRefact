@@ -3,10 +3,11 @@ package ShoppingTests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import Utils.TestBase;
 import Utils.TestUtil;
 
 
-public class TESTS_AddRemoveMultipleItems extends TestUtil{
+public class TESTS_AddRemoveMultipleItems extends TestBase{
 
 	/***
 	 * The test will do : 
@@ -57,7 +58,7 @@ public class TESTS_AddRemoveMultipleItems extends TestUtil{
 		 * "Your shopping cart is empty!"
 		 */
 		shoppingCartPage.clickOnRemoveQuantity();
-		assertIsDisplayed(shoppingCartPage.messageEmptyCart());
+		testUtil.assertIsDisplayed(shoppingCartPage.messageEmptyCart());
 
 	}
 

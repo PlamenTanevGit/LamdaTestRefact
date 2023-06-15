@@ -14,16 +14,12 @@ public class TopHeaderPage  {
 	private WebDriver driver;
 	private WebDriverWait wait;
 	private Actions actions;
-	private AccountRegisterPage accountRegisterPage;
-	private LoginPage loginPage;
 	private TestUtil testUtil;
 	
 	public TopHeaderPage(WebDriver driver) {
 		this.driver = driver;
-		this.accountRegisterPage = new AccountRegisterPage(driver);
 		this.actions = new Actions(driver);
 		this.wait = new WebDriverWait(driver, 5);
-		this.loginPage = new LoginPage(driver);
 		this.testUtil = new TestUtil();
 	}
 
@@ -114,6 +110,9 @@ public class TopHeaderPage  {
 	
 	
 	public void logOut () throws InterruptedException {		
+		AccountRegisterPage accountRegisterPage = new AccountRegisterPage(driver);
+		LoginPage loginPage = new LoginPage(driver);
+
 		wait.until(ExpectedConditions.visibilityOf(myAccountMenu()));
         actions.moveToElement(myAccountMenu()).build().perform();
 

@@ -1,5 +1,6 @@
 package Pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -38,9 +39,11 @@ public class CheckoutPage {
 	
 	public void clickOnUpdate() throws InterruptedException {
 		testUtil.clickOnElement(updateInnerIcon());
-		testUtil.pausems(3);
+//		testUtil.pause(3);
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);
 		testUtil.clickOnElement(updateInnerIcon());
-		testUtil.pause(3);
+//		testUtil.pause(3);
+		testUtil.waitForElementPresntUsingFluentWait(By.cssSelector("#button-save"), 5, 1);
 	
 	}
 	

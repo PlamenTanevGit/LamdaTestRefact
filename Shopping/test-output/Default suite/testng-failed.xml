@@ -6,10 +6,10 @@
       <class name="ShoppingTests.DifferentCalculations">
         <methods>
           <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="t4_FacadeGuestAccountShippingAddress" invocation-numbers="0"/>
-          <include name="beforeClass"/>
           <include name="afterSuite"/>
+          <include name="t1_calculationsWithVAT_Country" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
         </methods>
       </class> <!-- ShoppingTests.DifferentCalculations -->
     </classes>

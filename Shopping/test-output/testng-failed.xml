@@ -6,15 +6,17 @@
     <listener class-name="Listeners.ExtentReportListener"/>
     <listener class-name="Listeners.Listners"/>
   </listeners>
-  <test thread-count="5" name=" Different Calculations(failed)">
+  <test thread-count="5" parallel="methods" name=" Different Calculations(failed)">
     <classes>
       <class name="ShoppingTests.DifferentCalculations">
         <methods>
           <include name="beforeSuite"/>
-          <include name="afterClass"/>
-          <include name="t4_FacadeGuestAccountShippingAddress" invocation-numbers="0"/>
-          <include name="beforeClass"/>
           <include name="afterSuite"/>
+          <include name="t2_calculationsWithoutVAT_Country" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="t3_FacadeRegisteredAccountNoVAT" invocation-numbers="0"/>
+          <include name="beforeClass"/>
+          <include name="t4_FacadeGuestAccount" invocation-numbers="0"/>
         </methods>
       </class> <!-- ShoppingTests.DifferentCalculations -->
     </classes>

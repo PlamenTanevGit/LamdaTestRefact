@@ -24,6 +24,7 @@ import com.aventstack.extentreports.markuputils.MarkupHelper;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import Utils.TestBase;
 import Utils.TestUtil;
 
 public class ExtentReportListener extends TestUtil implements ITestListener {
@@ -67,7 +68,8 @@ public class ExtentReportListener extends TestUtil implements ITestListener {
         extentReports.setSystemInfo("Build#", "1.1");
         extentReports.setSystemInfo("Team", "Automation Team");
         extentReports.setSystemInfo("ENV NAME ", "- ven02303");
-        extentReports.setSystemInfo(" Browser :  ", config.getProperty("browser"));
+        
+        extentReports.setSystemInfo(" Browser :  ", TestBase.config.getProperty("browser"));
 
         return extentReports;
     }

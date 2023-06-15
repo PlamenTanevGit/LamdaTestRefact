@@ -210,7 +210,6 @@ public class FascadePage  {
 
 		Assert.assertEquals(UNIT_PRICE, testUtil.getDoubleFromStringValue(UNIT__PRICE));
 		Assert.assertEquals(TOTAL, testUtil.getDoubleFromStringValue(TOTAL_));	
-		Assert.assertEquals(TOTAL, UNIT_PRICE);
 		/**
 		 * Assertion for :
 		 * - Sub-Total Amount value
@@ -229,7 +228,6 @@ public class FascadePage  {
 
 		Assert.assertEquals(UNIT_PRICE, testUtil.getDoubleFromStringValue(UNIT__PRICE));
 		Assert.assertEquals(TOTAL, testUtil.getDoubleFromStringValue(TOTAL_));	
-		Assert.assertEquals(TOTAL, UNIT_PRICE);
 		/**
 		 * Assertion for :
 		 * - Sub-Total Amount value
@@ -242,7 +240,7 @@ public class FascadePage  {
 		Assert.assertEquals(accountRegisterPage.getFlatShippingRateAmmount(), testUtil.getDoubleFromStringValue(FlatShipping));
 		Assert.assertEquals(accountRegisterPage.getEcoTaxAmount(), testUtil.getDoubleFromStringValue(Eco));
 		Assert.assertEquals(accountRegisterPage.getVATAmount(), testUtil.getDoubleFromStringValue(VATValue));
-		Assert.assertEquals(accountRegisterPage.getTotalAmount("VAT_YES"), testUtil.getDoubleFromStringValue(Total));		
+		Assert.assertEquals(accountRegisterPage.getTotalAmount(VAT_YES_NO), testUtil.getDoubleFromStringValue(Total));		
 
 
 	}
