@@ -8,7 +8,6 @@ import Utils.TestUtil;
 public class FascadePage  {
 	
 	private WebDriver driver;
-	private ShoppingCartPage shoppingCartPage;
 	private AccountRegisterPage accountRegisterPage;
 	private HomePage homePage;
 	private SearchResultPage searchResultPage;	
@@ -18,7 +17,6 @@ public class FascadePage  {
 	
 	public FascadePage(WebDriver driver) {
 		this.driver = driver;
-		this.shoppingCartPage = new ShoppingCartPage(driver);
 		this.accountRegisterPage = new AccountRegisterPage(driver);
 		this.homePage = new HomePage(driver);
 		this.searchResultPage = new SearchResultPage(driver);

@@ -11,28 +11,46 @@ import Utils.TestUtil;
 
 public class DifferentCalculations extends TestBase {
 	/***
-	 * The tests will do 
-	 * - Test 1 - calculations checks for Sub-Total:/ Flat Shipping Rate:/Eco Tax /VAT /Total: for country with VAT 
-	 * - Test 2 - calculations checks for Sub-Total:/ Flat Shipping Rate:/Eco Tax /VAT /Total: for country without VAT 
+	 * Data provider for inputs With VAT with :
+	 * 		 - quantity,
+	 * 		-  UNIT__PRICE,
+			- TOTAL_,
+			- SubTotal,
+			- FlatShipping,
+			- Eco,
+			- VATValue,
+			- Total 
 	 */
 	
 	@DataProvider(name = "calculationsInputsWithVAT")
 	public Object[][] getData() {
 		return new Object[][] { 
 			{ "1,","123.2", "123.2","101.0","5.0","4.0","21.2","131.2" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Eco Tax, VAT value, Total 
-			// { "2,","123.2", "246.4","202.0","5.0","6.0","41.4","254.4" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Eco Tax, VAT value, Total 
-			// { "3,","123.2", "369.60","303.0","5.0","8.0","61.6","377.6" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Eco Tax, VAT value, Total 
+			{ "2,","123.2", "246.4","202.0","5.0","6.0","41.4","254.4" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Eco Tax, VAT value, Total 
+			{ "3,","123.2", "369.60","303.0","5.0","8.0","61.6","377.6" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Eco Tax, VAT value, Total 
 			
 		};		
 			
 	}	
+
+		/***
+	 * Data provider for inputs Without VAT with :
+	 * 		 - quantity,
+	 * 		-  UNIT__PRICE,
+			- TOTAL_,
+			- SubTotal,
+			- FlatShipping,
+			- Eco,
+			- VATValue,
+			- Total 
+	 */
 	
 	@DataProvider(name = "calculationsInputsWithoutVAT")
 	public Object[][] getData2() {
 		return new Object[][] { 
 			{ "1,","101.0", "101.0","101.0","5.0","106.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
-			// { "2,","101.0", "202.0","202.0","5.0","207.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
-			// { "3,","101.0", "303.0","303.0","5.0","308.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
+			{ "2,","101.0", "202.0","202.0","5.0","207.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
+			{ "3,","101.0", "303.0","303.0","5.0","308.0" },  // QUANTITY ,UNIT PRICE, TOTAL, Sub-Total,Flat ShippingRate, Total 
 			
 		};
 

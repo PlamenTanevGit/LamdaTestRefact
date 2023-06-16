@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="4" total="8" passed="4" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[]]>
@@ -8,40 +8,416 @@
       <![CDATA[FIREFOX is Initialised]]>
     </line>
     <line>
-      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
+      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
     </line>
     <line>
-      <![CDATA[ Enter value : HTC Touch HD]]>
+      <![CDATA[ Enter value : Iphone]]>
     </line>
     <line>
       <![CDATA[Successfully click on element ]]>
     </line>
     <line>
-      <![CDATA[Text : Checkout - is Verified]]>
+      <![CDATA[ Enter value : Palmer]]>
     </line>
     <line>
-      <![CDATA[Text : View Cart - is Verified]]>
+      <![CDATA[ Enter value : Will]]>
     </line>
     <line>
-      <![CDATA[Page title  is Verified]]>
+      <![CDATA[ Enter value : randell.botsford@gmail.com]]>
     </line>
     <line>
-      <![CDATA[Text : IMAGE - is Verified]]>
+      <![CDATA[ Enter value : 0371 494 9415]]>
     </line>
     <line>
-      <![CDATA[Text : PRODUCT NAME - is Verified]]>
+      <![CDATA[ Enter value : Schowalter-Hintz]]>
     </line>
     <line>
-      <![CDATA[Text : MODEL - is Verified]]>
+      <![CDATA[ Enter value : 2257 John Roads, Jacquetown, OK BN3P 8BE]]>
     </line>
     <line>
-      <![CDATA[Text : QUANTITY - is Verified]]>
+      <![CDATA[ Enter value : 2257 John Roads, Jacquetown, OK BN3P 8BE]]>
     </line>
     <line>
-      <![CDATA[Text : UNIT PRICE - is Verified]]>
+      <![CDATA[ Enter value : NE89 1LA]]>
     </line>
     <line>
-      <![CDATA[Text : TOTAL - is Verified]]>
+      <![CDATA[ Enter value : Kent]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element United Kingdom]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element --- Please Select ---
+Aberdeen
+Aberdeenshire
+Anglesey
+Angus
+Argyll and Bute
+Bedfordshire
+Berkshire
+Blaenau Gwent
+Bridgend
+Bristol
+Buckinghamshire
+Caerphilly
+Cambridgeshire
+Cardiff
+Carmarthenshire
+Ceredigion
+Cheshire
+Clackmannanshire
+Conwy
+Cornwall
+County Antrim
+County Armagh
+County Down
+County Fermanagh
+County Londonderry
+County Tyrone
+Cumbria
+Denbighshire
+Derbyshire
+Devon
+Dorset
+Dumfries and Galloway
+Dundee
+Durham
+East Ayrshire
+East Dunbartonshire
+East Lothian
+East Renfrewshire
+East Riding of Yorkshire
+East Sussex
+Edinburgh
+Essex
+Falkirk
+Fife
+Flintshire
+Glasgow
+Gloucestershire
+Greater London
+Greater Manchester
+Gwynedd
+Hampshire
+Herefordshire
+Hertfordshire
+Highlands
+Inverclyde
+Isle of Wight
+Kent
+Lancashire
+Leicestershire
+Lincolnshire
+Merseyside
+Merthyr Tydfil
+Midlothian
+Monmouthshire
+Moray
+Neath Port Talbot
+Newport
+Norfolk
+North Ayrshire
+North Lanarkshire
+North Yorkshire
+Northamptonshire
+Northumberland
+Nottinghamshire
+Orkney Islands
+Oxfordshire
+Pembrokeshire
+Perth and Kinross
+Powys
+Renfrewshire
+Rhondda Cynon Taff
+Rutland
+Scottish Borders
+Shetland Islands
+Shropshire
+Somerset
+South Ayrshire
+South Lanarkshire
+South Yorkshire
+Staffordshire
+Stirling
+Suffolk
+Surrey
+Swansea
+Torfaen
+Tyne and Wear
+Vale of Glamorgan
+Warwickshire
+West Dunbartonshire
+West Lothian
+West Midlands
+West Sussex
+West Yorkshire
+Western Isles
+Wiltshire
+Worcestershire
+Wrexham]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element Kent]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element ]]>
     </line>
     <line>
       <![CDATA[Successfully click on element ]]>
@@ -50,16 +426,334 @@
       <![CDATA[FIREFOX is Initialised]]>
     </line>
     <line>
-      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
+      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
     </line>
     <line>
-      <![CDATA[ Enter value : HTC Touch HD]]>
-    </line>
-    <line>
-      <![CDATA[Successfully click on element ]]>
+      <![CDATA[ Enter value : Iphone]]>
     </line>
     <line>
       <![CDATA[Successfully click on element ]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Alex]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Moore]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : caren.schoen@yahoo.com]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 01669 342669]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : VonRueden-Boyle]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Suite 507 741 Coleman Course, Leandroview, NM YE3B 7DN]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Suite 507 741 Coleman Course, Leandroview, NM YE3B 7DN]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : KL6A 2BU]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Sofia]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element Bulgaria]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element Sofia]]>
     </line>
     <line>
       <![CDATA[Successfully click on element ]]>
@@ -71,244 +765,2355 @@
       <![CDATA[FIREFOX is Initialised]]>
     </line>
     <line>
-      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
+      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
     </line>
     <line>
-      <![CDATA[ Enter value : Palm Treo Pro]]>
+      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Iphone]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element ]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Ronald]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Corkery]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : ike.treutel@hotmail.com]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 055 9734 4262]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 1234]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 1234]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Watsica, McDermott and Nienow]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 8766 Milton Circles, Ornberg, FL O68 0LN]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 8766 Milton Circles, Ornberg, FL O68 0LN]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : E3U 3YH]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Sofia]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element Bulgaria]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element Sofia]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element ]]>
     </line>
     <line>
       <![CDATA[FIREFOX is Initialised]]>
     </line>
     <line>
-      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
+      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
     </line>
     <line>
-      <![CDATA[ Enter value : HTC Touch HD]]>
+      <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Iphone]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element ]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Franklin]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Corkery]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : rudolf.mills@hotmail.com]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 056 1935 2873]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Ankunding-O'Connell]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 28975 Ledner Rapids, East Kevinburgh, SC M8H 4JJ]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : 28975 Ledner Rapids, East Kevinburgh, SC M8H 4JJ]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : WQ7B 1JX]]>
+    </line>
+    <line>
+      <![CDATA[ Enter value : Sofia]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element Bulgaria]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element Sofia]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element ]]>
+    </line>
+    <line>
+      <![CDATA[Successfully click on element ]]>
     </line>
     <line>
       <![CDATA[Driver quit]]>
     </line>
     <line>
-      <![CDATA[Duration of Suite is : 33 sec.]]>
+      <![CDATA[Duration of Suite is : 63 sec.]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-06-15T13:24:51 EEST" name="Default suite" finished-at="2023-06-15T13:25:24 EEST" duration-ms="33338">
+  <suite started-at="2023-06-16T11:35:05 EEST" name="Default suite" finished-at="2023-06-16T11:36:08 EEST" duration-ms="63111">
     <groups>
     </groups>
-    <test started-at="2023-06-15T13:24:51 EEST" name="Default test" finished-at="2023-06-15T13:25:24 EEST" duration-ms="33338">
-      <class name="ShoppingTests.TESTS_AddRemoveItem">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ShoppingTests.TESTS_AddRemoveItem@6e20b53a]" started-at="2023-06-15T13:24:51 EEST" name="beforeSuite" finished-at="2023-06-15T13:24:51 EEST" duration-ms="6" status="PASS">
+    <test started-at="2023-06-16T11:35:05 EEST" name="Default test" finished-at="2023-06-16T11:36:08 EEST" duration-ms="63111">
+      <class name="ShoppingTests.DifferentCalculations">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:05 EEST" name="beforeSuite" finished-at="2023-06-16T11:35:05 EEST" duration-ms="8" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.TESTS_AddRemoveItem@6e20b53a]" started-at="2023-06-15T13:24:51 EEST" name="beforeClass" finished-at="2023-06-15T13:24:52 EEST" duration-ms="1404" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:05 EEST" name="beforeClass" finished-at="2023-06-16T11:35:07 EEST" duration-ms="1738" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[FIREFOX is Initialised]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="t1_shoppingCartVerificationAndRemoveProducts(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ShoppingTests.TESTS_AddRemoveItem@6e20b53a]" started-at="2023-06-15T13:24:52 EEST" name="t1_shoppingCartVerificationAndRemoveProducts" description="This test performs search product and verifies the found product" data-provider="productInputs" finished-at="2023-06-15T13:25:01 EEST" duration-ms="8914" status="PASS">
+        <test-method signature="t1_calculations_VAT_YES_RegisteredAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:07 EEST" name="t1_calculations_VAT_YES_RegisteredAccount" description="The test performs Assertions on different quantities calculations " data-provider="calculationsInputsWithVAT" finished-at="2023-06-16T11:35:24 EEST" duration-ms="17202" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[HTC Touch HD]]>
+                <![CDATA[1,]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Product 1]]>
+                <![CDATA[123.2]]>
               </value>
             </param>
             <param index="2">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[123.2]]>
               </value>
             </param>
             <param index="3">
               <value>
-                <![CDATA[$146.00]]>
+                <![CDATA[101.0]]>
               </value>
             </param>
             <param index="4">
               <value>
-                <![CDATA[$146.00]]>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4.0]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[21.2]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[131.2]]>
               </value>
             </param>
           </params>
           <reporter-output>
             <line>
-              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
+              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
             </line>
             <line>
-              <![CDATA[ Enter value : HTC Touch HD]]>
+              <![CDATA[ Enter value : Iphone]]>
             </line>
             <line>
               <![CDATA[Successfully click on element ]]>
             </line>
             <line>
-              <![CDATA[Text : Checkout - is Verified]]>
+              <![CDATA[ Enter value : Palmer]]>
             </line>
             <line>
-              <![CDATA[Text : View Cart - is Verified]]>
+              <![CDATA[ Enter value : Will]]>
             </line>
             <line>
-              <![CDATA[Page title  is Verified]]>
+              <![CDATA[ Enter value : randell.botsford@gmail.com]]>
             </line>
             <line>
-              <![CDATA[Text : IMAGE - is Verified]]>
+              <![CDATA[ Enter value : 0371 494 9415]]>
             </line>
             <line>
-              <![CDATA[Text : PRODUCT NAME - is Verified]]>
+              <![CDATA[ Enter value : Schowalter-Hintz]]>
             </line>
             <line>
-              <![CDATA[Text : MODEL - is Verified]]>
+              <![CDATA[ Enter value : 2257 John Roads, Jacquetown, OK BN3P 8BE]]>
             </line>
             <line>
-              <![CDATA[Text : QUANTITY - is Verified]]>
+              <![CDATA[ Enter value : 2257 John Roads, Jacquetown, OK BN3P 8BE]]>
             </line>
             <line>
-              <![CDATA[Text : UNIT PRICE - is Verified]]>
+              <![CDATA[ Enter value : NE89 1LA]]>
             </line>
             <line>
-              <![CDATA[Text : TOTAL - is Verified]]>
+              <![CDATA[ Enter value : Kent]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element United Kingdom]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element --- Please Select ---
+Aberdeen
+Aberdeenshire
+Anglesey
+Angus
+Argyll and Bute
+Bedfordshire
+Berkshire
+Blaenau Gwent
+Bridgend
+Bristol
+Buckinghamshire
+Caerphilly
+Cambridgeshire
+Cardiff
+Carmarthenshire
+Ceredigion
+Cheshire
+Clackmannanshire
+Conwy
+Cornwall
+County Antrim
+County Armagh
+County Down
+County Fermanagh
+County Londonderry
+County Tyrone
+Cumbria
+Denbighshire
+Derbyshire
+Devon
+Dorset
+Dumfries and Galloway
+Dundee
+Durham
+East Ayrshire
+East Dunbartonshire
+East Lothian
+East Renfrewshire
+East Riding of Yorkshire
+East Sussex
+Edinburgh
+Essex
+Falkirk
+Fife
+Flintshire
+Glasgow
+Gloucestershire
+Greater London
+Greater Manchester
+Gwynedd
+Hampshire
+Herefordshire
+Hertfordshire
+Highlands
+Inverclyde
+Isle of Wight
+Kent
+Lancashire
+Leicestershire
+Lincolnshire
+Merseyside
+Merthyr Tydfil
+Midlothian
+Monmouthshire
+Moray
+Neath Port Talbot
+Newport
+Norfolk
+North Ayrshire
+North Lanarkshire
+North Yorkshire
+Northamptonshire
+Northumberland
+Nottinghamshire
+Orkney Islands
+Oxfordshire
+Pembrokeshire
+Perth and Kinross
+Powys
+Renfrewshire
+Rhondda Cynon Taff
+Rutland
+Scottish Borders
+Shetland Islands
+Shropshire
+Somerset
+South Ayrshire
+South Lanarkshire
+South Yorkshire
+Staffordshire
+Stirling
+Suffolk
+Surrey
+Swansea
+Torfaen
+Tyne and Wear
+Vale of Glamorgan
+Warwickshire
+West Dunbartonshire
+West Lothian
+West Midlands
+West Sussex
+West Yorkshire
+Western Isles
+Wiltshire
+Worcestershire
+Wrexham]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element Kent]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
             </line>
             <line>
               <![CDATA[Successfully click on element ]]>
             </line>
           </reporter-output>
-        </test-method> <!-- t1_shoppingCartVerificationAndRemoveProducts -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.TESTS_AddRemoveItem@6e20b53a]" started-at="2023-06-15T13:25:01 EEST" name="afterClass" finished-at="2023-06-15T13:25:01 EEST" duration-ms="310" status="PASS">
+        </test-method> <!-- t1_calculations_VAT_YES_RegisteredAccount -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:24 EEST" name="afterClass" finished-at="2023-06-16T11:35:24 EEST" duration-ms="171" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ShoppingTests.TESTS_AddRemoveItem@6e20b53a]" started-at="2023-06-15T13:25:24 EEST" name="afterSuite" finished-at="2023-06-15T13:25:24 EEST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:24 EEST" name="beforeClass" finished-at="2023-06-16T11:35:25 EEST" duration-ms="976" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[FIREFOX is Initialised]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="t2_calculationsNO_VAT_RegisteredAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:25 EEST" name="t2_calculationsNO_VAT_RegisteredAccount" description="The test performs Assertions on different quantities calculations " data-provider="calculationsInputsWithoutVAT" finished-at="2023-06-16T11:35:37 EEST" duration-ms="11998" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[101.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[101.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[106.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Iphone]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Alex]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Moore]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : caren.schoen@yahoo.com]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 01669 342669]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : VonRueden-Boyle]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Suite 507 741 Coleman Course, Leandroview, NM YE3B 7DN]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Suite 507 741 Coleman Course, Leandroview, NM YE3B 7DN]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : KL6A 2BU]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Sofia]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element Bulgaria]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element Sofia]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- t2_calculationsNO_VAT_RegisteredAccount -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:37 EEST" name="afterClass" finished-at="2023-06-16T11:35:38 EEST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:38 EEST" name="beforeClass" finished-at="2023-06-16T11:35:39 EEST" duration-ms="1159" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[FIREFOX is Initialised]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="t3_facadeRegisteredAccountNoVAT(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:39 EEST" name="t3_facadeRegisteredAccountNoVAT" description="The test performs Assertions on different quantities calculations " data-provider="calculationsInputsWithoutVAT" finished-at="2023-06-16T11:35:53 EEST" duration-ms="13862" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[101.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[101.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[106.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
+            </line>
+            <line>
+              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Iphone]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Ronald]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Corkery]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : ike.treutel@hotmail.com]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 055 9734 4262]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 1234]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 1234]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Watsica, McDermott and Nienow]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 8766 Milton Circles, Ornberg, FL O68 0LN]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 8766 Milton Circles, Ornberg, FL O68 0LN]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : E3U 3YH]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Sofia]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element Bulgaria]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element Sofia]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- t3_facadeRegisteredAccountNoVAT -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:53 EEST" name="afterClass" finished-at="2023-06-16T11:35:53 EEST" duration-ms="168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:53 EEST" name="beforeClass" finished-at="2023-06-16T11:35:54 EEST" duration-ms="992" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[FIREFOX is Initialised]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="t4_fascadeCalculations_VAT_NO_GuestAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:35:54 EEST" name="t4_fascadeCalculations_VAT_NO_GuestAccount" description="The test performs Assertions on different quantities calculations " data-provider="calculationsInputsWithoutVAT" finished-at="2023-06-16T11:36:08 EEST" duration-ms="14472" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1,]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[101.0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[101.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[101.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[5.0]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[106.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
+            </line>
+            <line>
+              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=common/home']]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Iphone]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Franklin]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Corkery]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : rudolf.mills@hotmail.com]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 056 1935 2873]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Ankunding-O'Connell]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 28975 Ledner Rapids, East Kevinburgh, SC M8H 4JJ]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : 28975 Ledner Rapids, East Kevinburgh, SC M8H 4JJ]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : WQ7B 1JX]]>
+            </line>
+            <line>
+              <![CDATA[ Enter value : Sofia]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element   --- Please Select ---
+ Aaland Islands
+ Afghanistan
+ Albania
+ Algeria
+ American Samoa
+ Andorra
+ Angola
+ Anguilla
+ Antarctica
+ Antigua and Barbuda
+ Argentina
+ Armenia
+ Aruba
+ Ascension Island (British)
+ Australia
+ Austria
+ Azerbaijan
+ Bahamas
+ Bahrain
+ Bangladesh
+ Barbados
+ Belarus
+ Belgium
+ Belize
+ Benin
+ Bermuda
+ Bhutan
+ Bolivia
+ Bonaire, Sint Eustatius and Saba
+ Bosnia and Herzegovina
+ Botswana
+ Bouvet Island
+ Brazil
+ British Indian Ocean Territory
+ Brunei Darussalam
+ Bulgaria
+ Burkina Faso
+ Burundi
+ Cambodia
+ Cameroon
+ Canada
+ Canary Islands
+ Cape Verde
+ Cayman Islands
+ Central African Republic
+ Chad
+ Chile
+ China
+ Christmas Island
+ Cocos (Keeling) Islands
+ Colombia
+ Comoros
+ Congo
+ Cook Islands
+ Costa Rica
+ Cote D'Ivoire
+ Croatia
+ Cuba
+ Curacao
+ Cyprus
+ Czech Republic
+ Democratic Republic of Congo
+ Denmark
+ Djibouti
+ Dominica
+ Dominican Republic
+ East Timor
+ Ecuador
+ Egypt
+ El Salvador
+ Equatorial Guinea
+ Eritrea
+ Estonia
+ Ethiopia
+ Falkland Islands (Malvinas)
+ Faroe Islands
+ Fiji
+ Finland
+ France, Metropolitan
+ French Guiana
+ French Polynesia
+ French Southern Territories
+ FYROM
+ Gabon
+ Gambia
+ Georgia
+ Germany
+ Ghana
+ Gibraltar
+ Greece
+ Greenland
+ Grenada
+ Guadeloupe
+ Guam
+ Guatemala
+ Guernsey
+ Guinea
+ Guinea-Bissau
+ Guyana
+ Haiti
+ Heard and Mc Donald Islands
+ Honduras
+ Hong Kong
+ Hungary
+ Iceland
+ India
+ Indonesia
+ Iran (Islamic Republic of)
+ Iraq
+ Ireland
+ Isle of Man
+ Israel
+ Italy
+ Jamaica
+ Japan
+ Jersey
+ Jordan
+ Kazakhstan
+ Kenya
+ Kiribati
+ Kosovo, Republic of
+ Kuwait
+ Kyrgyzstan
+ Lao People's Democratic Republic
+ Latvia
+ Lebanon
+ Lesotho
+ Liberia
+ Libyan Arab Jamahiriya
+ Liechtenstein
+ Lithuania
+ Luxembourg
+ Macau
+ Madagascar
+ Malawi
+ Malaysia
+ Maldives
+ Mali
+ Malta
+ Marshall Islands
+ Martinique
+ Mauritania
+ Mauritius
+ Mayotte
+ Mexico
+ Micronesia, Federated States of
+ Moldova, Republic of
+ Monaco
+ Mongolia
+ Montenegro
+ Montserrat
+ Morocco
+ Mozambique
+ Myanmar
+ Namibia
+ Nauru
+ Nepal
+ Netherlands
+ Netherlands Antilles
+ New Caledonia
+ New Zealand
+ Nicaragua
+ Niger
+ Nigeria
+ Niue
+ Norfolk Island
+ North Korea
+ Northern Mariana Islands
+ Norway
+ Oman
+ Pakistan
+ Palau
+ Palestinian Territory, Occupied
+ Panama
+ Papua New Guinea
+ Paraguay
+ Peru
+ Philippines
+ Pitcairn
+ Poland
+ Portugal
+ Puerto Rico
+ Qatar
+ Reunion
+ Romania
+ Russian Federation
+ Rwanda
+ Saint Kitts and Nevis
+ Saint Lucia
+ Saint Vincent and the Grenadines
+ Samoa
+ San Marino
+ Sao Tome and Principe
+ Saudi Arabia
+ Senegal
+ Serbia
+ Seychelles
+ Sierra Leone
+ Singapore
+ Slovak Republic
+ Slovenia
+ Solomon Islands
+ Somalia
+ South Africa
+ South Georgia & South Sandwich Islands
+ South Korea
+ South Sudan
+ Spain
+ Sri Lanka
+ St. Barthelemy
+ St. Helena
+ St. Martin (French part)
+ St. Pierre and Miquelon
+ Sudan
+ Suriname
+ Svalbard and Jan Mayen Islands
+ Swaziland
+ Sweden
+ Switzerland
+ Syrian Arab Republic
+ Taiwan
+ Tajikistan
+ Tanzania, United Republic of
+ Thailand
+ Togo
+ Tokelau
+ Tonga
+ Trinidad and Tobago
+ Tristan da Cunha
+ Tunisia
+ Turkey
+ Turkmenistan
+ Turks and Caicos Islands
+ Tuvalu
+ Uganda
+ Ukraine
+ United Arab Emirates
+ United Kingdom
+ United States
+ United States Minor Outlying Islands
+ Uruguay
+ Uzbekistan
+ Vanuatu
+ Vatican City State (Holy See)
+ Venezuela
+ Viet Nam
+ Virgin Islands (British)
+ Virgin Islands (U.S.)
+ Wallis and Futuna Islands
+ Western Sahara
+ Yemen
+ Zambia
+ Zimbabwe
+ ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element Bulgaria]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element --- Please Select ---
+Blagoevgrad
+Burgas
+Dobrich
+Gabrovo
+Haskovo
+Kardjali
+Kyustendil
+Lovech
+Montana
+Pazardjik
+Pernik
+Pleven
+Plovdiv
+Razgrad
+Ruse
+Shumen
+Silistra
+Sliven
+Smolyan
+Sofia
+Sofia - town
+Stara Zagora
+Targovishte
+Varna
+Veliko Tarnovo
+Vidin
+Vratza
+Yambol]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element Sofia]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+            <line>
+              <![CDATA[Successfully click on element ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- t4_fascadeCalculations_VAT_NO_GuestAccount -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:36:08 EEST" name="afterClass" finished-at="2023-06-16T11:36:08 EEST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:ShoppingTests.DifferentCalculations@6b927fb]" started-at="2023-06-16T11:36:08 EEST" name="afterSuite" finished-at="2023-06-16T11:36:08 EEST" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Driver quit]]>
             </line>
             <line>
-              <![CDATA[Duration of Suite is : 33 sec.]]>
+              <![CDATA[Duration of Suite is : 63 sec.]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- ShoppingTests.TESTS_AddRemoveItem -->
-      <class name="ShoppingTests.TESTS_AddRemoveMultipleItems">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.TESTS_AddRemoveMultipleItems@661972b0]" started-at="2023-06-15T13:25:01 EEST" name="beforeClass" finished-at="2023-06-15T13:25:02 EEST" duration-ms="860" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[FIREFOX is Initialised]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="t2_shopingCart_AddMultipleItemsVerification()[pri:0, instance:ShoppingTests.TESTS_AddRemoveMultipleItems@661972b0]" started-at="2023-06-15T13:25:02 EEST" name="t2_shopingCart_AddMultipleItemsVerification" description="This test performs search product and verifies the found product" finished-at="2023-06-15T13:25:10 EEST" duration-ms="7721" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
-            </line>
-            <line>
-              <![CDATA[ Enter value : HTC Touch HD]]>
-            </line>
-            <line>
-              <![CDATA[Successfully click on element ]]>
-            </line>
-            <line>
-              <![CDATA[Successfully click on element ]]>
-            </line>
-            <line>
-              <![CDATA[Successfully click on element ]]>
-            </line>
-            <line>
-              <![CDATA[Successfully click on element ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- t2_shopingCart_AddMultipleItemsVerification -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.TESTS_AddRemoveMultipleItems@661972b0]" started-at="2023-06-15T13:25:10 EEST" name="afterClass" finished-at="2023-06-15T13:25:10 EEST" duration-ms="292" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- ShoppingTests.TESTS_AddRemoveMultipleItems -->
-      <class name="ShoppingTests.TESTS_HomePageDP">
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.TESTS_HomePageDP@5af3afd9]" started-at="2023-06-15T13:25:10 EEST" name="beforeClass" finished-at="2023-06-15T13:25:11 EEST" duration-ms="829" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[FIREFOX is Initialised]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="t3_search_ProductInTheSearchFieldAndVerifyResults(java.lang.String,java.lang.String,int)[pri:0, instance:ShoppingTests.TESTS_HomePageDP@5af3afd9]" started-at="2023-06-15T13:25:11 EEST" name="t3_search_ProductInTheSearchFieldAndVerifyResults" description="The test will search multiple products in the search and Assert the size of the products as results" data-provider="productInputs" finished-at="2023-06-15T13:25:18 EEST" duration-ms="6369" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Palm Treo Pro]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[$337.99]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[2]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
-            </line>
-            <line>
-              <![CDATA[ Enter value : Palm Treo Pro]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- t3_search_ProductInTheSearchFieldAndVerifyResults -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.TESTS_HomePageDP@5af3afd9]" started-at="2023-06-15T13:25:18 EEST" name="afterClass" finished-at="2023-06-15T13:25:18 EEST" duration-ms="336" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:ShoppingTests.TESTS_HomePageDP@5af3afd9]" started-at="2023-06-15T13:25:18 EEST" name="beforeClass" finished-at="2023-06-15T13:25:19 EEST" duration-ms="988" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[FIREFOX is Initialised]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="t3_search_ProductInTheSearchFieldAndVerifyResults(java.lang.String,java.lang.String,int)[pri:0, instance:ShoppingTests.TESTS_HomePageDP@5af3afd9]" started-at="2023-06-15T13:25:19 EEST" name="t3_search_ProductInTheSearchFieldAndVerifyResults" description="The test will search multiple products in the search and Assert the size of the products as results" data-provider="productInputs" finished-at="2023-06-15T13:25:24 EEST" duration-ms="4960" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[HTC Touch HD]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[$146.00]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[Successfully opened url 'https://ecommerce-playground.lambdatest.io/index.php?route=account/login']]>
-            </line>
-            <line>
-              <![CDATA[ Enter value : HTC Touch HD]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- t3_search_ProductInTheSearchFieldAndVerifyResults -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:ShoppingTests.TESTS_HomePageDP@5af3afd9]" started-at="2023-06-15T13:25:24 EEST" name="afterClass" finished-at="2023-06-15T13:25:24 EEST" duration-ms="324" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- ShoppingTests.TESTS_HomePageDP -->
+      </class> <!-- ShoppingTests.DifferentCalculations -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
