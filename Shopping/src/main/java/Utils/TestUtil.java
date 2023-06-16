@@ -44,22 +44,13 @@ import Pages.TopHeaderPage;
 
 public class TestUtil {
 
-
-	// Properties Initialize
-//	public static Properties config = new Properties();
-//	public  Properties or = new Properties();
-//	public  java.io.FileInputStream fis;
-//	public  java.io.FileInputStream fis2;
-	// public static ThreadLocal<WebDriver> tDriver = new ThreadLocal<WebDriver>();
 	public WebDriver driver;
 	public WebDriverWait wait;
-	public  SoftAssert softAssert;
-	public  WebElement element;
+	public SoftAssert softAssert;
+	public WebElement element;
 	public JavascriptExecutor js;
 	String screenshotName;
 	Actions actions;
-//	long startTime;
-//	long endTime;
 
 	/** Pages */
 	protected HomePage homePage;
@@ -76,67 +67,45 @@ public class TestUtil {
 	protected FascadePage fascadePage;
 	protected TestBase testBase;
 
-//	private  final String PROPERTIES_FILE = "config.properties";
-//	private  final String ENVIRONMENT_URL_KEY = "environment.url";
-//	private  final Properties properties = new Properties();
-	
-
 	public TestUtil() {
 		this.testBase = new TestBase();
-		
+
 	}
 
-	public  void pause(int seconds) {
-        try {
-            Thread.sleep(seconds * 1000);
-
-        } catch (Exception e) {
-            System.out.println("After waiting for " + seconds + " seconds");
-        }
-    }
-
-	public  void pausems(int mseconds) {
-        try {
-            Thread.sleep(mseconds * 100);
-
-        } catch (Exception e) {
-            System.out.println("After waiting for " + (mseconds *100) + " ms seconds");
-        }
-    }
-
-	public  void openUrl(String url) {
+	public void openUrl(String url) {
 		TestBase.tDriver.get().navigate().to(url);
 		Reporter.log("Successfully opened url '" + url + "'");
 	}
 
-	public  void assertIsDisplayed(WebElement element) {
+	public void assertIsDisplayed(WebElement element) {
 		Assert.assertTrue(element.isDisplayed());
 	}
 
-	public  void assertElementIsNotDisplayed (By locator) {
-		List<WebElement> searchedElemeents = driver.findElements(locator);
-		Assert.assertTrue(searchedElemeents.isEmpty());
-	}
-
-	public  WebElement locateElement(LocatorType locatorType, String locatorPath) {
+	public WebElement locateElement(LocatorType locatorType, String locatorPath) {
 
 		wait = new WebDriverWait(TestBase.tDriver.get(), DriverFactory.TIMEOUT);
 
 		switch (locatorType) {
 		case ID:
 			return wait.until(ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.id(locatorPath))));
-		case XPATH: 
-			return wait.until(ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.xpath(locatorPath))));
+		case XPATH:
+			return wait
+					.until(ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.xpath(locatorPath))));
 		case NAME:
-			return wait.until(ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.name(locatorPath))));
+			return wait
+					.until(ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.name(locatorPath))));
 		case CLASSNAME:
-			return wait.until(ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.className(locatorPath))));
+			return wait.until(
+					ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.className(locatorPath))));
 		case CSS:
-			return wait.until(ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.cssSelector(locatorPath))));
+			return wait.until(
+					ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.cssSelector(locatorPath))));
 		case LINKEDTEXT:
-			return wait.until(ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.linkText(locatorPath))));
+			return wait.until(
+					ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.linkText(locatorPath))));
 		case TAGNAME:
-			return wait.until(ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.tagName(locatorPath))));
+			return wait.until(
+					ExpectedConditions.visibilityOf(TestBase.tDriver.get().findElement(By.tagName(locatorPath))));
 
 		default:
 			throw new RuntimeException("Unknown locator " + locatorType + " : " + locatorPath);
@@ -144,31 +113,31 @@ public class TestUtil {
 
 	}
 
-	public  List<WebElement> getElementList(String locator, LocatorType type) {
-		
+	public List<WebElement> getElementList(String locator, LocatorType type) {
+
 		List<WebElement> elementList = new ArrayList<WebElement>();
-		if (type==LocatorType.ID) {
+		if (type == LocatorType.ID) {
 			elementList = TestBase.tDriver.get().findElements(By.id(locator));
-			
-		} else if (type==LocatorType.NAME) {
-			elementList = TestBase.tDriver.get().findElements(By.name(locator));		}
-		
-		else if (type==LocatorType.XPATH) {
+
+		} else if (type == LocatorType.NAME) {
+			elementList = TestBase.tDriver.get().findElements(By.name(locator));
+		}
+
+		else if (type == LocatorType.XPATH) {
 			elementList = TestBase.tDriver.get().findElements(By.xpath(locator));
-						
-		} else if (type==LocatorType.CSS) {
+
+		} else if (type == LocatorType.CSS) {
 			elementList = TestBase.tDriver.get().findElements(By.cssSelector(locator));
-			
-		} else if (type==LocatorType.CLASSNAME) {
+
+		} else if (type == LocatorType.CLASSNAME) {
 			elementList = TestBase.tDriver.get().findElements(By.className(locator));
-			
-		} else if (type==LocatorType.TAGNAME) {
+
+		} else if (type == LocatorType.TAGNAME) {
 			elementList = TestBase.tDriver.get().findElements(By.tagName(locator));
-			
-		} else if (type==LocatorType.LINKEDTEXT) {
+
+		} else if (type == LocatorType.LINKEDTEXT) {
 			elementList = TestBase.tDriver.get().findElements(By.linkText(locator));
-		} 
-		else if (type==LocatorType.PARTIALLINKTEXT) {
+		} else if (type == LocatorType.PARTIALLINKTEXT) {
 			elementList = TestBase.tDriver.get().findElements(By.partialLinkText(locator));
 		} else {
 			System.out.println("Locator type not supported");
@@ -182,7 +151,7 @@ public class TestUtil {
 		return elementList;
 	}
 
-	public  WebElement findElement(LocatorType locatorType, String locatorPath) {
+	public WebElement findElement(LocatorType locatorType, String locatorPath) {
 		try {
 			element = locateElement(locatorType, locatorPath);
 		} catch (StaleElementReferenceException e) {
@@ -192,16 +161,16 @@ public class TestUtil {
 		return element;
 	}
 
-	public  WebElement typeOnField(WebElement element, String value) {
+	public WebElement typeOnField(WebElement element, String value) {
 		HighLightElement(element);
 		element.clear();
 		element.sendKeys(value);
 		Reporter.log(" Enter value : " + value);
-		
+
 		return element;
 	}
 
-	public  void HighLightElement(WebElement element) {
+	public void HighLightElement(WebElement element) {
 
 		js = (JavascriptExecutor) TestBase.tDriver.get();
 		js.executeScript("arguments[0].setAttribute('style','background: yellow; border: 2px solid red;')", element);
@@ -213,13 +182,7 @@ public class TestUtil {
 		js.executeScript("arguments[0].setAttribute('style','border: solid 2px white')", element);
 	}
 
-	public  void scrollDown(WebElement Element) {
-		js = (JavascriptExecutor) TestBase.tDriver.get();
-		js.executeScript("arguments[0].scrollIntoView();", Element);
-
-	}
-
-	public  void jSClick(WebElement element) {
+	public void jSClick(WebElement element) {
 		wait = new WebDriverWait(TestBase.tDriver.get(), DriverFactory.TIMEOUT);
 		js = (JavascriptExecutor) TestBase.tDriver.get();
 		element = wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -227,7 +190,7 @@ public class TestUtil {
 		Reporter.log("Successfully click on element " + element.getText());
 	}
 
-	public  void clickOnElement(WebElement element) {
+	public void clickOnElement(WebElement element) {
 		wait = new WebDriverWait(TestBase.tDriver.get(), DriverFactory.TIMEOUT);
 		try {
 			element = wait.until(ExpectedConditions.elementToBeClickable(element));
@@ -238,16 +201,18 @@ public class TestUtil {
 		}
 	}
 
-	public  void pseudoClickJavascript(String cssPath, String key) {
+	public void pseudoClickJavascript(String cssPath, String key) {
 
 		switch (key) {
-		
+
 		case "before":
-			((JavascriptExecutor) driver).executeScript("document.querySelector(arguments[0],':before').click();",cssPath);					
+			((JavascriptExecutor) driver).executeScript("document.querySelector(arguments[0],':before').click();",
+					cssPath);
 			break;
-			
+
 		case "after":
-			((JavascriptExecutor) driver).executeScript("document.querySelector(arguments[0],':after').click();",cssPath);
+			((JavascriptExecutor) driver).executeScript("document.querySelector(arguments[0],':after').click();",
+					cssPath);
 			break;
 
 		default:
@@ -255,9 +220,11 @@ public class TestUtil {
 		}
 
 	}
-	public  String selectDropdownOptionByTagName(WebElement dropdown, String tagName, String searchedOption) throws InterruptedException {		
+
+	public String selectDropdownOptionByTagName(WebElement dropdown, String tagName, String searchedOption)
+			throws InterruptedException {
 		actions = new Actions(TestBase.tDriver.get());
-		clickOnElement(dropdown);	
+		clickOnElement(dropdown);
 		List<WebElement> options = TestBase.tDriver.get().findElements(By.tagName(tagName));
 		for (WebElement option : options) {
 			if (option.getText().equals(searchedOption)) {
@@ -268,12 +235,7 @@ public class TestUtil {
 		return searchedOption;
 	}
 
-	public  void JSclickOnWebElement(WebElement element) {
-		js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", element);
-	}
-
-	public  String ScreenCapture() throws IOException {
+	public String ScreenCapture() throws IOException {
 		System.setProperty("org.uncommons.reportng.escape-output", "false");
 		zoomOutPage(50);
 		Date d = new Date();
@@ -291,15 +253,7 @@ public class TestUtil {
 
 	}
 
-	public  void select(WebElement select1, String value) {
-
-		Select select = new Select(select1);
-		select.selectByVisibleText(value);
-		Reporter.log("Selecting from dropdown value as : " + value);
-
-	}
-
-	public  void pageTitleVerify(String expected) {
+	public void pageTitleVerify(String expected) {
 		String actual = TestBase.tDriver.get().getTitle();
 		Assert.assertEquals(actual, expected);
 		Reporter.log("Page title  is Verified");
@@ -307,12 +261,12 @@ public class TestUtil {
 
 	}
 
-	public  void zoomOutPage(int percent) {
+	public void zoomOutPage(int percent) {
 		JavascriptExecutor js = (JavascriptExecutor) TestBase.tDriver.get();
 		js.executeScript("document.body.style.zoom='" + percent + "%'");
 	}
 
-	public  void verifyEqualTexts(WebElement element, String expected) {
+	public void verifyEqualTexts(WebElement element, String expected) {
 
 		Assert.assertEquals(element.getText(), expected);
 		Reporter.log("Text : " + element.getText() + " - is Verified");
@@ -320,7 +274,7 @@ public class TestUtil {
 
 	}
 
-	public  void movesToTheElement(WebElement element) {
+	public void movesToTheElement(WebElement element) {
 		actions = new Actions(TestBase.tDriver.get());
 		wait = new WebDriverWait(TestBase.tDriver.get(), 5);
 
@@ -337,52 +291,16 @@ public class TestUtil {
 		}
 	}
 
-	public  int convertDoubleToInt(double doubleAmount) {	
+	public int convertDoubleToInt(double doubleAmount) {
 		Double newData = new Double(doubleAmount);
 		return newData.intValue();
 	}
-	
-	public  int convertStringToInt (String value) {
+
+	public int convertStringToInt(String value) {
 		return Integer.parseInt(value);
 	}
 
-	public  List<WebElement> visiblilityOfAllElements(By locator, int timeout) {
-		wait = new WebDriverWait(driver, timeout);
-		wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(locator)));
-		return driver.findElements(locator);
-	}
-
-	public  WebElement waitForElementToBePresent(By locator, int timeout) {
-		wait = new WebDriverWait(driver, timeout);
-		wait.until(ExpectedConditions.presenceOfElementLocated(locator));
-		return getElement(locator);
-	}
-
-	public  WebElement waitForElementToBeClickable(By locator, int timeout) {
-		wait = new WebDriverWait(driver, timeout);
-		wait.until(ExpectedConditions.elementToBeClickable(locator));
-		return getElement(locator);
-	}
-
-	public  WebElement waitForElementToBeVisbile(By locator, int timeout) {
-		WebElement element = getElement(locator);
-		wait = new WebDriverWait(TestBase.tDriver.get(), timeout);
-		wait.until(ExpectedConditions.visibilityOf(element));
-		return element;
-	}
-
-	public  void clickWhenReady(By locator, int timeout) {
-		wait = new WebDriverWait(TestBase.tDriver.get(), timeout);
-		wait.until(ExpectedConditions.elementToBeClickable(locator));
-		getElement(locator).click();
-	}
-
-	public  WebElement getElement(By locator) {
-		WebElement element = driver.findElement(locator);
-		return element;
-	}
-
-	public  String randomString(int lenght) {
+	public String randomString(int lenght) {
 		String characters = "abcdefghijklmnopqrstuvwxyz";
 		String randomString = "";
 
@@ -398,19 +316,19 @@ public class TestUtil {
 		}
 		return randomString;
 	}
-	
-	public  double getDoubleFromWebElement (WebElement element) {
-		
+
+	public double getDoubleFromWebElement(WebElement element) {
+
 		String unitPriceStringValueShoppingCart = element.getText();
 		String unitPriceStringValueShoppingCartModified = unitPriceStringValueShoppingCart.replace("$", "");
 		return Double.parseDouble(unitPriceStringValueShoppingCartModified);
 	}
-	
-	public  double getDoubleFromStringValue (String stringValue ) {
-		String price1 = stringValue.replace("$", "");		
-		return  Double.parseDouble(price1);
+
+	public double getDoubleFromStringValue(String stringValue) {
+		String price1 = stringValue.replace("$", "");
+		return Double.parseDouble(price1);
 	}
-	
+
 	public String getScreenshot() throws WebDriverException {
 		DriverFactory drvierFactory = new DriverFactory();
 		File srcFile = ((TakesScreenshot) drvierFactory.getDriver()).getScreenshotAs(OutputType.FILE);
@@ -425,11 +343,10 @@ public class TestUtil {
 		return path;
 	}
 
-	public  WebDriver getDriver() {
+	public WebDriver getDriver() {
 		return TestBase.tDriver.get();
 	}
 
-	
 	public WebElement waitForElementPresntUsingFluentWait(By locator, int timeOut, int pollingTime) {
 		try {
 			Wait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(timeOut))
@@ -438,9 +355,85 @@ public class TestUtil {
 		} catch (NullPointerException e) {
 			System.out.println(e);
 		}
-		
+
 		return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 
 	}
+
+//	public  void pause(int seconds) {
+//  try {
+//      Thread.sleep(seconds * 1000);
+//
+//  } catch (Exception e) {
+//      System.out.println("After waiting for " + seconds + " seconds");
+//  }
+//}
+//
+//public  void pausems(int mseconds) {
+//  try {
+//      Thread.sleep(mseconds * 100);
+//
+//  } catch (Exception e) {
+//      System.out.println("After waiting for " + (mseconds *100) + " ms seconds");
+//  }
+//}
+//	public  List<WebElement> visiblilityOfAllElements(By locator, int timeout) {
+//	wait = new WebDriverWait(driver, timeout);
+//	wait.until(ExpectedConditions.visibilityOfAllElements(driver.findElements(locator)));
+//	return driver.findElements(locator);
+//}
+
+//public  WebElement waitForElementToBePresent(By locator, int timeout) {
+//	wait = new WebDriverWait(driver, timeout);
+//	wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+//	return getElement(locator);
+//}
+
+//public  WebElement waitForElementToBeClickable(By locator, int timeout) {
+//	wait = new WebDriverWait(driver, timeout);
+//	wait.until(ExpectedConditions.elementToBeClickable(locator));
+//	return getElement(locator);
+//}
+//
+//public  WebElement waitForElementToBeVisbile(By locator, int timeout) {
+//	WebElement element = getElement(locator);
+//	wait = new WebDriverWait(TestBase.tDriver.get(), timeout);
+//	wait.until(ExpectedConditions.visibilityOf(element));
+//	return element;
+//}
+//
+//public  void clickWhenReady(By locator, int timeout) {
+//	wait = new WebDriverWait(TestBase.tDriver.get(), timeout);
+//	wait.until(ExpectedConditions.elementToBeClickable(locator));
+//	getElement(locator).click();
+//}
+//
+//public  WebElement getElement(By locator) {
+//	WebElement element = driver.findElement(locator);
+//	return element;
+//}
+//	public  void select(WebElement select1, String value) {
+//
+//		Select select = new Select(select1);
+//		select.selectByVisibleText(value);
+//		Reporter.log("Selecting from dropdown value as : " + value);
+//
+//	}
+
+//	public  void JSclickOnWebElement(WebElement element) {
+//		js = (JavascriptExecutor) driver;
+//		js.executeScript("arguments[0].click();", element);
+//	}
+
+//	public  void scrollDown(WebElement Element) {
+//		js = (JavascriptExecutor) TestBase.tDriver.get();
+//		js.executeScript("arguments[0].scrollIntoView();", Element);
+//
+//	}
+
+//	public  void assertElementIsNotDisplayed (By locator) {
+//		List<WebElement> searchedElemeents = driver.findElements(locator);
+//		Assert.assertTrue(searchedElemeents.isEmpty());
+//	}
 
 }
